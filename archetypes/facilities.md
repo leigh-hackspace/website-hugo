@@ -1,5 +1,5 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-icon: ""
+title: "{{ replace .Name "_" " " | title }}"
+subtitle: ""
 ---
 

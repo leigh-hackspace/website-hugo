@@ -5,7 +5,6 @@
     {{- range (where .Site.RegularPages "Section" "facilities") }}
     <div class="column is-one-quarter">
         <div class="box is-large hover-items">
-            <div class=""><img src="{{ .Params.icon }}" width="32"></div>
             <h3 class="is-size-4 has-text-weight-bold">{{ .Title }}</h3>
             <div class="content mt-5 box-height">
                 <p>{{ .Params.subtitle }}</p>

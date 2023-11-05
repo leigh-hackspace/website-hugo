@@ -8,6 +8,25 @@ company = "Leigh Hackspace CIC"
 company_number = "09404083"
 copyright_years = "2023"
 
+# Header links
+[menu]
+[[menu.main]]
+name = "About"
+pageRef = "/about"
+
+[[menu.main]]
+name = "Facilities"
+pageRef = "/facilities"
+
+[[menu.main]]
+name = "Blog"
+pageRef = "/blog"
+
+[[menu.main]]
+name = "Contact"
+pageRef = "contact"
+
+# Social links
 [[params.social]]
 name = "twitter"
 url = "https://twitter.com/leigh_hackspace"
