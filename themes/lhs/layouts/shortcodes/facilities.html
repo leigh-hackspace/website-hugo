@@ -1,0 +1,19 @@
+<style>
+    .box-height { min-height: 180px; }
+</style>
+<div class="columns pricing-tiers is-centered is-multiline">
+    {{- range (where .Site.RegularPages "Section" "facilities") }}
+    <div class="column is-one-quarter">
+        <div class="box is-large hover-items">
+            <div class=""><img src="{{ .Params.icon }}" width="32"></div>
+            <h3 class="is-size-4 has-text-weight-bold">{{ .Title }}</h3>
+            <div class="content mt-5 box-height">
+                <p>{{ .Params.subtitle }}</p>
+            </div>
+            <div class="content">
+                <a href="{{ .Permalink }}" class="button is-primary is-medium is-fullwidth has-box-shadow ">Learn More</a>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+</div>

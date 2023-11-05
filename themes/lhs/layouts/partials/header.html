@@ -1,0 +1,49 @@
+<nav class="navbar is-spaced" role="navigation" aria-label="main navigation">
+    <div class="container">
+
+        <div class="navbar-brand" style="flex-grow: 1;">
+            <a class="navbar-item" href="/">
+                <img class="site-logo" src="/images/logo.svg" alt="" width="152">
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbar" class="navbar-menu has-text-centered-touch is-size-5-touch">
+            <div class="navbar-start is-half ">
+
+                <a href="/about" class="active navbar-item has-shadow is-size-5">About</a>
+                <a href="/facilities" class=" navbar-item has-shadow is-size-5">Facilities</a>
+                <a href="/contact" class=" navbar-item has-shadow is-size-5">Contact</a>
+
+
+                <div class="navbar-item has-shadow">
+                    <div class="buttons is-block-touch is-fullwidth-touch">
+                        <a href="/membership" class="button is-primary is-rounded is-size-5">
+                            <strong>Become a member</strong>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="navbar-end navbar--social-links">
+                {{- with .Site.Params.social }}
+                {{ range . -}}
+                <div class="navbar-item is-inline-block-touch">
+                    <span class="icon">
+                        <a href="{{ .url | safeURL }}" target="_blank" rel="noopener me"
+                            title="{{ .name | humanize }}"><i class="fab {{ .icon }}" aria-hidden="true"></i></a>
+                    </span>
+                </div>
+                {{ end }}
+                {{- end }}
+            </div>
+        </div>
+
+
+    </div>
+</nav>

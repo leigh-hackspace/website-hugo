@@ -1,0 +1,31 @@
+{{ define "hero-content" }}
+<div class="columns _is-centered is-vcentered has-text-white has-text-centered-mobile">
+
+    <div class="column is-full-tablet _is-offset-one-quarter-tablet is-half-desktop">
+        <h1 class="title is-1 has-text-white">{{ .Title }}</h1>
+        <p class="subtitle"></p>
+        <p>{{ .Params.subtitle }}</p>
+        <p></p>
+        
+        <div class="columns _is-desktop">
+            <div class="column is-mobile is-multiline is-fullwidth-mobile is-half-tablet">
+                <a class="button is-primary is-medium is-fullwidth has-box-shadow" href="/about">Learn more</a>
+            </div>
+            <div class="column is-mobile is-multiline is-fullwidth-mobile is-half-tablet">
+                <a class="button is-primary is-medium is-fullwidth has-box-shadow is-inverted _is-outlined"
+                    href="/membership">Become a member</a>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+{{ end }}
+
+{{ define "content" }}
+{{ .Content }}
+{{ end }}
+
+{{ define "cta" }}
+{{ partial "design/bigcta.html" . }}
+{{ end }}

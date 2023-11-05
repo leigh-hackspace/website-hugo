@@ -1,0 +1,90 @@
+baseURL = 'http://leighhack.org/'
+languageCode = 'en-gb'
+theme = 'lhs'
+title = 'Leigh Hackspace'
+
+[params]
+company = "Leigh Hackspace CIC"
+company_number = "09404083"
+copyright_years = "2023"
+
+[[params.social]]
+name = "twitter"
+url = "https://twitter.com/leigh_hackspace"
+icon = "fa-twitter"
+
+[[params.social]]
+name = "slack"
+url = "https://join.slack.com/t/leighhack/shared_invite/enQtNDYzMjEyMDMxNDExLTE1MWY5N2IwMzdhMzQ0ZWFiNDkyNzJmMGM1ZmFkODcwMGM5ODFmYmI4MjhmM2JiMWEyY2E3NTRjMTQzMzljZWU"
+icon = "fa-slack"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/leigh-hackspace"
+icon = "fa-github-alt"
+
+[[params.social]]
+name = "instagram"
+url = "https://www.instagram.com/leighhackspace"
+icon = "fa-instagram"
+
+[[params.social]]
+name = "facebook"
+url = "https://www.facebook.com/groups/leighhackspace/"
+icon = "fa-facebook-square"
+
+[[params.social]]
+name = "discourse"
+url = "https://discourse.leighhack.org"
+icon = "fa-discourse"
+
+[[params.social]]
+name = "mastodon"
+url = "https://mastodon.social/@leigh_hackspace"
+icon = "fa-mastodon"
+
+# Membership Levels
+
+[[params.membership]]
+name = "Member"
+price = "24"
+description = "Our standard membership that allows usage of the hackspace facilities."
+link = "https://pay.gocardless.com/AL00024VQTCKBK"
+
+[[params.membership]]
+name = "Member+"
+price = "30"
+description = "Standard membership with an additional donation."
+link = "https://pay.gocardless.com/AL00024VQW2FWQ"
+
+[[params.membership]]
+name = "Concession"
+price = "18"
+description = "A subsidised membership for pensioners, students, and low income earners."
+link = "https://pay.gocardless.com/AL0002BMN4S3AX"
+
+[[params.membership]]
+name = "Family"
+price = "40"
+description = "A discounted membership for two adults and two children."
+link = "https://pay.gocardless.com/AL000637J3VZP7"
+
+[[params.membership]]
+name = "Business"
+price = " POA"
+description = "Access to the hackspace for a business or community group."
+link = "mailto:info@leighhack.org?subject=Corporate%20Membership"
+button = "Enquire"
+
+[[params.membership]]
+name = "Patron"
+price = "5"
+description = "Support the hackspace without being a member."
+link = "https://pay.gocardless.com/AL000FDGN4Q6AC"
+
+[[params.membership]]
+name = "Day Pass"
+price = "5"
+description = "Access to the hackspace's facilities for a day."
+link = "mailto:info@leighhack.org?subject=Day%20Pass"
+button = "Enquire"

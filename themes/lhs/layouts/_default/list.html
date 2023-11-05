@@ -1,0 +1,28 @@
+{{ define "title" }}
+{{ .Title }}
+{{ end }}
+
+{{ define "subtitle" }}
+{{ .Params.subtitle }}
+{{ end }}
+
+{{ define "content" }}
+{{ .Content }}
+
+{{- range .Data.Pages.GroupByDate "2006" }}
+<div class="posts-group">
+    <h3 id="{{ .Key }}">{{ .Key }}
+</div>
+<ul class="posts-list">
+    {{- range .Pages }}
+    <li class="post-item">
+        <a href="{{.Permalink}}">
+            <span class="post-title">{{.Title}}</span>
+            <span class="post-day">{{ .Date.Format "2006-01-01" }}</span>
+        </a>
+    </li>
+    {{- end }}
+</ul>
+</div>
+{{- end }}
+{{ end }}
