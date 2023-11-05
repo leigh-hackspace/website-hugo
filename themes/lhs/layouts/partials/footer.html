@@ -12,7 +12,8 @@
                     Leigh Hackspace<br>
                     Unit 3.14, Leigh Spinners Mill<br>
                     Park Lane, Leigh <br>
-                    WN7 2LB
+                    WN7 2LB <br>
+                    <a href="mailto:info@leighhack.org">info@leighhack.org</a>
                 </address>
             </div>
 
@@ -21,9 +22,9 @@
                 <div class="columns">
                     <div class="column">
                         <ul class="has-text-white is-size-6 ">
-                            <li><a href="/about">About Us</a></li>
-                            <li><a href="/facilities">Our Facilities</a></li>
-                            <li><a href="/contact">Contact Us</a></li>
+                        {{- range site.Menus.main }}
+                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                        {{- end }}
                         </ul>
                     </div>
 
@@ -55,7 +56,7 @@
                     <div class="level-left">
                     </div>
                     <div class="level-right has-text-right">
-                        <p>© {{ .Site.Params.company }} {{ .Site.Params.copyright_years }} | Initial website by <a href="https://www.studiocosmos.co.uk"
+                        <p>&copy; {{ .Site.Params.company }} {{ .Site.Params.copyright_years }} | Initial website design by <a href="https://www.studiocosmos.co.uk"
                                 target="_blank" rel="noopener">COSMOS</a><br/>
                                 {{ .Site.Title }} is a trading name of {{ .Site.Params.Company }}, registered in England & Wales No. <a href="https://find-and-update.company-information.service.gov.uk/company/{{ .Site.Params.company_number }}">{{ .Site.Params.company_number }}</a></p>
                     </div>

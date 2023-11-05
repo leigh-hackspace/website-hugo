@@ -2,6 +2,12 @@ baseURL = 'http://leighhack.org/'
 languageCode = 'en-gb'
 theme = 'lhs'
 title = 'Leigh Hackspace'
+enableRobotsTXT = true
+
+[sitemap]
+  changeFreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = -1
 
 [params]
 company = "Leigh Hackspace CIC"
@@ -23,8 +29,8 @@ name = "Blog"
 pageRef = "/blog"
 
 [[menu.main]]
-name = "Contact"
-pageRef = "contact"
+name = "Visit Us"
+pageRef = "visit"
 
 # Social links
 [[params.social]]

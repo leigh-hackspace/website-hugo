@@ -7,10 +7,4 @@ Leigh Hackspace is a social enterprise created for the benefit of our members an
 
 The biggest asset you will find as a member is being part of a social making and learning community. Our memberbase consists of people with skills ranging from programming computers to making guitars, from self-publishing to hand stitching, and from fine art to poetry.
 
-### Membership will give you access to our facilities
-
-{{< facilities >}}
-
-
-
 {{< memberships >}}
