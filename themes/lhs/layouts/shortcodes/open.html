@@ -1,0 +1,15 @@
+<div class="notification has-text-centered" id="hackspace-open">
+Leigh Hackspace is currently <span id="hackspace_status">Closed</span>
+</div>
+<script>
+    $.getJSON("https://api.leighhack.org/space.json", function (data) {
+        var date = new Date(data.state.lastchange * 1000);
+        
+        if (data.state.open) {
+            $('span#hackspace_status').html('<b>Open</b>');
+            $('div#hackspace-open').addClass('is-success');
+        } else {
+            $('span#hackspace_status').html('<b>Closed</b>');
+        }
+    });
+</script>
