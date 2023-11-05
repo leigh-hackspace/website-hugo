@@ -17,7 +17,7 @@
                 <div class="container">
                     {{ block "hero-content" . }}
                     <div class="columns _is-centered is-vcentered has-text-white has-text-centered-mobile">
-                        <div class="column is-full-tablet _is-offset-one-quarter-tablet is-half-desktop">
+                        <div class="column is-full-tablet _is-offset-one-quarter-tablet">
                             <h1 class="title is-1 has-text-white">{{ block "title" . }}{{ end }}</h1>
                             <p class="subtitle has-text-white">{{ block "subtitle" . }}{{ end }}</p>
                             <p></p>
@@ -33,7 +33,7 @@
 
     <section class="section">
         <div class="container content">
-            {{ block "content" .}}
+            {{ block "content" . }}
             {{ end }}
         </div>
     </section>

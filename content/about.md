@@ -1,7 +1,7 @@
 ---
 title: About Leigh Hackspace
 subtitle: An accessible, social workspace, where you can meet people, learn new skills, and build awesome things!
-----
+---
 ### What is Leigh Hackspace?
 
 Leigh Hackspace is a shared community workspace that offers the facilities you need to make a bunch of stuff you’re not able to make at home. Maybe you don’t have the right tools? Maybe you don’t have enough space? Maybe you’re stuck trying to figure out a problem you’re not able to solve on your own? We’re here to help!
