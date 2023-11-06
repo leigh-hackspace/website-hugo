@@ -12,7 +12,7 @@
 
     {{ block "hero" . }}
     <section id="hero">
-        {{ $img := resources.Get "/images/hero-bg.jpg" }}
+        {{ $img := resources.Get (default "/images/hero-bg.jpg" .Params.hero_image) }}
         {{ $img = $img.Resize "1256x jpg" }}
         <div class="hero is-medium" style="background-image: linear-gradient(-249deg, #53071b, #d41246), url({{ $img.RelPermalink }});">
             <div class="hero-body">

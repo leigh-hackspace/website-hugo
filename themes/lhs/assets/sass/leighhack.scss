@@ -108,6 +108,12 @@ address {
 	transition: all 0.2s;
 }
 
+.site-logo-text {
+	font-size: .9em; 
+	line-height: 1.1; 
+	font-family: 'Transport Medium';
+}
+
 // -------------------------------------------------------
 //Navigation
 // -------------------------------------------------------
@@ -207,6 +213,10 @@ address {
 			border-color: hsl(0, 0%, 86%);
 		  }
 	}
+
+	&-description { 
+		min-height: 180px; 
+	}
 }
 
 .small_cta {
@@ -223,7 +233,13 @@ address {
 	&-tiers, &-facilities{
 		padding:2em 0;
 	}
+
+	&-description { 
+		min-height: 180px; 
+	}
 }
+
+
 
 // -------------------------------------------------------
 // Join the team

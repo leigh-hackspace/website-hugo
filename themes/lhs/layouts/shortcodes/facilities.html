@@ -1,12 +1,9 @@
-<style>
-    .box-height { min-height: 180px; }
-</style>
 <div class="columns pricing-tiers is-centered is-multiline">
     {{- range (where .Site.RegularPages "Section" "facilities") }}
     <div class="column is-one-quarter">
         <div class="box is-large hover-items">
             <h3 class="is-size-4 has-text-weight-bold">{{ .Title }}</h3>
-            <div class="content mt-5 box-height">
+            <div class="content mt-5 facility-description">
                 <p>{{ .Params.subtitle }}</p>
             </div>
             <div class="content">
