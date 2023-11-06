@@ -37,7 +37,7 @@
                 <div class="columns">
                     <div class="column is-4">
                         <ul class="has-text-white is-size-6 ">
-                            {{- with .Site.Params.social }}
+                            {{- with .Site.Params.social_links }}
                             {{ range . -}}
                             <li><a href="{{ .url | safeURL }}" target="_blank" rel="noopener me" title="{{ .name | humanize }}">{{ .name | humanize }}</a></li>
                             {{ end }}

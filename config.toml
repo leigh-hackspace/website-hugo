@@ -5,14 +5,18 @@ title = 'Leigh Hackspace'
 enableRobotsTXT = true
 
 [sitemap]
-  changeFreq = 'weekly'
-  filename = 'sitemap.xml'
-  priority = -1
+changeFreq = 'weekly'
+filename = 'sitemap.xml'
+priority = -1
 
 [params]
 company = "Leigh Hackspace CIC"
 company_number = "09404083"
 copyright_years = "2023"
+description = "Leigh Hackspace is a hackspace located in the north-west of England."
+
+[params.social]
+twitter = 'leigh_hackspace'
 
 # Header links
 [menu]
@@ -37,37 +41,37 @@ name = "Events"
 pageRef = "events"
 
 # Social links
-[[params.social]]
+[[params.social_links]]
 name = "twitter"
 url = "https://twitter.com/leigh_hackspace"
 icon = "fa-twitter"
 
-[[params.social]]
+[[params.social_links]]
 name = "slack"
 url = "https://join.slack.com/t/leighhack/shared_invite/enQtNDYzMjEyMDMxNDExLTE1MWY5N2IwMzdhMzQ0ZWFiNDkyNzJmMGM1ZmFkODcwMGM5ODFmYmI4MjhmM2JiMWEyY2E3NTRjMTQzMzljZWU"
 icon = "fa-slack"
 
-[[params.social]]
+[[params.social_links]]
 name = "github"
 url = "https://github.com/leigh-hackspace"
 icon = "fa-github-alt"
 
-[[params.social]]
+[[params.social_links]]
 name = "instagram"
 url = "https://www.instagram.com/leighhackspace"
 icon = "fa-instagram"
 
-[[params.social]]
+[[params.social_links]]
 name = "facebook"
 url = "https://www.facebook.com/groups/leighhackspace/"
 icon = "fa-facebook-square"
 
-[[params.social]]
+[[params.social_links]]
 name = "discourse"
 url = "https://discourse.leighhack.org"
 icon = "fa-discourse"
 
-[[params.social]]
+[[params.social_links]]
 name = "mastodon"
 url = "https://mastodon.social/@leigh_hackspace"
 icon = "fa-mastodon"

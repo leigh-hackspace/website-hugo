@@ -1,7 +1,11 @@
-<meta charset="utf-8">
 <title>{{ block "title" . }}{{ .Site.Title }} - {{ .Title }}{{ end }}</title>
+
+<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
 
 <!-- favicons -->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -19,10 +23,3 @@
 {{ with resources.Get "sass/leighhack.scss" | toCSS $opts | minify | fingerprint }}
   <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
 {{ end }}
-
-<style>
-    @font-face {
-        font-family: 'Transport Medium';
-        src: url('/fonts/transport-medium.woff2') format('woff2');
-    }
-</style>

@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+// Additional fonts
+@font-face {
+	font-family: 'Transport Medium';
+	src: url('/fonts/transport-medium.woff2') format('woff2');
+}
+
 // Hackspace Branding 
 $family-sans-serif: "Roboto", sans-serif;
 $primary: #d41246;
