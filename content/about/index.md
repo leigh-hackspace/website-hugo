@@ -12,20 +12,38 @@ Visit Leigh Hackspace and solve all of these problems – we provide workspace, 
 
 ‘Hackspaces’ have nothing to do with computer ‘hacking’ (although it’s a great place to come and learn how to program or otherwise master your computer).
 
-### History of Leigh Hackspace
+### History of the hackspace
 
-Leigh Hackspace was initially set up as a Facebook group and garnered plenty of interest for local supporters. Before long, everyone involved in this early stage realised that there was a demand for a physical space where people could gather, share their ideas and resources, and work on projects together.
+The first meetings of Leigh Hackspace took place in late 2014 at Cadence Cafe, Tyldesley, Greater Manchester, following the creation of a Facebook Group 'Leigh Virtual Hackspace'. After two such 'hacking' meetings, the founders were offered the temporary share of a derelict shop at 25 Market Street by the Leigh Building Preservation Trust as part of a wider empty shop scheme.
 
-Luckily, Leigh Hackspace was able to obtain space through an empty shop scheme and moved into a disused retail unit in Leigh town centre on Market Street. Having a shopfront helped spread the word, the space grew quickly and soon Leigh Hackspace was ready to expand into even larger premises. In 2016 Leigh Hackspace moved into larger premises within a former mill’s warehouse space.
+{{< image "shop.jpg" >}}
+
+The joint official opening was held on 13 February 2015. The shop allowed us to spread the word and the space grew quickly, ending with us taking full use of the store during the year. After some time we started to outgrow the space, and started to search for new premises.
+
+### The Cotton Mill
+
+In early 2016, the hackspace moved from the shop to a 4000sqft dedicated space in [The Cotton Mill](https://en.wikipedia.org/wiki/Mather_Lane_Mill). The official opening was on Friday 12th February and was celebrated with an Open Hack evening and other events.
+
+{{< image "cottonmill.jpg" >}}
+
+The Cotton Mill was large enough to have dedicated areas for the darkroom and wood work. Over the years we ran several events, including Raspberry Jam days, Maker Markets, hack days, quizzes, and even a film screening in association with Leigh Film Society.
+
+The mill was a great home for the hackspace until 2019, when again we outgrew the space and was looking for something better.
 
 ### Moving to Leigh Spinners Mill
 
-The space continued to grow and evolve and in 2019 the decision was taken to move into Leigh Spinners Mill, to be part of the vibrant community of local organisations and businesses that had started to flourish. It was going to be a big job, our volunteers were going to physically build out the space to our community’s bespoke specifications. The project was ambitious but the team of volunteers were passionate, determined and excited to have such an amazing opportunity. The build began in November.
+[Leigh Spinners Mill](https://en.wikipedia.org/wiki/Leigh_Spinners) was being redeveloped by the Leigh Building Preservation Trust into an arts and local business centre during 2018, and the hackspace agreed to take space in the mill once it was able to. 
+
+The initial build-out happened during November 2019, but was paused early 2020 due to the global pandemic. Only during the latter part of 2022 was the hackspace able to return to fitting out the space, due to several building issues that prevented people working in the mill. 
 
 {{< image "buildout_1.jpg" >}}
 
 ### Leigh Hackspace '3.0'
 
-Not long after this bold move everything changed, the global pandemic meant that all work was halted. The situation was frustrating and all plans had to be put on hold. During this time a number of other issues arose surrounding the building the new space was part of. These circumstances unfortunately caused further delays.
+The '3.0' hackspace opened Feburary 2023 and now consists of three units on the third floor of the mill. A shared main space, a workshop and craft area, and a social space. Some areas were still being built out, but the space was now open for members to use.
 
-As of today the build of Leigh Hackspace V.3.0 is still underway, a dedicated team of volunteers continue to spend their free time working towards a common goal. If Leigh Hackspace sounds like a place you might be interested in, why not visit us and get involved?
+In early July the [electronics bay]({{< ref "/facilities/electronics" >}}) was completed giving members a wide selection of tools and components for any projects they are created. Then in November the [darkroom]({{< ref "/facilities/darkroom" >}}) was finally fitted for power and could be used by our members.
+
+### Looking to the future
+
+The hackspace will always be in a fluid state as we think of additional ways to utilize the space available to us. Our on-going aim is to foster relationships with the mill residents and the wider Leigh community. 

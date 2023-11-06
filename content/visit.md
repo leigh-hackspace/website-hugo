@@ -39,3 +39,5 @@ Alternatively, the Mill is only a 10-15 minute walk from Leigh Bus Station.
 ### Train
 
 **Atherton** (ATN) is the closest train station to the hackspace. From there you'll either need a taxi or a bus via Leigh Bus Station.
+
+The nearest mainline station is **Wigan Wallgate** (WGW) which has direct trains to Atherton station. Wallgate is a short 100 meter walk from Wigan North Western which is on the West Coast Mainline.
