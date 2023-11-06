@@ -1,0 +1,48 @@
+{{ define "title" }}
+{{ .Title }}
+{{ end }}
+
+{{ define "subtitle" }}
+{{ .Params.subtitle }}
+{{ end }}
+
+{{ define "content" }}
+<link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
+<script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js"></script>
+<div id="calendar" style="height: 800px"></div>
+<script>
+    /* in the browser environment namespace */
+    const Calendar = tui.Calendar;
+    const calendar = new Calendar('#calendar', {
+        defaultView: 'month',
+        isReadOnly: true,
+        useDetailPopup: true,
+        usageStatistics: false,
+        calendars: [
+            {
+                id: '1',
+                name: 'Hackspace Events',
+                backgroundColor: '#ff0000',
+            },
+        ],
+    });
+
+    console.log(calendar.getEvent());
+
+    $.getJSON('https://api.leighhack.org/events', function (data) {
+        data.forEach(function (event) {
+            calendar.createEvents([{
+                id: event['uid'],
+                calendarId: '1',
+                title: event['summary'],
+                body: event['description'],
+                state: 'Free',
+                dueDateClass: '',
+                start: event['start']['dateTime'],
+                end: event['end']['dateTime'],
+            }])
+        });
+    });
+    calendar.render();
+</script>
+{{ end }}

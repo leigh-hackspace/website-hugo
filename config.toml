@@ -18,11 +18,11 @@ copyright_years = "2023"
 [menu]
 [[menu.main]]
 name = "About"
-pageRef = "/about"
+pageRef = "about"
 
 [[menu.main]]
 name = "Facilities"
-pageRef = "/facilities"
+pageRef = "facilities"
 
 [[menu.main]]
 name = "Blog"
@@ -31,6 +31,10 @@ pageRef = "/blog"
 [[menu.main]]
 name = "Visit Us"
 pageRef = "visit"
+
+[[menu.main]]
+name = "Events"
+pageRef = "events"
 
 # Social links
 [[params.social]]

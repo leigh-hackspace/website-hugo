@@ -13,7 +13,7 @@
 <h3 id="{{ .Key }}">{{ .Key }}</h3>
 <ul>
     {{- range .Pages }}
-    <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+    <li><a href="{{.Permalink}}">{{.Title}}</a> - <i>{{ .Params.author }}</i></li>
     {{- end }}
 </ul>
 </div>
