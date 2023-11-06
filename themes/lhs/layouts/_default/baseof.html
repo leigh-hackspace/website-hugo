@@ -12,21 +12,31 @@
 
     {{ block "hero" . }}
     <section id="hero">
-        {{ $img := resources.Get (default "/images/hero-bg.jpg" .Params.hero_image) }}
-        {{ $img = $img.Resize "1256x jpg" }}
-        <div class="hero is-medium" style="background-image: linear-gradient(-249deg, #53071b, #d41246), url({{ $img.RelPermalink }});">
+        <div class="hero has-primary-gradient">
             <div class="hero-body">
                 <div class="container">
-                    {{ block "hero-content" . }}
-                    <div class="columns _is-centered is-vcentered has-text-white has-text-centered-mobile">
-                        <div class="column is-full-tablet _is-offset-one-quarter-tablet">
-                            <h1 class="title is-1 has-text-white">{{ block "title" . }}{{ end }}</h1>
-                            <p class="subtitle has-text-white">{{ block "subtitle" . }}{{ end }}</p>
-                            <p></p>
-                            <p></p>
+                    <div class="columns is-centered ">
+                        <div class="column is-four-fifths">
+                            <div class="columns is-vcentered has-text-centered-mobile">
+    
+                                <div class="column is-half">
+                                    {{ block "hero-content" . }}
+                                    <h1 class="title is-1 has-text-white">{{ .Title }}</h1>
+                                    <p class="subtitle has-text-white">{{ .Params.subtitle }}</p>
+                                    {{ end }}
+                                </div>
+    
+                                <div class="column">
+                                    {{ block "hero-image" . }}
+                                    {{ if .Params.hero_image }}
+                                    <img class="hero-img" src="{{ .Params.hero_image }}">
+                                    {{ end }}
+                                    {{ end }}
+                                </div>
+    
+                            </div>
                         </div>
                     </div>
-                    {{ end }}
                 </div>
             </div>
         </div>

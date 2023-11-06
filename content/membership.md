@@ -1,7 +1,7 @@
 ---
 title: Join Leigh Hackspace
 subtitle: Become part of our community.
-layout: membership
+hero_image: /images/hero-img.svg
 ---
 Leigh Hackspace is a social enterprise created for the benefit of our members and the wider Leigh community. We depend on memeberships and grants to operate, and in return we offer members access to the hackspace's facilities and resources.
 

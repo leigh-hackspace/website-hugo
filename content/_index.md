@@ -1,5 +1,5 @@
 ---
-title: Welcome to Leigh Hackspace!
+title: Welcome!
 subtitle: Leigh Hackspace is an accessible workspace, where members come together to learn new skills, share ideas and build awesome things!
 layout: home
 ---
