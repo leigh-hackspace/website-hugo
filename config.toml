@@ -118,3 +118,11 @@ period = "per day"
 description = "Access to the hackspace's facilities for a day."
 link = "mailto:info@leighhack.org?subject=Day%20Pass"
 button = "Enquire"
+
+[[params.membership]]
+name = "Creator Pod"
+price = " POA"
+period = "per month"
+description = "Enhanced membership which includes a dedicated space for your personal use."
+link = "mailto:info@leighhack.org?subject=Artist%20Pod%20Lease"
+button = "Enquire"
