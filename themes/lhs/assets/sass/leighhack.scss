@@ -108,12 +108,6 @@ address {
 	transition: all 0.2s;
 }
 
-.site-logo-text {
-	font-size: .9em; 
-	line-height: 1.1; 
-	font-family: 'Transport Medium';
-}
-
 // -------------------------------------------------------
 //Navigation
 // -------------------------------------------------------
@@ -144,7 +138,16 @@ address {
 
 .site-logo {
 	max-height:3rem!important;
+
+	&-text {
+		font-size: 1.1em; 
+		line-height: 1.1; 
+		font-family: 'Transport Medium';
+	}
 }
+
+
+
 
 // -------------------------------------------------------
 // Page Modules
