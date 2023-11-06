@@ -41,7 +41,11 @@
     </section>
 
     {{ block "cta" . }}
+    {{ if .Params.show_big_cta }}
+    {{ partial "design/bigcta.html" . }}
+    {{ else }}
     {{ partial "design/cta.html" . }}
+    {{ end }}
     {{ end }}
 
     {{ partial "footer.html" .}}

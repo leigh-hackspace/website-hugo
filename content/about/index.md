@@ -1,6 +1,7 @@
 ---
 title: About Leigh Hackspace
 subtitle: An accessible, social workspace, where you can meet people, learn new skills, and build awesome things!
+show_big_cta: true
 ---
 ### What is Leigh Hackspace?
 
