@@ -12,7 +12,9 @@
 
     {{ block "hero" . }}
     <section id="hero">
-        <div class="hero is-medium" style="background-image: linear-gradient(-249deg, black, white), url({{ default "/images/hero-bg.jpg" .Params.hero_bg_image}});">
+        {{ $img := resources.Get "/images/hero-bg.jpg" }}
+        {{ $img = $img.Resize "1256x jpg" }}
+        <div class="hero is-medium" style="background-image: linear-gradient(-249deg, #53071b, #d41246), url({{ $img.RelPermalink }});">
             <div class="hero-body">
                 <div class="container">
                     {{ block "hero-content" . }}
@@ -44,7 +46,6 @@
 
     {{ partial "footer.html" .}}
 
-    <script src="/js/simplebox.min.js"></script>
     <script src="/js/site.js"></script>
 </body>
 

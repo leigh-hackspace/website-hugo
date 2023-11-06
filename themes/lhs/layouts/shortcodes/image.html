@@ -1,0 +1,5 @@
+{{ $img := .Page.Resources.GetMatch (printf "*%s*" (.Get 0)) }}
+{{ $img = $img.Resize "1256x jpg" }}
+<figure class="image">
+  <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}">`
+</figure>

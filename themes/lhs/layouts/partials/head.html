@@ -15,8 +15,10 @@
 <script src="https://kit.fontawesome.com/589b48ea08.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-<link rel="stylesheet" href="/css/bulma.min.css">
-<link rel="stylesheet" href="/css/leighhack.css" type="text/css">
+{{ $opts := dict "transpiler" "libsass" "targetPath" "css/leighhack.css" }}
+{{ with resources.Get "sass/leighhack.scss" | toCSS $opts | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
 
 <style>
     @font-face {
