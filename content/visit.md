@@ -3,7 +3,7 @@ title: Visit Us
 subtitle: Come take a look around.
 ---
 
-Leigh Hackspace is located inside [Leigh Spinners Mill](https://www.spinnersmill.co.uk), a Grade II* listed former cotton spinning mill, restored by Leigh Building Preservation Trust and now hosting multiple business and community projects.
+Leigh Hackspace is located inside [Leigh Spinners Mill](https://www.spinnersmill.co.uk), a [Grade II* listed](https://historicengland.org.uk/advice/heritage-at-risk/search-register/list-entry/48399) former cotton spinning mill, restored by Leigh Building Preservation Trust and now hosting [multiple business and community projects](https://www.spinnersmill.co.uk).
 
 The hackspace is located on the third floor of Mill 2, located at the end of the main corridor from the lift and stairs. 
 
@@ -30,7 +30,7 @@ The mill has a large gravel public car-park, and additional overflow areas. Park
 
 ### Bus
 
-The nearest bus stop, Sandersons Croft, is serviced by the **9**, **34**, **126**, **984**, and **WVR3** buses. 
+The nearest bus stop, Sandersons Croft, is serviced by the **[9](https://tfgm.com/public-transport/bus/routes/9-higher-folds)**, **[34](https://tfgm.com/public-transport/bus/routes/34-st-helens)**, **[126](https://tfgm.com/public-transport/bus/routes/126-leigh)**, **[984](https://tfgm.com/public-transport/bus/routes/984-town-lane)**, and **[WVR3](https://www.warringtonsownbuses.co.uk/services/WBTR/WVR3)** buses. 
 
 Most interconnecting services can be found at Leigh Bus Station, with the **9** and **34** taking you to Sandersons Croft. From there the mill is only a two minute walk.
 
