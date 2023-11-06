@@ -7,7 +7,7 @@
 }
 
 // Hackspace Branding 
-$family-sans-serif: "Roboto", sans-serif;
+//$family-sans-serif: "Roboto", sans-serif;
 $primary: #d41246;
 $accent: #fbf3ee;
 $link: $primary;
@@ -18,11 +18,11 @@ $navbar-background-color: black;
 $navbar-burger-color: white;
 $footer-background-color: black;
 $footer-link-color: #e2e2e2;
-$button-padding-vertical: calc(0.5em) !default;
-$body-font-size: 1.375em;
-$body-line-height: 1.636em;
-$subtitle-font-size:$body-font-size!important;
-$subtitle-line-height:$body-line-height;
+//$button-padding-vertical: calc(0.5em) !default;
+$body-font-size: 1.25em;
+//$body-line-height: 1.636em;
+//$subtitle-font-size:$body-font-size!important;
+//$subtitle-line-height:$body-line-height;
 
 // Import Bulmas styles
 @import "bulma.sass";
