@@ -4,9 +4,9 @@
     <div class="column is-one-quarter">
         <div class="box is-large hover-items">
             <h3 class="is-size-4 has-text-weight-bold">{{ .name }}</h3>
-            <div class="is-size-1 has-text-weight-bold">£{{ .price }}</div>
-            <div class="_is-block mt-1 is-size-6 has-text-weight-normal">{{ default "per month" .period }}</div>
-            <div class="content mt-5 pricing-description is-size-5">
+            <div class="is-size-1 has-text-weight-bold pricing-price">£{{ .price }}</div>
+            <div class="_is-block mt-1 is-size-7 has-text-weight-normal">{{ default "per month" .period }}</div>
+            <div class="content mt-5 pricing-description is-size-6">
                 <p>{{ .description }}</p>
             </div>
             <div class="content">

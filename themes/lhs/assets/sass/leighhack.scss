@@ -237,8 +237,12 @@ address {
 		padding:2em 0;
 	}
 
+	&-price {
+		line-height: 1;
+	}
+
 	&-description { 
-		min-height: 180px; 
+		min-height: 120px; 
 	}
 }
 
