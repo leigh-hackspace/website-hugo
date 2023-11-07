@@ -16,7 +16,8 @@
 <meta name="msapplication-TileColor" content="#b91d47">
 <meta name="theme-color" content="#ffffff">
 
-<link rel="alternate" type="application/rss+xml" href="{{.Site.BaseURL }}/blog/index.xml" title="{{ .Site.Title }}">
+<link rel="alternate" type="application/rss+xml" href="{{.Site.BaseURL }}blog/index.xml" title="{{ .Site.Title }}">
+<link rel="canonical" href="{{ .Permalink }}">
 
 {{ $opts := dict "transpiler" "libsass" "targetPath" "css/leighhack.css" }}
 {{ with resources.Get "sass/leighhack.scss" | toCSS $opts | minify | fingerprint }}
