@@ -9,6 +9,8 @@
 {{ define "content" }}
 {{ .Content }}
 
+<p><i>Subscribe to our <a href="index.xml" type="application/rss+xml" >RSS feed</a> to keep up to date with new posts.</i></p>
+
 {{- range .Data.Pages.GroupByDate "2006" }}
 <h3 id="{{ .Key }}">{{ .Key }}</h3>
 
@@ -29,6 +31,5 @@
     </div>
 </div>
 {{- end }}
-
 {{- end }}
 {{ end }}
