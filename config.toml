@@ -100,7 +100,7 @@ link = "https://pay.gocardless.com/AL0002BMN4S3AX"
 [[params.membership]]
 name = "Family"
 price = "40"
-description = "A discounted membership for two adults and two children."
+description = "A discounted family membership for two adults and two children."
 link = "https://pay.gocardless.com/AL000637J3VZP7"
 
 [[params.membership]]
@@ -128,6 +128,6 @@ button = "Enquire"
 name = "Creator Pod"
 price = " POA"
 period = "per month"
-description = "Enhanced membership which includes a dedicated space for your personal use."
+description = "An enhanced membership which includes a dedicated space for your personal use."
 link = "mailto:info@leighhack.org?subject=Artist%20Pod%20Lease"
 button = "Enquire"
