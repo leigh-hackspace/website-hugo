@@ -26,11 +26,15 @@ function render_calendar() {
     isReadOnly: true,
     useDetailPopup: true,
     usageStatistics: false,
+    month: {
+      startDayOfWeek: 1,
+      visibleWeeksCount: 4,
+    },
     calendars: [
       {
         id: '1',
         name: 'Hackspace Events',
-        backgroundColor: '#ff0000',
+        backgroundColor: '#d41246',
       },
     ],
   });
