@@ -3,7 +3,7 @@ title: "Powerbook G4 Disk Replacement"
 subtitle: "Andrew shares his journey in replacing a failed disk in a Powerbook G4"
 date: 2023-11-05T15:55:43Z
 tags: []
-draft: false
+draft: true
 author: Andrew Williams
 author_email: andy@tensixtyone.com
 ---
@@ -14,7 +14,7 @@ In October 2003, I made my first leap into using an Apple device. For quite some
 
 Sometime around 2014 when I was purchasing a new Macbook Pro I decided to grab my old laptop out of storage and get it booted to hopefully pull a few files from the system. I had lost the power adapter and (obviously) the battery had given up. I purchased a new power adapter on eBay and ended up throwing everything back in the draw to sort out another day.
 
-Roll on to 2023, in the Leigh Hackspace [Slack](https://join.slack.com/t/leighhack/shared_invite/enQtNDYzMjEyMDMxNDExLTE1MWY5N2IwMzdhMzQ0ZWFiNDkyNzJmMGM1ZmFkODcwMGM5ODFmYmI4MjhmM2JiMWEyY2E3NTRjMTQzMzljZWU) a fellow member was discussing his newly acquired iBook G4. I was reminded about my poor Powerbook that had been left unloved in a draw close to a decade, I found all the parts and powered it up...
+Roll on to 2023, in the Leigh Hackspace [Slack](https://join.slack.com/t/leighhack/shared_invite/enQtNDYzMjEyMDMxNDExLTE1MWY5N2IwMzdhMzQ0ZWFiNDkyNzJmMGM1ZmFkODcwMGM5ODFmYmI4MjhmM2JiMWEyY2E3NTRjMTQzMzljZWU) Chris, a fellow member, was discussing his newly acquired iBook G4. I was reminded about my poor Powerbook that had been left unloved in a draw close to a decade, I found all the parts and powered it up...
 
 Only to be confronted with the sound of screeching metal and clicking. The internal disk had given up. This model of Powerbook runs on a 2.5" IDE disk, usually manufactured by Toshiba, not one of the usual brands that would fail. After a few moments of poking it did seem that either the bearings or motor was damaged. If I wanted a working system then i'd need to replace it.
 
@@ -24,4 +24,26 @@ iFixIt [rates the hard-drive replacement](https://www.ifixit.com/Guide/PowerBook
 
 The initial disassembly took about an hour, most of that time was spent trying to get the top case to release from the tiny plastic clasps on the inside of the case. Lots of tape, sensitive connections that can snap at a moment notice, and again more screws to finally get to the hard drive within. 
 
-The replacement hard drive I purchased was a 'Bingogo 2.5" IDE 128GB', my fellow hackspace member purchased a cheaper mSATA to IDE converter to replace is iBook drive, but I felt like a fool when my drive arrived and it was also a simple mSATA to IDE converter. Lesson learned. 
+The replacement hard drive I purchased was a '[Bingogo 2.5" IDE 128GB](https://www.ebay.co.uk/itm/392852308254)', my fellow hackspace member purchased a cheaper mSATA to IDE converter to replace is iBook drive, but I felt like a fool when my drive arrived and it was also a simple mSATA to IDE converter. Lesson learned. 
+
+Chris has come prepared. In adavance of a re-install to his own device he had downloaded a full disk image of a working Leopoard (10.5) install. He was able to write the image onto my drive, saving having to fight with physical media and a long installation process. After cobbling together a working system I hit the power for the first time and crossed my fingers.
+
+Initially, it look like the image didn't work. The useful 'folder with a question mark' appeared, but at least it was better than when the faulty hard drive was in it. After a little bit of research on Google we came across the [Openfirmware Wiki](https://forums.macrumors.com/threads/the-open-firmware-wiki.2225024/) on MacRumors, that at least got us to a prompt that we could start investigating what was going on.
+
+{{< image src="openfirmware.jpg" width="400x" class="is-pulled-left" title="We have a working Openfirmware prompt">}}
+
+After a little exploring we found the disk, the contents, and was able to browse the file structure. The mirroring of the image was a success but it wasn't picking the new hard disk as its boot source. The hints we needed were found on the [MorphZone Openfirmware](https://library.morph.zone/Open_Firmware) page.
+
+A quick ```dir hd:,\``` gave us a list of files on the file systems. ```printenv``` showed the Openfirmware configuration options. The most important one here is `boot-device` showing what disks is configured as a first attempt at booting. In this instance it looked correct, but obviously wasn't working.
+
+Next attempt was to boot the OSX install on the disk, the autoboot didn't work so we had to kick this off manually. By calling the 'BootX' file from Openfirmware we should be able to get the system started.
+
+```
+boot hd:,\System\Library\CoreServices\BootX
+```
+
+`hd:` needs to be replaced with the disk or partition you're using, so if you have a single disk partition like the image I used it would be `hd:`, but if you have multiple partitions then it'll be `hd:1` and so on.
+
+Once booted into Mac OSX you can use the Startup Disk tool in the settings to configure the boot device. After changing the disk in there the `boot-device` value changed to `hd:,\\:tbxi` and all future boot attempts from Openfirmware worked fine using that.
+
+So after a full day in the hackspace I now have my Powerbook G4 back in a working condition. Its been great to experience my first ever laptop back in its native environment, even if it hasn't aged well. 
