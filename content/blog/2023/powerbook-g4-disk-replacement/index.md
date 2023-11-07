@@ -2,13 +2,15 @@
 title: "Powerbook G4 Disk Replacement"
 subtitle: "Andrew shares his journey in replacing a failed disk in a Powerbook G4"
 date: 2023-11-05T15:55:43Z
-tags: []
-draft: true
+tags:
+    - macosx
+    - hardware
+    - repair
+draft: false
 author: Andrew Williams
 author_email: andy@tensixtyone.com
+listing_image: open.jpg
 ---
-
-{{< image src="outside.jpg" width="400x" class="is-pulled-right" title="My Powerbook G4 12 inch, fresh out of storage.">}}
 
 In October 2003, I made my first leap into using an Apple device. For quite some time i'd been trying to find a reasonable and portable machine to use daily, and i'd slowly got frustrated with the current offerings by Dell, HP, and other major laptop manufactures. In the hunt for something new and I picked an Powerbook G4 12", this machine was my daily workhorse for several years and at the end of its life it was stuffed into a draw and forgotten about.
 

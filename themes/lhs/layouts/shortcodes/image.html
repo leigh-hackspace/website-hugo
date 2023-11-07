@@ -4,7 +4,8 @@
 {{ $title := .Get "title" }}
 {{ $class := .Get "class" }}
 <figure class="image{{ if $class }} {{ $class }}{{ end }}">
-  <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}"{{ if $title }} alt="{{ $title }}"{{ end }}>
+  <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" {{ if $title }}
+    alt="{{ $title }}" {{ end }}>
   {{ if $title }}
   <figcaption class="is-size-6">
     <small>
