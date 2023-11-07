@@ -22,5 +22,37 @@ $(document).ready(function () {
   }
 });
 
+function render_calendar() {
+  const calendar = new tui.Calendar('#calendar', {
+    defaultView: 'month',
+    isReadOnly: true,
+    useDetailPopup: true,
+    usageStatistics: false,
+    calendars: [
+      {
+        id: '1',
+        name: 'Hackspace Events',
+        backgroundColor: '#ff0000',
+      },
+    ],
+  });
+
+  $.getJSON('https://api.leighhack.org/events', function (data) {
+    data.forEach(function (event) {
+      calendar.createEvents([{
+        id: event['uid'],
+        calendarId: '1',
+        title: event['summary'],
+        body: event['description'],
+        state: 'Free',
+        dueDateClass: '',
+        start: event['start']['dateTime'],
+        end: event['end']['dateTime'],
+      }])
+    });
+  });
+  calendar.render();
+}
+
 
 

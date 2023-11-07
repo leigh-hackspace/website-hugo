@@ -3,6 +3,8 @@
 
 <head>
     {{ partial "head.html" . }}
+    {{ block "extra_css" . }}
+    {{ end }}
 </head>
 
 <body id="top" class="">
@@ -62,6 +64,8 @@
 
     {{ partial "footer.html" .}}
     {{ partial "foot.html" .}}
+    {{ block "extra_js" . }}
+    {{ end }}
 </body>
 
 </html>
