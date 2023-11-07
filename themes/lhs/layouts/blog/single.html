@@ -10,7 +10,8 @@
 <article class="media">
   <figure class="media-left">
     <p class="image is-64x64">
-      <img class="is-rounded" src="https://www.gravatar.com/avatar/{{ sha256 .Params.author_email }}">
+      {{ $avatar := resources.GetRemote (print "https://www.gravatar.com/avatar/" (sha256 .Params.author_email)) | resources.Copy (print "images/avatars/" (sha256 .Params.author_email) ".jpg") }}
+      <img class="is-rounded" src="{{ $avatar.Permalink }}">
     </p>
   </figure>
   <div class="media-content">

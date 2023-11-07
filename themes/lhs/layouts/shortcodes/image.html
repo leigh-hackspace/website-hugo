@@ -1,6 +1,6 @@
 {{ $img := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
 {{ $width := .Get "width" }}
-{{ $img = $img.Resize (print (default "1256x" $width) " jpg") }}
+{{ $img = $img.Resize (print (default "1264x" $width) " webp") }}
 {{ $title := .Get "title" }}
 {{ $class := .Get "class" }}
 <figure class="image{{ if $class }} {{ $class }}{{ end }}">

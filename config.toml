@@ -9,6 +9,12 @@ changeFreq = 'weekly'
 filename = 'sitemap.xml'
 priority = -1
 
+[imaging]
+  bgColor = '#ffffff'
+  hint = 'photo'
+  quality = 85
+  resampleFilter = 'MitchellNetravali'
+
 [params]
 company = "Leigh Hackspace CIC"
 company_number = "09404083"
