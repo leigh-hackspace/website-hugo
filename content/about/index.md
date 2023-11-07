@@ -16,7 +16,7 @@ Visit Leigh Hackspace and solve all of these problems – we provide workspace, 
 
 The first meetings of Leigh Hackspace took place in late 2014 at Cadence Cafe, Tyldesley, Greater Manchester, following the creation of a Facebook Group 'Leigh Virtual Hackspace'. After two such 'hacking' meetings, the founders were offered the temporary share of a derelict shop at 25 Market Street by the Leigh Building Preservation Trust as part of a wider empty shop scheme.
 
-{{< image "shop.jpg" >}}
+{{< image src="shop.jpg" >}}
 
 The joint official opening was held on 13 February 2015. The shop allowed us to spread the word and the space grew quickly, ending with us taking full use of the store during the year. After some time we started to outgrow the space, and started to search for new premises.
 
@@ -24,7 +24,7 @@ The joint official opening was held on 13 February 2015. The shop allowed us to 
 
 In early 2016, the hackspace moved from the shop to a 4000sqft dedicated space in [The Cotton Mill](https://en.wikipedia.org/wiki/Mather_Lane_Mill). The official opening was on Friday 12th February and was celebrated with an Open Hack evening and other events.
 
-{{< image "cottonmill.jpg" >}}
+{{< image src="cottonmill.jpg" >}}
 
 The Cotton Mill was large enough to have dedicated areas for the darkroom and wood work. Over the years we ran several events, including Raspberry Jam days, Maker Markets, hack days, quizzes, and even a film screening in association with Leigh Film Society.
 
@@ -36,7 +36,7 @@ The mill was a great home for the hackspace until 2019, when again we outgrew th
 
 The initial build-out happened during November 2019, but was paused early 2020 due to the global pandemic. Only during the latter part of 2022 was the hackspace able to return to fitting out the space, due to several building issues that prevented people working in the mill. 
 
-{{< image "buildout_1.jpg" >}}
+{{< image src="buildout_1.jpg" >}}
 
 ### Leigh Hackspace '3.0'
 

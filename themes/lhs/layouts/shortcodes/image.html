@@ -1,5 +1,15 @@
-{{ $img := .Page.Resources.GetMatch (printf "*%s*" (.Get 0)) }}
-{{ $img = $img.Resize "1256x jpg" }}
-<figure class="image">
-  <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}">`
+{{ $img := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
+{{ $width := .Get "width" }}
+{{ $img = $img.Resize (print (default "1256x" $width) " jpg") }}
+{{ $title := .Get "title" }}
+{{ $class := .Get "class" }}
+<figure class="image{{ if $class }} {{ $class }}{{ end }}">
+  <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}"{{ if $title }} alt="{{ $title }}"{{ end }}>
+  {{ if $title }}
+  <figcaption class="is-size-6">
+    <small>
+      {{ $title }}
+    </small>
+  </figcaption>
+  {{ end }}
 </figure>

@@ -5,7 +5,7 @@ subtitle: Hand tools and machinery to work with wood and metal.
 
 Our woodwork shop is the home of everything loud and dusty, along with a stock of tools, parts, and materials you'll need to make a quick repair, build a chair from scratch, or create some decorative treen for the house. 
 
-{{< image "workshop.jpg" >}}
+{{< image src="workshop.jpg" >}}
 
 ## Hand Tools
 

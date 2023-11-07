@@ -8,7 +8,7 @@ author: Andrew Williams
 author_email: andy@tensixtyone.com
 ---
 
-{{< figure src="outside.jpg" width="400" class="is-pulled-right">}}
+{{< image src="outside.jpg" width="400x" class="is-pulled-right" title="My Powerbook G4 12 inch, fresh out of storage.">}}
 
 In October 2003, I made my first leap into using an Apple device. For quite some time i'd been trying to find a reasonable and portable machine to use daily, and i'd slowly got frustrated with the current offerings by Dell, HP, and other major laptop manufactures. In the hunt for something new and I picked an Powerbook G4 12", this machine was my daily workhorse for several years and at the end of its life it was stuffed into a draw and forgotten about.
 
@@ -18,7 +18,7 @@ Roll on to 2023, in the Leigh Hackspace [Slack](https://join.slack.com/t/leighha
 
 Only to be confronted with the sound of screeching metal and clicking. The internal disk had given up. This model of Powerbook runs on a 2.5" IDE disk, usually manufactured by Toshiba, not one of the usual brands that would fail. After a few moments of poking it did seem that either the bearings or motor was damaged. If I wanted a working system then i'd need to replace it.
 
-{{< figure src="open.jpg" width="400" title="The Powerbook torn apart." class="is-pulled-left">}}
+{{< image src="open.jpg" width="400x" class="is-pulled-right" title="Disassembled down to the hard drive.">}}
 
 iFixIt [rates the hard-drive replacement](https://www.ifixit.com/Guide/PowerBook+G4+Aluminum+12-Inch+1-1.5+GHz+Hard+Drive+Replacement/548) as 'Difficult', and I walked into this thinking it wouldn't be that hard. You can really respect the modern repairability of most systems after looking at this, even just having a standard set to screws alone would be a huge improvement!
 
