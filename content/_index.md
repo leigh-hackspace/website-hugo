@@ -4,7 +4,11 @@ subtitle: Leigh Hackspace is a social enterprise created for the benefit of our 
 layout: home
 ---
 
-{{< open >}}
+{{< rawhtml >}}
+<div class="notification has-text-centered" id="hackspace-open">
+Leigh Hackspace is currently <span id="hackspace-status">Closed</span>
+</div>
+{{</ rawhtml >}}
 
 | Day       | Opening Times |
 | --------- | ------------- |

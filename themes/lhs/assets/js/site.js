@@ -1,24 +1,26 @@
-document.addEventListener('DOMContentLoaded', () => {
+$(document).ready(function () {
+  $(".navbar-burger").click(function () {
+    $(".navbar-burger").toggleClass("is-active");
+    $(".navbar-menu").toggleClass("is-active");
+  });
 
-  // Get all "navbar-burger" elements
-  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  if ($('span#hackspace-status').length) {
+    $.getJSON("https://api.leighhack.org/space.json", function (data) {
+      var date = new Date(data.state.lastchange * 1000);
 
-  // Check if there are any navbar burgers
-  if ($navbarBurgers.length > 0) {
-
-    // Add a click event on each of them
-    $navbarBurgers.forEach(el => {
-      el.addEventListener('click', () => {
-
-        // Get the target from the "data-target" attribute
-        const target = el.dataset.target;
-        const $target = document.getElementById(target);
-
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
-
-      });
+      if (data.state.open) {
+        message = '<b>Open<b>'
+        if ('message' in data.state) {
+          message = message + ': ' + data.state.message;
+        }
+        $('span#hackspace-status').html(message);
+        $('div#hackspace-open').addClass('is-success');
+      } else {
+        $('span#hackspace_status').html('<b>Closed</b>');
+      }
     });
   }
 });
+
+
+
