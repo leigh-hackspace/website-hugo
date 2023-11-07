@@ -45,3 +45,7 @@ Alternatively, the Mill is only a 30 minute walk from Leigh Bus Station. The [ro
 **Atherton** (ATN) is the closest train station to the hackspace. From there you'll either need a taxi or a bus via Leigh Bus Station.
 
 The nearest mainline station is **Wigan Wallgate** (WGW) which has direct trains to Atherton station. Wallgate is a short 100 meter walk from Wigan North Western which is on the West Coast Mainline.
+
+### Cycling
+
+The mill doesn't have any specific cycle storage, but we have more than enough space to store your bike in the hackspace itself. Cyclists may find it easier to approach the mill via the Bridgewater Canal and cross over towards the mill at Butts Bridge, which will avoid lots of relatively busy roads in the area.
