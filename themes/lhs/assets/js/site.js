@@ -27,11 +27,12 @@ $(document).ready(function () {
   if ($('div#printer-status').length) {
     $.getJSON("https://api.leighhack.org/space.json", function (data) {
       if (data.sensors.ext_3d_printers.length) {
-        data.sensors.ext_3d_printers.forEach(function (val, indx){
+
+        // sort the printers
+        const printers = Array.from(data.sensors.ext_3d_printers).sort((a, b) => a['name'].localeCompare(b['name']));
+
+        printers.forEach(function (val, indx){
           var obj = $($("template#printer-block").html());
-          console.log(val);
-          console.log(obj);
-          console.log(obj.find('#printer-name'))
           obj.find('#printer-name').html(val['name']);
           obj.find('#printer-status').html(titleCase(val['state']));
           $('div#printer-status').append(obj);
