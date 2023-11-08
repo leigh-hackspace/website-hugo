@@ -18,6 +18,27 @@ $(document).ready(function () {
       }
     });
   }
+
+  function titleCase(word) {
+    return word.charAt(0).toUpperCase() + word.substr(1).toLowerCase();
+  }
+
+  // 'printers' shortcode
+  if ($('div#printer-status').length) {
+    $.getJSON("https://api.leighhack.org/space.json", function (data) {
+      if (data.sensors.ext_3d_printers.length) {
+        data.sensors.ext_3d_printers.forEach(function (val, indx){
+          var obj = $($("template#printer-block").html());
+          console.log(val);
+          console.log(obj);
+          console.log(obj.find('#printer-name'))
+          obj.find('#printer-name').html(val['name']);
+          obj.find('#printer-status').html(titleCase(val['state']));
+          $('div#printer-status').append(obj);
+        });
+      }
+    });
+  }
 });
 
 function render_calendar() {
