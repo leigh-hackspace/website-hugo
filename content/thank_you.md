@@ -1,8 +1,8 @@
 ---
 title: "Thank You, and Welcome!"
 subtitle: "You're now a member."
-draft: true
-show_big_cta: false # Show the big Call To Action at the bottom of the page
+draft: false
+show_cta: false
 ---
 
 **Thank you** for joining us! You now have access to Leigh Hackspace and its facilities. You're probably wondering what to do next? Hopefully we can guide you on your next steps.

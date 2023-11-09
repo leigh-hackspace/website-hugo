@@ -55,10 +55,12 @@
     <div class="is-clearfix"></div>
     
     {{ block "cta" . }}
-    {{ if .Params.show_big_cta }}
-    {{ partial "design/bigcta.html" . }}
-    {{ else }}
-    {{ partial "design/cta.html" . }}
+    {{ if (default true .Params.show_cta) }}
+        {{ if .Params.show_big_cta }}
+        {{ partial "design/bigcta.html" . }}
+        {{ else }}
+        {{ partial "design/cta.html" . }}
+        {{ end }}
     {{ end }}
     {{ end }}
 
