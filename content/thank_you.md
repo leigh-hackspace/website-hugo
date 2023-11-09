@@ -9,35 +9,33 @@ show_cta: false
 
 ### Your subscription
 
-First of all we'll like to say your subscription isn't a contract. You can cancel it at any time, all you need to do is cancel your Direct Debit or contact a director and we'll cancel it on our side. No further action is needed.
+First of all, __your subscription is not a contract__. You can cancel it at any time, all you need to do is cancel your Direct Debit or contact a director and we'll cancel it on our side.
 
-Our subscriptions by default are set to the first of the month, if you want to change this then please get in contact with a director and we can adjust it to your needs. 
+By default, subscriptions are set to the first of the month. This means your Direct Debit will be taken on or after the first of the month (should the first of the month fall on a weekend). If you would like to change this, please get in touch with a director and we can adjust it to your needs.
 
 ### Get chatting to other members
 
-The hackspace uses Slack as our chat rooms, not heard of it before? Well think of WhatsApp, Facebook Messenger and other chat apps on your phone. The difference is rather than being a singular chat its a private space with many chat rooms about various topics. You can use it on your laptop or mobile phone.
+If you want to start chatting with other hackspace members straight away, the hackspace uses Slack. This is a messaging tool similar to WhatsApp or Facebook Messenger that can be downloaded to your phone, or used on your computer. 
 
 To join our slack click [this link](https://join.slack.com/t/leighhack/shared_invite/enQtNDYzMjEyMDMxNDExLTE1MWY5N2IwMzdhMzQ0ZWFiNDkyNzJmMGM1ZmFkODcwMGM5ODFmYmI4MjhmM2JiMWEyY2E3NTRjMTQzMzljZWU) and you'll be guided to create an account with your email address.
 
 ### Vist the hackspace and get to know people
 
-Best way to get introduced to people is to pop in during our popular times. At the moment the following times are best (as the most members are in the hackspace during these times):
+The best way to meet your fellow members is to visit during our popular times. The most popular times at the moment are:
 
-* Wednesdays - 19:00-21:00
-* Saturdays - 12:00-18:00
-
-Members are also in the space at various times, so keep an eye out in the 'General' channel in Slack.
+* Wednesdays - 19:00 - 21:00
+* Saturdays - 12:00 - 18:00
 
 ### Sign up with Authentik (optional)
 
-Authentik is our login system for anything IT related in the hackspace, if you want to make use of our internal infrastructure for IT projects then its suggested you sign up, **but not required**!
+Authentik is our login system for anything IT related in the hackspace. If you want to make use of our internal infrastructure for IT projects, then its suggested you sign up **but it is not mandatory**!
 
-You can [sign up here](https://id.leighhack.org/if/flow/hackspace-new-user-enrollment/), all we ask is that you use the same email address as you used with signing up for your membership, as it'll automatically link your subscription.
+You can [sign up here](https://id.leighhack.org/if/flow/hackspace-new-user-enrollment/). We ask that you please use the same email address that you used when signing up for your membership, as it will automatically link your subscription and allow you access.
 
 ### Check the Wiki for information
 
-We have a member maintained [Wiki](https://wiki.leighhack.org) which has a lot of details about the space, policies, proceedures, documentation for various tools and items available to members.
+We have a member maintained [Wiki](https://wiki.leighhack.org) which has details of the policies, procedures, and essential documentation for items in the space.
 
 ### Get in contact
 
-If you have any other questions then please get in contact either via Slack or in-person at the hackspace. Check the [Useful Contacts](https://wiki.leighhack.org/membership/useful_contacts/) page on the Wiki for details on who is best to contact for each area, you'll be able to find them on Slack.
+If you have any other questions, please get in touch either via Slack or in-person at the hackspace. The [Useful Contacts](https://wiki.leighhack.org/membership/useful_contacts/) page on the Wiki details who is the best contact for each hackspace area.
