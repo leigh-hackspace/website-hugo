@@ -18,11 +18,11 @@ Leigh
 WN7 2LB
 ```
 
-What3Words: [//escape.shot.cleansed](https://what3words.com/escape.shots.cleansed)
+What3Words: [//escape.shot.cleansed](https://what3words.com/escape.shots.cleansed) - This is for the main entrance of Mill 2.
 
 The hackspace is located on the **third floor** of Mill 2. Once you reach the third floor, go through the double doors to your right then through the next set of double doors then follow the corridor to your left until you see the signage for the hackspace.
 
-## Travelling by Car
+## Travelling by car
 
 Leigh Spinners Mill is located at the end of Park Road, use the postcode `WN7 2LB` for your satnav. 
 
@@ -30,7 +30,11 @@ Leigh Spinners Mill is located at the end of Park Road, use the postcode `WN7 2L
 
 The mill has a large gravel public car-park, and additional overflow areas. Parking is free but may become busy during popular times. The car park is open from 8am until 10pm, if you are visiting outside of these hours then its recommended you park elsewhere.
 
-## Travelling by Public Transport
+## Travelling by bike
+
+The mill doesn't have any specific cycle storage, but we have more than enough space to store your bike in the hackspace itself. Cyclists may find it easier to approach the mill via the Bridgewater Canal and cross over towards the mill at Butts Bridge, which will avoid lots of relatively busy roads in the area.
+
+## Travelling by public transport
 
 ### Bus
 
@@ -45,7 +49,3 @@ Alternatively, the Mill is only a 30 minute walk from Leigh Bus Station. The [ro
 **Atherton** (ATN) is the closest train station to the hackspace. From there you'll either need a taxi or a bus via Leigh Bus Station.
 
 The nearest mainline station is **Wigan Wallgate** (WGW) which has direct trains to Atherton station. Wallgate is a short 100 meter walk from Wigan North Western which is on the West Coast Mainline.
-
-### Cycling
-
-The mill doesn't have any specific cycle storage, but we have more than enough space to store your bike in the hackspace itself. Cyclists may find it easier to approach the mill via the Bridgewater Canal and cross over towards the mill at Butts Bridge, which will avoid lots of relatively busy roads in the area.

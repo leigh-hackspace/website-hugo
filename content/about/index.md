@@ -3,22 +3,21 @@ title: About Us
 subtitle: Who we are, and what we do
 show_big_cta: true
 ---
-### What is Leigh Hackspace?
+## What is a hackspace?
 
-Leigh Hackspace is a shared community workspace that offers the facilities you need to make a bunch of stuff you’re not able to make at home. Maybe you don’t have the right tools? Maybe you don’t have enough space? Maybe you’re stuck trying to figure out a problem you’re not able to solve on your own? We’re here to help!
-Solve problems
+A hackspace, also known as a hackerspace or makerspace, is a collaborative workspace where people with common interests, often in computers, technology, science, or digital or electronic art, can meet, socialize, and work on projects. These spaces provide a physical location for individuals to share resources, tools, and knowledge.
 
-Visit Leigh Hackspace and solve all of these problems – we provide workspace, inspiration, equipment, ideas, support, training and even some materials for ‘hacking’. All with a great community spirit and a ‘can-do’ atmosphere.
+Hackspace environments typically have a variety of equipment, including 3D printers, laser cutters, woodworking tools, electronics components, and more. Members of a hackspace community often come from diverse backgrounds and may include hobbyists, engineers, artists, and entrepreneurs. The goal is to create a supportive and creative environment where people can bring their ideas to life and collaborate on innovative projects.
 
-‘Hackspaces’ have nothing to do with computer ‘hacking’ (although it’s a great place to come and learn how to program or otherwise master your computer).
+Leigh Hackspace has been created with these concepts in mind. Since 2015 we've provided a space for the Leigh (and wider) community to use to 'do cool stuff'.
 
-### History of the hackspace
+## History of Leigh Hackspace
 
-The first meetings of Leigh Hackspace took place in late 2014 at Cadence Cafe, Tyldesley, Greater Manchester, following the creation of a Facebook Group 'Leigh Virtual Hackspace'. After two such 'hacking' meetings, the founders were offered the temporary share of a derelict shop at 25 Market Street by the Leigh Building Preservation Trust as part of a wider empty shop scheme.
+The first meetings of Leigh Hackspace took place in late 2014 at Cadence Cafe, Tyldesley, following the creation of a Facebook Group 'Leigh Virtual Hackspace'. After two such 'hacking' meetings, the founders were offered the temporary share of a derelict shop at on Market Street by the Leigh Building Preservation Trust as part of a wider empty shop scheme. The trust used some of the space to publicise their drive to restore Leigh Spinners Mill.
 
 {{< image src="shop.jpg" >}}
 
-The joint official opening was held on 13 February 2015. The shop allowed us to spread the word and the space grew quickly, ending with us taking full use of the store during the year. After some time we started to outgrow the space, and started to search for new premises.
+The official opening ceremony took place on February 13, 2015. The establishment of the shop provided an opportunity for us to promote awareness of the hackspace and its objectives and the space gained popularity in response. Over time we took over all the space in the store, and the growing demand prompted us to initiate a search for new premises.
 
 ### The Cotton Mill
 
@@ -44,6 +43,6 @@ The '3.0' hackspace opened Feburary 2023 and now consists of three units on the 
 
 In early July the [electronics bay]({{< ref "/facilities/electronics" >}}) was completed giving members a wide selection of tools and components for any projects they are created. Then in November the [darkroom]({{< ref "/facilities/darkroom" >}}) was finally fitted for power and could be used by our members.
 
-### Looking to the future
+## Looking to the future
 
 The hackspace will always be in a fluid state as we think of additional ways to utilize the space available to us. Our on-going aim is to foster relationships with the mill residents and the wider Leigh community. 
