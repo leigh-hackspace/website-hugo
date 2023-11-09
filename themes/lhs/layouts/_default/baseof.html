@@ -18,24 +18,21 @@
             <div class="hero-body">
                 <div class="container">
                     <div class="columns _is-centered is-vcentered">
-                        <div class="column is-four-fifths">
+                        <div class="column">
                             <div class="columns is-vcentered has-text-centered-mobile">
-    
-                                <div class="column is-half">
+                                <div class="column">
                                     {{ block "hero-content" . }}
                                     <h1 class="title is-1 has-text-white">{{ .Title }}</h1>
                                     <p class="subtitle has-text-white">{{ .Params.subtitle }}</p>
                                     {{ end }}
                                 </div>
-    
-                                <div class="column">
+                                {{ if .Params.hero_image }}
+                                <div class="column is-half">
                                     {{ block "hero-image" . }}
-                                    {{ if .Params.hero_image }}
-                                    <img class="hero-img" src="{{ .Params.hero_image }}">
-                                    {{ end }}
+                                    <img class="image hero-img" src="{{ .Params.hero_image }}">
                                     {{ end }}
                                 </div>
-    
+                                {{ end }}
                             </div>
                         </div>
                     </div>

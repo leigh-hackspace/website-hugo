@@ -2,6 +2,7 @@
 title: Welcome!
 subtitle: Leigh Hackspace is a social enterprise created for the benefit of our members and the wider Leigh community.
 layout: home
+hero_image: /images/rose_logo.svg
 ---
 
 {{< rawhtml >}}
