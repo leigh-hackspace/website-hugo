@@ -48,19 +48,14 @@ pageRef = "events"
 
 # Social links
 [[params.social_links]]
+name = "mastodon"
+url = "https://mastodon.social/@leigh_hackspace"
+icon = "fa-mastodon"
+
+[[params.social_links]]
 name = "twitter"
 url = "https://twitter.com/leigh_hackspace"
 icon = "fa-twitter"
-
-[[params.social_links]]
-name = "slack"
-url = "https://join.slack.com/t/leighhack/shared_invite/enQtNDYzMjEyMDMxNDExLTE1MWY5N2IwMzdhMzQ0ZWFiNDkyNzJmMGM1ZmFkODcwMGM5ODFmYmI4MjhmM2JiMWEyY2E3NTRjMTQzMzljZWU"
-icon = "fa-slack"
-
-[[params.social_links]]
-name = "github"
-url = "https://github.com/leigh-hackspace"
-icon = "fa-github-alt"
 
 [[params.social_links]]
 name = "instagram"
@@ -73,14 +68,19 @@ url = "https://www.facebook.com/groups/leighhackspace/"
 icon = "fa-facebook-square"
 
 [[params.social_links]]
+name = "slack"
+url = "https://join.slack.com/t/leighhack/shared_invite/enQtNDYzMjEyMDMxNDExLTE1MWY5N2IwMzdhMzQ0ZWFiNDkyNzJmMGM1ZmFkODcwMGM5ODFmYmI4MjhmM2JiMWEyY2E3NTRjMTQzMzljZWU"
+icon = "fa-slack"
+
+[[params.social_links]]
+name = "github"
+url = "https://github.com/leigh-hackspace"
+icon = "fa-github-alt"
+
+[[params.social_links]]
 name = "discourse"
 url = "https://discourse.leighhack.org"
 icon = "fa-discourse"
-
-[[params.social_links]]
-name = "mastodon"
-url = "https://mastodon.social/@leigh_hackspace"
-icon = "fa-mastodon"
 
 # Membership Levels
 
