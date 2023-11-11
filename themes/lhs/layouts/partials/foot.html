@@ -1,6 +1,8 @@
 <script src="https://kit.fontawesome.com/7353d7e426.js" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+{{ $theme := resources.Get "js/theme.js" }}
 {{ $site := resources.Get "js/site.js" }}
-{{ $js := slice $site | resources.Concat "js/bundle.js" | resources.Minify }}
+{{ $js := slice $site $theme | resources.Concat "js/bundle.js" | resources.Minify }}
 {{ $secureJS := $js | resources.Fingerprint "sha512" }}
 <script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>

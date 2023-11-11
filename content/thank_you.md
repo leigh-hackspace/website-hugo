@@ -1,7 +1,6 @@
 ---
 title: "Thank You, and Welcome!"
 subtitle: "You're now a member."
-draft: false
 show_cta: false
 ---
 

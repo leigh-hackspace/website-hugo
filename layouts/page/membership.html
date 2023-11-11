@@ -1,3 +1,6 @@
+{{ define "content" }}
+{{ .Content }}
+
 <div class="columns pricing-tiers is-centered is-multiline">
     {{- with $.Site.Data.memberships.membership_levels }}
     {{ range . -}}
@@ -17,3 +20,4 @@
     {{ end }}
     {{- end }}
 </div>
+{{ end }}
