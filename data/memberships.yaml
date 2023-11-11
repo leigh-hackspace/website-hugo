@@ -43,4 +43,4 @@ membership_levels:
     period: "per month"
     description: "An enhanced membership which includes a dedicated space for your personal use."
     link: "mailto:info@leighhack.org?subject=Artist%20Pod%20Lease"
-    ∏button: "Enquire"
+    button: "Enquire"
