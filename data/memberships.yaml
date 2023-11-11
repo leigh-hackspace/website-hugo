@@ -1,0 +1,46 @@
+# Membership levels, this is used on the website and also presented as JSON for other services to use.
+membership_levels:
+  - name: "Member"
+    price: "24"
+    description: "Our standard membership that allows usage of the hackspace facilities."
+    link: "https://pay.gocardless.com/AL00024VQTCKBK"
+
+  - name: "Member+"
+    price: "30"
+    description: "Standard membership with an additional donation."
+    link: "https://pay.gocardless.com/AL00024VQW2FWQ"
+
+  - name: "Concession"
+    price: "18"
+    description: "A subsidised membership for pensioners, students, and low income earners."
+    link: "https://pay.gocardless.com/AL0002BMN4S3AX"
+
+  - name: "Family"
+    price: "40"
+    description: "A discounted family membership for two adults and two children."
+    link: "https://pay.gocardless.com/AL000637J3VZP7"
+
+  - name: "Day Pass"
+    price: "5"
+    period: "per day"
+    description: "Access to the hackspace's facilities for a day."
+    link: "mailto:info@leighhack.org?subject=Day%20Pass"
+    button: "Enquire"
+
+  - name: "Patron"
+    price: "5"
+    description: "Support the hackspace without being a member."
+    link: "https://pay.gocardless.com/AL000FDGN4Q6AC"
+
+  - name: "Business"
+    price: " POA"
+    description: "Access to the hackspace for a business or community group."
+    link: "mailto:info@leighhack.org?subject=Corporate%20Membership"
+    button: "Enquire"
+
+  - name: "Creator Pod"
+    price: " POA"
+    period: "per month"
+    description: "An enhanced membership which includes a dedicated space for your personal use."
+    link: "mailto:info@leighhack.org?subject=Artist%20Pod%20Lease"
+    ∏button: "Enquire"

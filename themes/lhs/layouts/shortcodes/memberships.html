@@ -1,5 +1,5 @@
 <div class="columns pricing-tiers is-centered is-multiline">
-    {{- with .Site.Params.membership }}
+    {{- with $.Site.Data.memberships.membership_levels }}
     {{ range . -}}
     <div class="column is-one-quarter">
         <div class="box is-large hover-items">
