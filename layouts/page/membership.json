@@ -1,0 +1,7 @@
+{{ $len := (len $.Site.Data.memberships.membership_levels) }}
+{"memberships": [
+    {{- with $.Site.Data.memberships.membership_levels }}
+    {{- range $index, $element := . -}}
+    { "name": "{{ .name }}", "price": "{{ .price }}", "period": "{{ default "monthly" .period }}", "link": "{{ .link }}"}{{ if ne (add $index 1) $len }},{{ end }}
+    {{- end }}
+    {{- end }}]}
