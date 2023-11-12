@@ -28,7 +28,7 @@ Leigh Spinners Mill is located at the end of Park Road, use the postcode `WN7 2L
 
 ### Car Parking
 
-The mill has a large gravel public car-park, and additional overflow areas. Parking is free but may become busy during popular times. The car park is open from 8am until 10pm, if you are visiting outside of these hours then its recommended you park elsewhere.
+The mill has a large gravel public car-park, and additional overflow areas. Parking is free but may become busy during popular times. The car park is open from 8am until 10pm, if you are visiting outside of these hours then its recommended you park elsewhere. Please, **do not park on Park Lane**, as this is residents only parking.
 
 ## Travelling by bike
 
