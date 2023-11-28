@@ -2,6 +2,6 @@
 {"memberships": [
     {{- with $.Site.Data.memberships.membership_levels }}
     {{- range $index, $element := . -}}
-    { "name": "{{ .name }}", "price": "{{ .price }}", "period": "{{ default "monthly" .period }}", "link": "{{ .link }}", "description": "{{ .description}}"}{{ if ne (add $index 1) $len }},{{ end }}
+    { "name": "{{ .name }}", "value": "{{ .value }}", "currency": "{{ .currency }}", "billing_interval": "{{ default "monthly" .billing_interval }}", "link": "{{ .link }}", "description": "{{ .description}}"}{{ if ne (add $index 1) $len }},{{ end }}
     {{- end }}
     {{- end }}]}
