@@ -5,22 +5,29 @@
     {{- with $.Site.Data.memberships.membership_levels }}
     {{ range . -}}
 
-    {{ $period := (default "monthly" .period) }}
-    {{ if eq $period "yearly" }}
-    {{ $period = "per year" }}
-    {{ else if eq $period "monthly" }}
-    {{ $period = "per month" }}
-    {{ else if eq $period "weekly" }}
-    {{ $period = "per weekly" }}
-    {{ else if eq $period "daily" }}
-    {{ $period = "per day" }}
+    {{ $billing_interval := (default "monthly" .billing_interval) }}
+    {{ if eq $billing_interval "yearly" }}
+    {{ $billing_interval = "per year" }}
+    {{ else if eq $billing_interval "monthly" }}
+    {{ $billing_interval = "per month" }}
+    {{ else if eq $billing_interval "weekly" }}
+    {{ $billing_interval = "per weekly" }}
+    {{ else if eq $billing_interval "daily" }}
+    {{ $billing_interval = "per day" }}
+    {{ end }}
+
+    {{ $currency := (default "GBP" .currency )}}
+    {{ if eq $currency "GBP" }}
+    {{ $currency = "£" }}
+    {{ else if eq $currency "EUR" }}
+    {{ $currency = "€" }}
     {{ end }}
 
     <div class="column is-one-quarter">
         <div class="box is-large hover-items">
             <h3 class="is-size-4 has-text-weight-bold">{{ .name }}</h3>
-            <div class="is-size-1 has-text-weight-bold pricing-price">£{{ default " POA" .price }}</div>
-            <div class="_is-block mt-1 is-size-7 has-text-weight-normal">{{ $period }}</div>
+            <div class="is-size-1 has-text-weight-bold pricing-price">{{ $currency }}{{ default " POA" .value }}</div>
+            <div class="_is-block mt-1 is-size-7 has-text-weight-normal">{{ $billing_interval }}</div>
             <div class="content mt-5 pricing-description is-size-6">
                 <p>{{ .description }}</p>
             </div>
