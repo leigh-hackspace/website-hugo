@@ -2,31 +2,31 @@
 membership_levels:
   - name: "Member"
     value: 24
-    currency: 'GBP'
+    currency: "GBP"
     description: "Our standard membership that allows usage of the hackspace facilities."
     link: "https://pay.gocardless.com/AL00024VQTCKBK"
 
   - name: "Member+"
     value: 30
-    currency: 'GBP'
+    currency: "GBP"
     description: "Standard membership with an additional donation."
     link: "https://pay.gocardless.com/AL00024VQW2FWQ"
 
   - name: "Concession"
     value: "18"
-    currency: 'GBP'
+    currency: "GBP"
     description: "A subsidised membership for pensioners, students, and low income earners."
     link: "https://pay.gocardless.com/AL0002BMN4S3AX"
 
   - name: "Family"
     value: 40
-    currency: 'GBP'
+    currency: "GBP"
     description: "A discounted family membership for two adults and two children."
     link: "https://pay.gocardless.com/AL000637J3VZP7"
 
   - name: "Day Pass"
     value: 5
-    currency: 'GBP'
+    currency: "GBP"
     billing_interval: "daily"
     description: "Access to the hackspace's facilities for a day."
     link: "mailto:info@leighhack.org?subject=Day%20Pass"
@@ -34,20 +34,20 @@ membership_levels:
 
   - name: "Patron"
     value: 5
-    currency: 'GBP'
+    currency: "GBP"
     description: "Support the hackspace without being a member."
     link: "https://pay.gocardless.com/AL000FDGN4Q6AC"
 
   - name: "Business"
     value: 0
-    currency: 'GBP'
+    currency: "GBP"
     description: "Access to the hackspace for a business or community group."
     link: "mailto:info@leighhack.org?subject=Corporate%20Membership"
     button: "Enquire"
 
   - name: "Creator Pod"
     value: 0
-    currency: 'GBP'
+    currency: "GBP"
     description: "An enhanced membership which includes a dedicated space for your personal use."
     link: "mailto:info@leighhack.org?subject=Artist%20Pod%20Lease"
     button: "Enquire"
