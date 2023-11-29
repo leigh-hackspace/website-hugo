@@ -9,13 +9,9 @@
 {{ define "content" }}
 {{ .Content }}
 
-{{- range .Data.Pages.GroupByDate "2006" }}
-<h3 id="{{ .Key }}">{{ .Key }}</h3>
 <ul>
     {{- range .Pages }}
-    <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
     {{- end }}
 </ul>
-</div>
-{{- end }}
 {{ end }}
