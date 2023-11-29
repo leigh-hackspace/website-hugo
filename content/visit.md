@@ -32,7 +32,7 @@ The mill has a large gravel public car-park, and additional overflow areas. Park
 
 ## Travelling by bike
 
-The mill doesn't have any specific cycle storage, but we have more than enough space to store your bike in the hackspace itself. Cyclists may find it easier to approach the mill via the Bridgewater Canal and cross over towards the mill at Butts Bridge, which will avoid lots of relatively busy roads in the area.
+The mill does have a cycle rack outside the main entry to Mill 2, but we have more than enough space to store your bike in the hackspace itself. Cyclists may find it easier to approach the mill via the Bridgewater Canal and cross over towards the mill at Butts Bridge, which will avoid lots of relatively busy roads in the area.
 
 ## Travelling by public transport
 
