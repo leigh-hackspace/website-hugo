@@ -29,22 +29,32 @@ twitter = 'leigh_hackspace'
 [[menu.main]]
 name = "About"
 pageRef = "about"
+weight = 1
+
+[[menu.main]]
+name = "History"
+pageRef = "history"
+weight = 2
 
 [[menu.main]]
 name = "Facilities"
 pageRef = "facilities"
+weight = 3
 
 [[menu.main]]
 name = "Blog"
 pageRef = "/blog"
+weight = 4
 
 [[menu.main]]
 name = "Visit Us"
 pageRef = "visit"
+weight = 5
 
 [[menu.main]]
 name = "Events"
 pageRef = "events"
+weight = 6
 
 # Social links
 [[params.social_links]]
