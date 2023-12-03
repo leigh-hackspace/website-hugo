@@ -36,6 +36,8 @@ The '3.0' hackspace opened Feburary 2023 and now consists of three units on the 
 
 In early July the [electronics bay]({{< ref "/facilities#electronics-bay" >}}) was completed giving members a wide selection of tools and components for any projects they are created. Then in November the [darkroom]({{< ref "/facilities#dark-room" >}}) was finally fitted for power and could be used by our members.
 
+{{< image src="social_space.jpg" >}}
+
 ## Looking to the future
 
 The hackspace will always be in a fluid state as we think of additional ways to utilize the space available to us. Our on-going aim is to foster relationships with the mill residents and the wider Leigh community. 
