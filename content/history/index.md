@@ -1,9 +1,10 @@
 ---
-title: History
+title: History of Leigh Hackspace
 subtitle: Where we came from
 show_big_cta: true
 ---
-## History of Leigh Hackspace
+
+## The Start
 
 The first meetings of Leigh Hackspace took place in late 2014 at Cadence Cafe, Tyldesley, following the creation of a Facebook Group 'Leigh Virtual Hackspace'. After two such 'hacking' meetings, the founders were offered the temporary share of a derelict shop at on Market Street by the Leigh Building Preservation Trust as part of a wider empty shop scheme. The trust used some of the space to publicise their drive to restore Leigh Spinners Mill.
 
