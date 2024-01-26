@@ -1,0 +1,6 @@
+{
+    "extends": [
+        "config:base",
+        "github>leigh-hackspace/renovate-config:hugo"
+    ]
+}
