@@ -1,2 +1,2 @@
 serve: 
-	hugo serve -D -w
+	hugo serve -D --gc -w -F
