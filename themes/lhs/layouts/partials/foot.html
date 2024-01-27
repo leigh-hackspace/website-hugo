@@ -1,6 +1,13 @@
 <script src="https://kit.fontawesome.com/7353d7e426.js" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+{{ if .Page.Store.Get "hasMermaid" }}
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+{{ end }}
+
 {{ $theme := resources.Get "js/theme.js" }}
 {{ $site := resources.Get "js/site.js" }}
 {{ $js := slice $site $theme | resources.Concat "js/bundle.js" | resources.Minify }}
