@@ -21,4 +21,4 @@ Leigh Hackspace is currently <span id="hackspace-status"><i class="fas fa-spinne
 | Saturday  | 12:00 - 17:00 |
 | Sunday    | Closed        |
 
-We currently operate a reduced opening hours due to member availability. The hackspace can be open outside of these hours and a banner above will appear when it is open, otherwise please check on [Slack](https://join.slack.com/t/leighhack/shared_invite/enQtNDYzMjEyMDMxNDExLTE1MWY5N2IwMzdhMzQ0ZWFiNDkyNzJmMGM1ZmFkODcwMGM5ODFmYmI4MjhmM2JiMWEyY2E3NTRjMTQzMzljZWU).
+We currently operate reduced opening hours due to member availability. The hackspace can be open outside of these hours and a banner above will appear when it is open, otherwise please check on [Slack](https://join.slack.com/t/leighhack/shared_invite/enQtNDYzMjEyMDMxNDExLTE1MWY5N2IwMzdhMzQ0ZWFiNDkyNzJmMGM1ZmFkODcwMGM5ODFmYmI4MjhmM2JiMWEyY2E3NTRjMTQzMzljZWU).

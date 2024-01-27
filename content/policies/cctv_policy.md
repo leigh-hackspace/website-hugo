@@ -29,17 +29,17 @@ Cameras are located at strategic points throughout the hackspace’s premises, p
 
 All cameras are also clearly visible.
 
-Appropriate signs are prominently displayed so that members, public and other visitors are aware they are entering an area covered by CCTV.  
+Appropriate signs are prominently displayed so that members, the public and other visitors are aware they are entering an area covered by CCTV.  
 
 ## Recording and retention of images
 
-Images produced by the CCTV equipment are intended to be as clear as possible so that they are effective for the purposes set out above.  Maintenance checks of the equipment are undertaken on a regular basis to ensure it is working properly and that the media is producing high quality images.
+Images produced by the CCTV equipment are intended to be as clear as possible so that they are effective for the purposes set out above.  Maintenance checks of the equipment are undertaken on a regular basis to ensure it is working properly and that the media is producing high-quality images.
 
-Images may be recorded either in constant real-time (24 hours a day throughout the year), or only at certain times, as the needs of the business dictate.
+Images may be recorded either in constant real-time (24 hours a day throughout the year) or only at certain times, as the needs of the business dictate.
 
-As the recording system records digital images, any CCTV images that are held on the hard drive of a PC or server are deleted and overwritten on a recycling basis and, in any event, once the hard drive has reached the end of its use, it will be erased prior to disposal.  
+As the recording system records digital images, any CCTV images that are held on the hard drive of a PC or server are deleted and overwritten on a recycling basis and, in any event, once the hard drive has reached the end of its use, it will be erased before disposal.  
 
-Images that are stored on, or transferred on to, removable media such as CDs or which are stored digitally are erased or destroyed once the purpose of the recording is no longer relevant.  In normal circumstances, this will be a period of 12 months.  However, where a law enforcement agency is investigating a crime, images may need to be retained for a longer period.
+Images that are stored on, or transferred onto, removable media such as CDs or which are stored digitally are erased or destroyed once the purpose of the recording is no longer relevant.  In normal circumstances, this will be 12 months.  However, where a law enforcement agency is investigating a crime, images may need to be retained for a longer period.
 
 ## Access to and disclosure of images
 
@@ -49,7 +49,7 @@ The images that are filmed are recorded centrally and held in a secure location.
 
 Disclosure of images to other third parties will only be made in accordance with the purposes for which the system is used and will be limited to:  
 
-* The police and other law enforcement agencies, where the images recorded could assist in the prevention or detection of a crime or the identification and prosecution of an offender or the identification of a victim or witness.  
+* The police and other law enforcement agencies, where the images are recorded could assist in the prevention or detection of a crime or the identification and prosecution of an offender or the identification of a victim or witness.  
 * Prosecution agencies, such as the Crown Prosecution Service.  
 * Relevant legal representatives.  
 * Directors of the hackspace in regards to dispute resolution or investigation of rules and code of conduct breaches.
@@ -69,7 +69,7 @@ The hackspace will usually respond promptly and in any case within one month of 
 
 The hackspace will always check the identity of the person making the request before processing it.
 
-The directors will always determine whether disclosure of your images will reveal third party information, as you have no right to access CCTV images relating to other people.  In this case, the images of third parties may need to be obscured if it would otherwise involve an unfair intrusion into their privacy.
+The directors will always determine whether disclosure of your images will reveal third-party information, as you have no right to access CCTV images relating to other people.  In this case, the images of third parties may need to be obscured if it would otherwise involve an unfair intrusion into their privacy.
 
 If the hackspace is unable to comply with your request because access could prejudice the prevention or detection of crime or the apprehension or prosecution of offenders, you will be advised accordingly.   
 
