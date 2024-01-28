@@ -1,5 +1,5 @@
 ---
-title: "Powerbook G4 Disk Replacement"
+title: "Disk replacement on a Powerbook G4"
 subtitle: "Andrew shares his journey in replacing a failed disk in a Powerbook G4"
 date: 2023-11-05T15:55:43Z
 tags:
