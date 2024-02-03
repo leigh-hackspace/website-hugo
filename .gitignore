@@ -1,4 +1,8 @@
+.hugo_build.lock 
+.DS_Store
+.vscode/
+content/.DS_Store
+content/blog/.DS_Store
 public
 resources
-.hugo_build.lock
-.DS_Store
+serve.sh
