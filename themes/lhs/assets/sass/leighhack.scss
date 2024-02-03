@@ -384,4 +384,97 @@ background-image: linear-gradient(red, orange);
 	border-radius: 5px;;
 	padding: 2rem 0;
 	margin-bottom: 2rem;
+.center-image {
+		margin-left: 45%;
+	}
+}
+.center-block-90 {
+	width: auto;
+	margin: 0 2.5%;
+	padding: 10px;
+	word-wrap: break-word;
+}
+
+.center-block-80 {
+	margin: 0 10%;
+	padding: 0 5px;
+}
+
+.highlighted {
+	outline: 1px solid red;
+}
+
+// Custom image CSS added by john
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.side-by-side-2-cols {
+    display: flex;
+    gap: 15px;
+	margin-bottom: 20px;
+}
+
+.side-by-side-2-cols figure {
+    flex: 1;
+}
+
+.side-by-side-2-cols img {
+    width: 50%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.side-by-side-3-cols {
+    display: flex;
+    gap: 10px;
+	padding: 10px;
+}
+
+.side-by-side-3-cols img {
+    width: 33%;
+}
+
+.padded-center-image img {
+    display: block;
+    margin: 10px auto;
+	width: 90%;
+	border-radius: 15px;
+}
+
+.image-left, .image-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.image-left img, .image-right img {
+    width: 40%;
+}
+
+.image-left .text, .image-right .text {
+    flex: 1;
+}
+
+.image-right {
+    flex-direction: row-reverse;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .side-by-side, .image-left, .image-right {
+        flex-direction: column;
+        text-align: center;
+    }
+    .side-by-side img, .image-left img, .image-right img {
+        width: 100%;
+        padding: 10px;
+	}
 }

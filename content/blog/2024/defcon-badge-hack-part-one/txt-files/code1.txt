@@ -1,0 +1,12 @@
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10101001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Logs & HQ Directives Downloader ]
+A secure delivery method and storage for spaceship logs, HQ directives and new orders.
+
+CS2023{H4rDc0d3d_c0
+insert password > 
