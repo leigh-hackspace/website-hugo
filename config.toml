@@ -1,4 +1,4 @@
-baseURL = 'http://leighhack.org/'
+baseURL = 'https://leighhack.org/'
 languageCode = 'en-gb'
 theme = 'lhs'
 title = 'Leigh Hackspace'
