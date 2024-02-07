@@ -18,6 +18,8 @@ Leigh
 WN7 2LB
 ```
 
+{{< map >}}
+
 What3Words: [//escape.shot.cleansed](https://what3words.com/escape.shots.cleansed) - This is for the main entrance of Mill 2.
 
 The hackspace is located on the **third floor** of Mill 2. Once you reach the third floor, go through the double doors to your right then through the next set of double doors then follow the corridor to your left until you see the signage for the hackspace.
