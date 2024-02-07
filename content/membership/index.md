@@ -1,7 +1,7 @@
 ---
 title: Join Leigh Hackspace
 subtitle: Become part of our community.
-hero_image: /images/hero-img.svg
+hero_image: hero-img.svg
 layout: membership
 show_cta: False
 outputs:
