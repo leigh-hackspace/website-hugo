@@ -41,3 +41,6 @@ for BRANCH in $(git for-each-ref --format='%(refname:short)' refs/heads); do
 done
 
 echo "</ul>" >> "${INDEX_PAGE}"
+
+# Reset the repo back to main
+git reset --hard > /dev/null
