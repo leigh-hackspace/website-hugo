@@ -34,7 +34,7 @@ for BRANCH in $(git for-each-ref --format='%(refname:short)' refs/heads); do
     hugo --gc -b "${URL_BASE}/${BRANCH}" -s "${TEMP_FOLDER}" -d "${TARGET_FOLDER}/${BRANCH}" > /dev/null
 
     # Add to the index page
-    echo "  <li><a href=\"/${BRANCH}\">${BRANCH}</a><li>" >> "${INDEX_PAGE}"
+    echo "  <li><a href=\"/${BRANCH}\">${BRANCH}</a></li>" >> "${INDEX_PAGE}"
 
     # Cleanup the temp folder
     rm -rf "${TEMP_FOLDER}"
