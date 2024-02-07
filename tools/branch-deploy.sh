@@ -11,7 +11,7 @@ INDEX_PAGE="${TARGET_FOLDER}/index.html"
 mkdir -p "${TARGET_FOLDER}"
 
 # Track all remote branches locally
-git branch -r | grep -v '\->' | sed "s,\x1B\[[0-9;]*[a-zA-Z],,g" | while read remote; do git branch --track "${remote#origin/}" "$remote" 2>/dev/null; done
+git branch -r | grep -v '\->' | sed "s,\x1B\[[0-9;]*[a-zA-Z],,g" | while read remote; do git branch --track "${remote#origin/}" "$remote" >/dev/null 2>&1; done
 
 # Pull the branches
 git pull --all > /dev/null
