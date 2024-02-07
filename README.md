@@ -8,10 +8,14 @@ To run the site locally you can do the following:
 
 * Download [Hugo extended edition](https://github.com/gohugoio/hugo/releases/) (named hugo_extended).
 * Check out repo
-* Run `hugo serve -D --gc -w -F` (add -F to show content with future dates)
+* Run `hugo serve -D --gc -w -F` (add -F to show content with future dates) or `make serve` (if you have `make` installed)
 * Goto `http://localhost:1313/`
 
-The site will be updated in realtime with any changes made to the site.
+The site will be updated in real-time with any changes made to the site.
+
+## Making Changes
+
+All changes to the website must be done on a branch and pushed through the GitHub pull requests workflow. If you have any questions about this process then contact the [Tech Infrastructure](https://wiki.leighhack.org/membership/useful_contacts/#tech-infrastructure) people.
 
 ## New Blog Post
 
