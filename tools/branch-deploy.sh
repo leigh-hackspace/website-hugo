@@ -40,7 +40,7 @@ for BRANCH in $(git for-each-ref --format='%(refname:short)' refs/heads); do
     rm -rf "${TEMP_FOLDER}"
 done
 
-echo "</ul>" >> "${INDEX_PAGE}"
+echo -e "</ul>\n<p>Last Updated: $(date)</p>" >> "${INDEX_PAGE}"
 
 # Reset the repo back to main
 git reset --hard > /dev/null
