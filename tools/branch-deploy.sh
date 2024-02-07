@@ -1,18 +1,23 @@
 #!/bin/bash
 # Deploys all branches of a Hugo repository to a structure of folders.
 # Useful for deploying all PRs/branches of a Hugo installation to a test URL for viewing.
+set -u
 
 # Args: folder
-TARGET_FOLDER="$1"
+TARGET_FOLDER=$(realpath $1)
+URL_BASE="$2"
 
+INDEX_PAGE="${TARGET_FOLDER}/index.html"
 mkdir -p "${TARGET_FOLDER}"
 
 # Track all remote branches locally
-git branch -r | grep -v '\->' | sed "s,\x1B\[[0-9;]*[a-zA-Z],,g" | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
+git branch -r | grep -v '\->' | sed "s,\x1B\[[0-9;]*[a-zA-Z],,g" | while read remote; do git branch --track "${remote#origin/}" "$remote" 2>/dev/null; done
 
 # Pull the branches
-git pull --all
-git fetch --all
+git pull --all > /dev/null
+git fetch --all > /dev/null
+
+echo -e "<h1>Branches</h1>\n<ul>" > "${INDEX_PAGE}"
 
 # Iterate each local branch, and check it out into tmp folder, then build into the destination folder
 for BRANCH in $(git for-each-ref --format='%(refname:short)' refs/heads); do
@@ -26,8 +31,13 @@ for BRANCH in $(git for-each-ref --format='%(refname:short)' refs/heads); do
     git --work-tree="${TEMP_FOLDER}" checkout "${BRANCH}" -- .
 
     # Build to the destination folder
-    hugo --gc -b "${URL_BASE}/${BRANCH}" -s "${TEMP_FOLDER}" -d "${TARGET_FOLDER}/${BRANCH}"
+    hugo --gc -b "${URL_BASE}/${BRANCH}" -s "${TEMP_FOLDER}" -d "${TARGET_FOLDER}/${BRANCH}" > /dev/null
+
+    # Add to the index page
+    echo "  <li><a href=\"/${BRANCH}\">${BRANCH}</a><li>" >> "${INDEX_PAGE}"
 
     # Cleanup the temp folder
     rm -rf "${TEMP_FOLDER}"
 done
+
+echo "</ul>" >> "${INDEX_PAGE}"
