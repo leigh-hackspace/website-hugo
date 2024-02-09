@@ -29,7 +29,8 @@
                                 {{ if .Params.hero_image }}
                                 <div class="column is-half">
                                     {{ block "hero-image" . }}
-                                    <img class="image hero-img" src="{{ .Site.BaseURL }}/images/{{ .Params.hero_image }}">
+                                    {{ $hero := printf "%s/%s" "images/" .Params.hero_image }}
+                                    <img class="image hero-img" src="{{ absURL $hero }}">
                                     {{ end }}
                                 </div>
                                 {{ end }}
