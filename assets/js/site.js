@@ -10,7 +10,7 @@ $(document).ready(function () {
         // Hackspace status
         if ($('span#hackspace-status').length) {
             if (data.state.open) {
-                message = '<b>Open<b>'
+                message = '<b>Open</b>'
                 if ('message' in data.state) {
                     message = message + ': ' + data.state.message;
                 }
@@ -19,7 +19,6 @@ $(document).ready(function () {
             } else {
                 $('span#hackspace-status').html('<b>Closed</b>');
             }
-            console.log(atob('aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1IcDdBSVh5UkpwdyAtIERhYm8uLi4u'));
         }
 
         // 'printers' shortcode
@@ -53,17 +52,14 @@ $(document).ready(function () {
                         source: new ol.source.Vector({
                             features: [new ol.Feature({
                                 geometry: new ol.geom.Point(center),
-                                name: "Leigh Hackspace",
                             })]
                         }),
                         style: new ol.style.Style({
                             image: new ol.style.Icon({
-                              scale: .06,
-                              anchorXUnits: 'fraction',
-                              anchorYUnits: 'pixels',
-                              src: '../images/rose_logo.svg',
+                                scale: .06,
+                                src: '../images/rose_logo.svg',
                             }),
-                          }),
+                        }),
                     })
                 ],
                 view: new ol.View({
@@ -74,4 +70,6 @@ $(document).ready(function () {
             });
         }
     });
+
+    console.log(atob('aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1IcDdBSVh5UkpwdyAtIERhYm8uLi4u'));
 });
