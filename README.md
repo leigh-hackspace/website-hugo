@@ -30,3 +30,11 @@ Branches are automatically deployed to [https://web-test.leighhack.org](https://
 * Update the `author` and `author_email` values
 * Add a `subtitle`
 * Run Dev Mode (above), or `make serve` and view your post. 
+
+### Updating Membership Plans
+
+The membership plan data is held in a YAML file, this is used by the Hackspace API and other tools as well.
+
+* Edit [data/memberships.yaml](data/memberships.yaml), follow the format of existing entries.
+* Links are standard URIs and can support any of the normal formats (mailto:, etc).
+  
