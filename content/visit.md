@@ -1,6 +1,7 @@
 ---
 title: Visit Us
 subtitle: Come take a look around.
+layout: visit
 ---
 
 Leigh Hackspace is located inside [Leigh Spinners Mill](https://www.spinnersmill.co.uk), a [Grade II* listed](https://historicengland.org.uk/advice/heritage-at-risk/search-register/list-entry/48399) former cotton spinning mill, restored by Leigh Building Preservation Trust and now hosting [multiple business and community projects](https://www.spinnersmill.co.uk).
@@ -18,7 +19,9 @@ Leigh
 WN7 2LB
 ```
 
-{{< map >}}
+{{< rawhtml >}}
+<div id="map" class="map"></div>
+{{</ rawhtml >}}
 
 What3Words: [//escape.shot.cleansed](https://what3words.com/escape.shots.cleansed) - This is for the main entrance of Mill 2.
 
