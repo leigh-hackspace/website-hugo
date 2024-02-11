@@ -20,6 +20,7 @@ company = "Leigh Hackspace CIC"
 company_number = "09404083"
 copyright_years = "2023"
 description = "Leigh Hackspace is a hackspace located in the north-west of England."
+calendarUrl = "https://api.leighhack.org/events.ics"
 
 [params.social]
 twitter = 'leigh_hackspace'
