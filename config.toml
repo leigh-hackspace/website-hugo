@@ -75,7 +75,7 @@ icon = "fa-instagram"
 
 [[params.social_links]]
 name = "facebook"
-url = "https://www.facebook.com/groups/leighhackspace/"
+url = "https://www.facebook.com/LeighHackspace"
 icon = "fa-facebook-square"
 
 [[params.social_links]]
