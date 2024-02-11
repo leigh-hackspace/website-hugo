@@ -37,7 +37,7 @@
                 <div class="navbar-item is-inline-block-touch">
                     <span class="icon">
                         <a href="{{ .url | safeURL }}" target="_blank" rel="noopener me"
-                            title="{{ .name | humanize }}"><i class="fab {{ .icon }}" aria-hidden="true"></i></a>
+                            title="{{ .name | humanize }}"><i class="{{ .icon }}" aria-hidden="true"></i></a>
                     </span>
                 </div>
                 {{ end }}
