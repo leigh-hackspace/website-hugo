@@ -1,10 +1,9 @@
 <footer class="footer _footer--sticky is-black has-text-white">
     <div class="container">
         <div class="columns">
-
             <div class="column is-1 is-pull-right-touch is-hidden-mobile">
                 <img src="{{ absURL "images/rose_logo.svg" }}" alt="The logo of Leigh Hackspace">
-            </div> 
+            </div>
 
             <div class="column is-4">
                 <h4 class="title is-size-6 has-text-white">Leigh Hackspace</h4>
@@ -12,34 +11,44 @@
                     Unit 3.14, Leigh Spinners Mill<br>
                     Park Lane, Leigh <br>
                     WN7 2LB <br>
-                    <a href="mailto:info@leighhack.org">info@leighhack.org</a>
+                    <a href="mailto:{{ .Site.Params.contact_email }}">{{ .Site.Params.contact_email }}</a>
                 </address>
             </div>
 
-            <div class="column is-5-mobile is-4">
+            <div class="column is-5-mobile is-2 has-text-right has-text-left-mobile">
                 <h4 class="title is-size-6 has-text-white">Site Links</h4>
                 <div class="columns">
                     <div class="column">
                         <ul class="has-text-white is-size-6 ">
-                        {{- range site.Menus.main }}
-                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-                        {{- end }}
+                            {{- range site.Menus.main }}
+                            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                            {{- end }}
                         </ul>
                     </div>
-
-
                 </div>
             </div>
 
-            <div class="column">
-                <h4 class="title is-6 has-text-white">Socials</h4>
+            <div class="column is-5-mobile is-2 has-text-right has-text-left-mobile">
+                <h4 class="title is-size-6 has-text-white">Policies</h4>
                 <div class="columns">
-                    <div class="column is-4">
+                    <div class="column">
                         <ul class="has-text-white is-size-6 ">
-                            {{- with .Site.Params.social_links }}
-                            {{ range . -}}
-                            <li><a href="{{ .url | safeURL }}" target="_blank" rel="noopener me" title="{{ .name | humanize }}">{{ .name | humanize }}</a></li>
-                            {{ end }}
+                            {{- range site.Menus.policies }}
+                            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                            {{- end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-5-mobile is-2 has-text-right has-text-left-mobile">
+                <h4 class="title is-6 has-text-white ">Socials</h4>
+                <div class="columns">
+                    <div class="column">
+                        <ul class="has-text-white is-size-6 ">
+                            {{- range .Site.Params.social_links }}
+                            <li><a href="{{ .url | safeURL }}" target="_blank" rel="noopener me"
+                                    title="{{ .name | humanize }}">{{ .name | humanize }}</a></li>
                             {{- end }}
                         </ul>
                     </div>
@@ -48,16 +57,17 @@
 
         </div>
 
-        <div class="columns is-vcentered is-size-6 is-multiline has-text-grey mt-4">
+        <div class="columns is-vcentered is-size-6 is-multiline has-text-grey mt-4 has-text-right has-text-left-mobile">
             <div class="column is-10-desktop is-offset-1-desktop">
 
                 <div class="level">
                     <div class="level-left">
                     </div>
-                    <div class="level-right has-text-right">
-                        <p>&copy; {{ .Site.Params.company }} {{ .Site.Params.copyright_years }} | Initial website design by <a href="https://www.studiocosmos.co.uk"
-                                target="_blank" rel="noopener">COSMOS</a><br/>
-                                {{ .Site.Title }} is a trading name of {{ .Site.Params.Company }}, registered in England & Wales No. <a href="https://find-and-update.company-information.service.gov.uk/company/{{ .Site.Params.company_number }}">{{ .Site.Params.company_number }}</a></p>
+                    <div class="level-right">
+                        <p>&copy; {{ .Site.Params.company }} {{ .Site.Params.copyright_years }} | Initial website design
+                            by <a href="https://www.studiocosmos.co.uk" target="_blank" rel="noopener">COSMOS</a><br />
+                            {{ .Site.Title }} is a trading name of {{ .Site.Params.Company }}, registered in England &
+                            Wales No. <a href="https://find-and-update.company-information.service.gov.uk/company/{{ .Site.Params.company_number }}">{{ .Site.Params.company_number }}</a></p>
                     </div>
                 </div>
 

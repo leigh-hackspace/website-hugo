@@ -10,7 +10,7 @@ subtitle: How we manage our CCTV facility
 
 ## Introduction 
 
-The hackspace uses closed circuit television (CCTV) images to protect the hackspace’s property and to provide a safe and secure environment for employees and visitors to the hackspace’s premises. This policy sets out the details of how the hackspace will collect, use and store CCTV images.
+The hackspace uses closed circuit television (CCTV) images to protect the hackspace’s property and to provide a safe and secure environment for members and visitors to the hackspace’s premises. This policy sets out the details of how the hackspace will collect, use and store CCTV images.
 
 The hackspace’s CCTV facility will only record images.  There is no audio recording i.e. conversations are not recorded on CCTV. 
 
@@ -63,7 +63,7 @@ All requests for disclosure and access to images will be documented, including t
 
 Under the UK’s data protection laws, including the General Data Protection Regulation (GDPR),  individuals have the right on request to receive a copy of the personal data that the hackspace holds about them, including CCTV images if they are recognisable from the image.  
 
-If you wish to access any CCTV images relating to you, you must make a written request to the hackspace’s directors. This can be done by using this email address [info@leighhack.org](mailto:info@leighhack.org).  The hackspace will usually not make a charge for such a request, but we may charge a reasonable fee if you make a request which is manifestly unfounded or excessive, or is repetitive. Your request must include the date and approximate time when the images were recorded and the location of the particular CCTV camera, so that the images can be easily located and your identity can be established as the person in the images.  
+If you wish to access any CCTV images relating to you, you must make a written request to the hackspace’s directors. This can be done by using this email address [info@leighhack.org](mailto:info@leighhack.org).  The hackspace will usually not make a charge for such a request, but we may charge a reasonable fee if you make a request which is manifestly unfounded, excessive, or is repetitive. Your request must include the date and approximate time when the images were recorded and the location of the particular CCTV camera, so that the images can be easily located and your identity can be established as the person in the images.  
 
 The hackspace will usually respond promptly and in any case within one month of receiving a request. However, where a request is complex or numerous the hackspace may extend the one month to respond by a further two months. 
 
@@ -80,7 +80,6 @@ Covert recording is specifically barred by Leigh Hackspace CIC and its directors
 ## Staff training                                                                    
 
 The hackspace will ensure that all members handling CCTV images or recordings are trained in the operation and administration of the CCTV system and on the impact of the laws regulating data protection and privacy with regard to that system.  
-
 
 ## Data Protection
 

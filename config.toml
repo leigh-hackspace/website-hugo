@@ -10,20 +10,18 @@ filename = 'sitemap.xml'
 priority = -1
 
 [imaging]
-  bgColor = '#ffffff'
-  hint = 'photo'
-  quality = 85
-  resampleFilter = 'MitchellNetravali'
+bgColor = '#ffffff'
+hint = 'photo'
+quality = 85
+resampleFilter = 'MitchellNetravali'
 
 [params]
 company = "Leigh Hackspace CIC"
 company_number = "09404083"
 copyright_years = "2023"
+contact_email = "info@leighhack.org"
 description = "Leigh Hackspace is a hackspace located in the north-west of England."
 calendarUrl = "https://api.leighhack.org/events.ics"
-
-[params.social]
-twitter = 'leigh_hackspace'
 
 # Header links
 [menu]
@@ -44,7 +42,7 @@ weight = 3
 
 [[menu.main]]
 name = "Blog"
-pageRef = "/blog"
+pageRef = "blog"
 weight = 4
 
 [[menu.main]]
@@ -56,6 +54,21 @@ weight = 5
 name = "Events"
 pageRef = "events"
 weight = 6
+
+[[menu.policies]]
+name = "Code of Conduct"
+pageRef = "policies/code_of_conduct"
+weight = 1
+
+[[menu.policies]]
+name = "Disputes"
+pageRef = "policies/disputes"
+weight = 2
+
+[[menu.policies]]
+name = "CCTV Policy"
+pageRef = "policies/cctv_policy"
+weight = 3
 
 # Social links
 [[params.social_links]]
@@ -92,4 +105,3 @@ icon = "fab fa-github-alt"
 name = "discourse"
 url = "https://discourse.leighhack.org"
 icon = "fab fa-discourse"
-
