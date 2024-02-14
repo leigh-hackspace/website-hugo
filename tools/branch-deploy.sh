@@ -13,32 +13,28 @@ HUGO_ARGUMENTS="--gc"
 # Ensure the target folder exists
 mkdir -p "${TARGET_FOLDER}"
 
-# Prune branches that have disappeared from origin
-git remote prune origin > /dev/null
-PRUNE_BRANCHES=$(git fetch -p ; git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}')
-echo $PRUNE_BRANCHES | xargs --no-run-if-empty git branch -d > /dev/null
-echo $PRUNE_BRANCHES | xargs --no-run-if-empty -I '{}' rm -rf ${TARGET_FOLDER}/{}
+# Checkout a local bare copy, to speed up later checkouts
+ORIGIN=$(git config --get remote.origin.url)
+BARE_FOLDER=`mktemp -u -d`
+echo "Cloning upstream at ${ORIGIN}"
+git clone --quiet --bare "${ORIGIN}" "${BARE_FOLDER}"
 
-# Track all remote branches locally
-git branch -r | grep -v '\->' | sed "s,\x1B\[[0-9;]*[a-zA-Z],,g" | while read remote; do git branch --track "${remote#origin/}" "$remote" >/dev/null 2>&1; done
-
-# Pull the branches
-git pull --all > /dev/null
-git fetch --all > /dev/null
+# Get a list of branch names on origin
+BRANCHES=$(git ls-remote -h origin | awk '{print $2}'| cut -d'/' -f3-)
 
 # Iterate each local branch, and check it out into tmp folder, then build into the destination folder
-for BRANCH in $(git for-each-ref --format='%(refname:short)' refs/heads); do
+for BRANCH in $BRANCHES; do
     echo "Building ${BRANCH}"
 
     # Make folders
     mkdir -p "${TARGET_FOLDER}/${BRANCH}"
-    TEMP_FOLDER=`mktemp -d`
+    TEMP_FOLDER=`mktemp -u -d`
 
     # Checkout the branch
-    git --work-tree="${TEMP_FOLDER}" checkout "${BRANCH}" -- .
+    git clone -q --branch "${BRANCH}" -- "file://${BARE_FOLDER}" "${TEMP_FOLDER}"
 
     # Build to the destination folder
-    hugo ${HUGO_ARGUMENTS} -b "${BASE_URL}/${BRANCH}" -s "${TEMP_FOLDER}" -d "${TARGET_FOLDER}/${BRANCH}" > /dev/null
+    hugo --quiet ${HUGO_ARGUMENTS} -b "${BASE_URL}/${BRANCH}" -s "${TEMP_FOLDER}" -d "${TARGET_FOLDER}/${BRANCH}"
 
     # Cleanup the temp folder
     rm -rf "${TEMP_FOLDER}"
@@ -48,10 +44,10 @@ done
 INDEX_PAGE="${TARGET_FOLDER}/index.html"
 
 echo -e "<h1>Branches</h1>\n<ul>" > "${INDEX_PAGE}"
-for BRANCH in $(git for-each-ref --format='%(refname:short)' refs/heads); do
+for BRANCH in $BRANCHES; do
     echo "  <li><a href=\"/${BRANCH}\">${BRANCH}</a></li>" >> "${INDEX_PAGE}"
 done
 echo -e "</ul>\n<p>Last Updated: $(date)</p>" >> "${INDEX_PAGE}"
 
-# Reset the repo back to main
-git reset --hard > /dev/null
+# Remove bare repo
+rm -rf "${BARE_FOLDER}"
