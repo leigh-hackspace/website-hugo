@@ -10,14 +10,15 @@
 <article class="media">
   <figure class="media-left">
     <p class="image is-64x64">
-      {{ $avatar := resources.GetRemote (print "https://www.gravatar.com/avatar/" (sha256 .Params.author_email)) | resources.Copy (print "images/avatars/" (sha256 .Params.author_email) ".jpg") }}
-      <img class="is-rounded" src="{{ $avatar.RelPermalink }}">
+      {{ $avatar := resources.GetRemote (print "https://www.gravatar.com/avatar/" (sha256 .Params.author_email)) |
+      resources.Copy (print "images/avatars/" (sha256 .Params.author_email) ".jpg") }}
+      <img class="is-rounded" src="{{ $avatar.RelPermalink }}" alt="{{ .Param.author }}'s avatar">
     </p>
   </figure>
   <div class="media-content">
     <div class="content">
       <p class="is-size-5 is-italic">This is a post by <b>{{ .Params.author }}</b>.<br />Originally
-        posted {{ .PublishDate | time.Format ":date_full" }}</b></p>
+        posted <b>{{ .PublishDate | time.Format ":date_full" }}</b></p>
     </div>
   </div>
 </article>

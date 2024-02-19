@@ -12,11 +12,11 @@
     <td>
       {{ $avatar := resources.GetRemote (print "https://www.gravatar.com/avatar/" (sha256 .Params.author_email)) |
       resources.Copy (print "images/avatars/" (sha256 .Params.author_email) ".jpg") }}
-      <img src="{{ $avatar.RelPermalink }}">
+      <img src="{{ $avatar.RelPermalink }}" alt="{{ .Params.author }}'s avatar">
     </td>
     <td>
-      <p class="is-size-5 is-italic">This is a post by <b>{{ .Params.author }}</b>.<br />Originally
-        posted {{ .PublishDate | time.Format ":date_full" }}</b></p>
+      <p class="is-size-5 is-italic">This is a post by <b>{{ .Params.author }}</b>.<br>Originally
+        posted <b>{{ .PublishDate | time.Format ":date_full" }}</b></p>
     </td>
   </tr>
 </table>
