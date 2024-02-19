@@ -10,14 +10,13 @@
     <b>Socials:</b>
     {{ $menu_items := add (len .Site.Params.social_links) -1 }}
     {{- range $i, $e := .Site.Params.social_links }}
-    <a href="{{ .url | safeURL }}" target="_blank" rel="noopener me" title="{{ .name | humanize }}">{{ .name | humanize
-        }}</a>{{ if lt $i $menu_items }} / {{ end }}
+    <a href="{{ .url | safeURL }}" target="_blank" rel="noopener me" title="{{ .name | humanize }}">{{ .name | humanize }}</a>{{ if lt $i $menu_items }} / {{ end }}
     {{- end }}
 </p>
 
 
 <p>&copy; {{ .Site.Params.company }} {{ .Site.Params.copyright_years }} | Initial website design by <a
-        href="https://www.studiocosmos.co.uk" target="_blank" rel="noopener">COSMOS</a><br />
+        href="https://www.studiocosmos.co.uk" target="_blank" rel="noopener">COSMOS</a><br>
     {{ .Site.Title }} is a trading name of {{ .Site.Params.Company }}, registered in England & Wales No. <a
         href="https://find-and-update.company-information.service.gov.uk/company/{{ .Site.Params.company_number }}">{{
         .Site.Params.company_number }}</a></p>
