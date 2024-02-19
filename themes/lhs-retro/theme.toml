@@ -1,0 +1,11 @@
+name = "lhs-retro"
+license = "All Rights Reserved"
+description = "A retro theme for Leigh Hackspace"
+homepage = "https://retro.leighhack.org/"
+tags = []
+features = []
+min_version = "0.111.3"
+
+[author]
+name = "Andrew Williams"
+homepage = "https://nikdoof.com"

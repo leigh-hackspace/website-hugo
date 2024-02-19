@@ -1,0 +1,7 @@
+{{ $img := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
+{{ $width := .Get "width" }}
+{{ $img = $img.Resize (print (default "640x" $width) " jpeg picture") }}
+{{ $title := .Get "title" }}
+{{ $class := .Get "class" }}
+<img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" {{ if $title }}
+  alt="{{ $title }}" {{ end }}>
