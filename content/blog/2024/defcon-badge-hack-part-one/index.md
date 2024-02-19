@@ -59,6 +59,8 @@ Underneath the Arduino there is a 'hidden' message that states "Nothing To See h
 
 There is somthing under the Battery pack but its not quite visible with the battery pack on.
 
+<< under the batteries >>
+
 lets get the iron out and get it off :D
 
 << removing the battery pack >>
@@ -71,7 +73,7 @@ Printed under the battery pack there is the phrase "TH3FUZZYLLAMA" that might co
 
 Also I have found that bridging the pads next to the LEDs on the back of the badge causes them to light up im not sure if this has any other function at this stage.
 
-#### Connecting to the Arduion Nano.
+#### Connecting to the Arduino Nano.
 
 Using the Serial monitor on the Arduino IDE configured with the baudrate of 115200 we get the following output
 
