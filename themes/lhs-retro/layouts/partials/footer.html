@@ -10,7 +10,8 @@
     <b>Socials:</b>
     {{ $menu_items := add (len .Site.Params.social_links) -1 }}
     {{- range $i, $e := .Site.Params.social_links }}
-    <a href="{{ .url | safeURL }}" target="_blank" rel="noopener me" title="{{ .name | humanize }}">{{ .name | humanize }}</a>{{ if lt $i $menu_items }} / {{ end }}
+    <a href="{{ .url | safeURL }}" target="_blank" rel="noopener me" title="{{ .name | humanize }}">{{ .name | humanize
+        }}</a>{{ if lt $i $menu_items }} / {{ end }}
     {{- end }}
 </p>
 
@@ -20,3 +21,8 @@
     {{ .Site.Title }} is a trading name of {{ .Site.Params.Company }}, registered in England & Wales No. <a
         href="https://find-and-update.company-information.service.gov.uk/company/{{ .Site.Params.company_number }}">{{
         .Site.Params.company_number }}</a></p>
+
+<p>
+    <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-html401"
+            alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+</p>

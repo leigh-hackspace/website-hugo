@@ -23,7 +23,7 @@
             <img src="{{ $image.RelPermalink}}" class="image is-inline-block">
         </div>
         <div class="column">
-            <p><a href="{{ .Permalink }}">{{.Title}}</a> - {{ .Params.author }}<br />
+            <p><a href="{{ .RelPermalink }}">{{.Title}}</a> - {{ .Params.author }}<br />
                 <span class="is-size-6">{{ dateFormat "Jan 2, 2006" .PublishDate }}</span>
             </p>
             <p class="is-size-6"><i>{{ .Summary }}</i></p>

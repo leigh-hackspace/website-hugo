@@ -12,7 +12,7 @@
     <td>
       {{ $avatar := resources.GetRemote (print "https://www.gravatar.com/avatar/" (sha256 .Params.author_email)) |
       resources.Copy (print "images/avatars/" (sha256 .Params.author_email) ".jpg") }}
-      <img src="{{ $avatar.Permalink }}">
+      <img src="{{ $avatar.RelPermalink }}">
     </td>
     <td>
       <p class="is-size-5 is-italic">This is a post by <b>{{ .Params.author }}</b>.<br />Originally

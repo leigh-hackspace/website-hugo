@@ -11,7 +11,7 @@
 
 <ul>
     {{- range .Pages }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
     {{- end }}
 </ul>
 {{ end }}

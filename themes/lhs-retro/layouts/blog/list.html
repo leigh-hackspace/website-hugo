@@ -24,7 +24,7 @@
             <img src="{{ $image.RelPermalink}}">
         </td>
         <td>
-            <p><a href="{{ .Permalink }}">{{.Title}}</a> - {{ .Params.author }}<br />
+            <p><a href="{{ .RelPermalink }}">{{.Title}}</a> - {{ .Params.author }}<br />
                 {{ dateFormat "Jan 2, 2006" .PublishDate }}
             </p>
             <p><i>{{ .Summary }}</i></p>

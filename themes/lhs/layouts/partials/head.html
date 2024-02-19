@@ -17,7 +17,7 @@
 
 <link rel="alternate" type="application/rss+xml" href="{{ absURL "blog/index.xml" }}" title="{{ .Site.Title }}">
 <link rel="alternate" type="text/calendar" href="https://api.leighhack.org/events.ics" title="{{ .Site.Title }} Events">
-<link rel="canonical" href="{{ .Permalink }}">
+<link rel="canonical" href="{{ .RelPermalink }}">
 
 {{ if .Page.Store.Get "hasMap" }}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v8.2.0/ol.css">
