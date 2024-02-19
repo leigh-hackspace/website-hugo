@@ -1,0 +1,26 @@
+{{ define "title" }}
+{{ .Title }}
+{{ end }}
+
+{{ define "subtitle" }}
+{{ .Params.subtitle }}
+{{ end }}
+
+{{ define "content" }}
+<table border="0">
+  <tr>
+    <td>
+      {{ $avatar := resources.GetRemote (print "https://www.gravatar.com/avatar/" (sha256 .Params.author_email)) |
+      resources.Copy (print "images/avatars/" (sha256 .Params.author_email) ".jpg") }}
+      <img src="{{ $avatar.Permalink }}">
+    </td>
+    <td>
+      <p class="is-size-5 is-italic">This is a post by <b>{{ .Params.author }}</b>.<br />Originally
+        posted {{ .PublishDate | time.Format ":date_full" }}</b></p>
+    </td>
+  </tr>
+</table>
+
+{{ .Content }}
+
+{{ end }}

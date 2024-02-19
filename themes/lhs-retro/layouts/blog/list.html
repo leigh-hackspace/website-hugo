@@ -1,0 +1,37 @@
+{{ define "title" }}
+{{ .Title }}
+{{ end }}
+
+{{ define "subtitle" }}
+{{ .Params.subtitle }}
+{{ end }}
+
+{{ define "content" }}
+{{ .Content }}
+
+<p><i>Subscribe to our <a href="index.xml" type="application/rss+xml">RSS feed</a> to keep up to date with new
+        posts.</i></p>
+
+{{- range .Data.Pages.GroupByDate "2006" }}
+<h3 id="{{ .Key }}">{{ .Key }}</h3>
+
+{{- range .Pages }}
+{{ $image := .Resources.GetMatch .Params.listing_image }}
+{{ $image = $image.Fill "128x128 Center jpg picture" }}
+<table border="1">
+    <tr>
+        <td>
+            <img src="{{ $image.RelPermalink}}">
+        </td>
+        <td>
+            <p><a href="{{ .Permalink }}">{{.Title}}</a> - {{ .Params.author }}<br />
+                {{ dateFormat "Jan 2, 2006" .PublishDate }}
+            </p>
+            <p><i>{{ .Summary }}</i></p>
+        </td>
+    </tr>
+
+</table>
+{{- end }}
+{{- end }}
+{{ end }}
