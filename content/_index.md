@@ -5,11 +5,7 @@ layout: home
 hero_image: rose_logo.svg
 ---
 
-{{< rawhtml >}}
-<div class="notification has-text-centered" id="hackspace-open">
-Leigh Hackspace is currently <span id="hackspace-status"><i class="fas fa-spinner fa-spin"></i></span>
-</div>
-{{</ rawhtml >}}
+{{< openstatus >}}
 
 | Day       | Opening Times |
 | --------- | ------------- |
