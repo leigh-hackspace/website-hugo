@@ -49,7 +49,7 @@ for BRANCH in $BRANCHES; do
     # Build to the destination folder
     for THEME in $THEMES; do
         hugo --quiet ${HUGO_ARGUMENTS} -b "${BASE_URL}/${BRANCH}/${THEME}" -s "${TEMP_FOLDER}" -d "${TARGET_FOLDER}/${BRANCH}/${THEME}" -t "${THEME}"
-        find "${TARGET_FOLDER}/${BRANCH}/${THEME}" -name "*.cgi" -exec chmod a+x {}\;
+        find "${TARGET_FOLDER}/${BRANCH}/${THEME}" -name "*.cgi" -exec chmod a+x {} \;
     done
 
     # Cleanup the temp folder
