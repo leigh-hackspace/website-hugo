@@ -8,7 +8,7 @@ TARGET_FOLDER=$(realpath $1)
 BASE_URL="$2"
 
 # Arguments to add to the Hugo call
-HUGO_ARGUMENTS="--gc"
+HUGO_ARGUMENTS="--gc -D -F"
 
 # Themes to build instances of
 THEMES="lhs lhs-retro"
