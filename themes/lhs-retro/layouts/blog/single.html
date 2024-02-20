@@ -12,6 +12,7 @@
     <td>
       {{ $avatar := resources.GetRemote (print "https://www.gravatar.com/avatar/" (sha256 .Params.author_email)) |
       resources.Copy (print "images/avatars/" (sha256 .Params.author_email) ".jpg") }}
+      {{ $avatar = $avatar.Resize "50x photo" }}
       <img src="{{ $avatar.RelPermalink }}" alt="{{ .Params.author }}'s avatar">
     </td>
     <td>

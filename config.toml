@@ -11,9 +11,7 @@ priority = -1
 
 [imaging]
 bgColor = '#ffffff'
-hint = 'photo'
-quality = 85
-resampleFilter = 'MitchellNetravali'
+resampleFilter = 'CatmullRom'
 
 [params]
 company = "Leigh Hackspace CIC"
