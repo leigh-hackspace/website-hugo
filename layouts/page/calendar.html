@@ -19,5 +19,5 @@
 
 {{ define "content" }}
 <div id="calendar"></div>
-{{ "<!--# include virtual='/cgi/events.cgi' -->" | safeHTML }}
+{{ printf "<!--# include virtual='%s' -->" ("/cgi/events.cgi" | relURL) | safeHTML }}
 {{ end }}

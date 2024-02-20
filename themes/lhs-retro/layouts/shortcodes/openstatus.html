@@ -1,1 +1,1 @@
-<p>Leigh Hackspace is currently {{ "<!--# include virtual='/cgi/status.cgi' -->" | safeHTML }}</p>
+<p>Leigh Hackspace is currently {{ printf "<!--# include virtual='%s' -->" ("/cgi/status.cgi" | relURL) | safeHTML }}</p>
