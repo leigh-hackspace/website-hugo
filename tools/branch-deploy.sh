@@ -16,6 +16,11 @@ THEMES="lhs lhs-retro"
 # Ensure the target folder exists
 mkdir -p "${TARGET_FOLDER}"
 
+# Clear out target folder, and put a boilerplate index in while we're building
+rm -rf ${TARGET_FOLDER}/*
+INDEX_PAGE="${TARGET_FOLDER}/index.html"
+echo "<meta http-equiv="refresh" content="5"><p>Deploying...</p>" > "${INDEX_PAGE}"
+
 # Checkout a local bare copy, to speed up later checkouts
 ORIGIN=$(git config --get remote.origin.url)
 BARE_FOLDER=`mktemp -u -d`
@@ -41,15 +46,14 @@ for BRANCH in $BRANCHES; do
     # Build to the destination folder
     for THEME in $THEMES; do
         hugo --quiet ${HUGO_ARGUMENTS} -b "${BASE_URL}/${BRANCH}/${THEME}" -s "${TEMP_FOLDER}" -d "${TARGET_FOLDER}/${BRANCH}/${THEME}" -t "${THEME}"
+        find "${TARGET_FOLDER}/${BRANCH}/${THEME}" -name "*.cgi" -exec chmod a+x {}\;
     done
 
     # Cleanup the temp folder
     rm -rf "${TEMP_FOLDER}"
 done
 
-# Build the index page
-INDEX_PAGE="${TARGET_FOLDER}/index.html"
-
+# Build the full index page
 echo -e "<h1>Branches</h1>\n<ul>" > "${INDEX_PAGE}"
 for BRANCH in $BRANCHES; do
     echo "  <li>${BRANCH} - " >> "${INDEX_PAGE}"
