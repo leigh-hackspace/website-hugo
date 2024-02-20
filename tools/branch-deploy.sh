@@ -10,6 +10,9 @@ BASE_URL="$2"
 # Arguments to add to the Hugo call
 HUGO_ARGUMENTS="--gc"
 
+# Themes to build instances of
+THEMES="lhs lhs-retro"
+
 # Ensure the target folder exists
 mkdir -p "${TARGET_FOLDER}"
 
@@ -27,14 +30,18 @@ for BRANCH in $BRANCHES; do
     echo "Building ${BRANCH}"
 
     # Make folders
-    mkdir -p "${TARGET_FOLDER}/${BRANCH}"
+    for THEME in $THEMES; do
+        mkdir -p "${TARGET_FOLDER}/${BRANCH}/${THEME}"
+    done
     TEMP_FOLDER=`mktemp -u -d`
 
     # Checkout the branch
     git clone -q --branch "${BRANCH}" -- "file://${BARE_FOLDER}" "${TEMP_FOLDER}"
 
     # Build to the destination folder
-    hugo --quiet ${HUGO_ARGUMENTS} -b "${BASE_URL}/${BRANCH}" -s "${TEMP_FOLDER}" -d "${TARGET_FOLDER}/${BRANCH}"
+    for THEME in $THEMES; do
+        hugo --quiet ${HUGO_ARGUMENTS} -b "${BASE_URL}/${BRANCH}/${THEME}" -s "${TEMP_FOLDER}" -d "${TARGET_FOLDER}/${BRANCH}/${THEME}" -t "${THEME}"
+    done
 
     # Cleanup the temp folder
     rm -rf "${TEMP_FOLDER}"
@@ -45,7 +52,11 @@ INDEX_PAGE="${TARGET_FOLDER}/index.html"
 
 echo -e "<h1>Branches</h1>\n<ul>" > "${INDEX_PAGE}"
 for BRANCH in $BRANCHES; do
-    echo "  <li><a href=\"/${BRANCH}\">${BRANCH}</a></li>" >> "${INDEX_PAGE}"
+    echo "  <li>${BRANCH} - " >> "${INDEX_PAGE}"
+    for THEME in $THEMES; do
+        echo "<a href=\"/${BRANCH}/${THEME}\">${THEME}</a> " >> "${INDEX_PAGE}"
+    done
+    echo "</li>" >> "${INDEX_PAGE}"
 done
 echo -e "</ul>\n<p>Last Updated: $(date)</p>" >> "${INDEX_PAGE}"
 
