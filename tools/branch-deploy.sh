@@ -22,7 +22,7 @@ INDEX_PAGE="${TARGET_FOLDER}/index.html"
 echo "<meta http-equiv="refresh" content="5"><p>Deploying...</p>" > "${INDEX_PAGE}"
 
 # Create a block all robots.txt
-echo -e "User-agent: *\nDisallow: /" > ${TARGET_FOLDER}/robots.txt"
+echo -e "User-agent: *\nDisallow: /" > "${TARGET_FOLDER}/robots.txt"
 
 # Checkout a local bare copy, to speed up later checkouts
 ORIGIN=$(git config --get remote.origin.url)
