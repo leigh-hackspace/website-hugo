@@ -11,6 +11,3 @@ HUGO_ARGUMENTS="--gc"
 # Pull the updates and run Hugo
 git pull
 hugo --quiet ${HUGO_ARGUMENTS} -b "${BASE_URL}" -d "${TARGET_FOLDER}" -t "lhs-retro"
-
-# Make sure the CGI scripts are executable
-find "${TARGET_FOLDER}" -name "*.cgi" -exec chmod a+x {} \;
