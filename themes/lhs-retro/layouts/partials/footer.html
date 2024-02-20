@@ -11,8 +11,8 @@
     <b>Policies:</b>
     {{ $menu_items := add (len .Site.Menus.policies) -1 }}
     {{- range $i, $e := .Site.Menus.policies }}
-    <a href="{{ .URL | safeURL }}" target="_blank" rel="noopener me" title="{{ .Name | humanize }}">{{ .Name | humanize
-        }}</a>{{ if lt $i $menu_items }} / {{ end }}
+    <a href="{{ .URL | safeURL }}" target="_blank" rel="noopener me" title="{{ .Name  }}">{{ .Name }}</a>{{ if lt $i
+    $menu_items }} / {{ end }}
     {{- end }}
 </p>
 
