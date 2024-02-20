@@ -1,0 +1,5 @@
+# Main website, config, and theme is managed by Infra team
+* @leigh-hackspace/infra
+
+# Website content is managed by the Web Editors team
+content/* @leigh-hackspace/web-editors

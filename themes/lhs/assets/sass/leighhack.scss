@@ -33,16 +33,16 @@ $body-font-size: 1.25em;
 // -------------------------------------------------------
 
 // Preloader
-.js div#preloader { 
-	position: fixed; 
-  left: 0; 
-  top: 0; 
-  z-index: 999; 
-  width: 100%; 
-  height: 100%; 
-  overflow: visible; 
-  background: white no-repeat center center; 
-  background-size: 20%;
+.js div#preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	background: white no-repeat center center;
+	background-size: 20%;
 }
 
 // Modifiers
@@ -61,8 +61,8 @@ $body-font-size: 1.25em;
 .hover-item {
 	// min-height:10em;
 	transition: all 0.3s;
-	
-	&:hover{
+
+	&:hover {
 		box-shadow: 0 0px 30px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1);
 		// border-color: $primary;
 		// box-shadow: 0 10px 1px rgba($black, 0.2);
@@ -76,10 +76,10 @@ $body-font-size: 1.25em;
 
 p {
 	line-height: $body-line-height;
-	margin-bottom:1.5em!important;
+	margin-bottom: 1.5em !important;
 
-	&:last-child{
-		margin-bottom:0!important;
+	&:last-child {
+		margin-bottom: 0 !important;
 	}
 }
 
@@ -92,22 +92,22 @@ p {
 // -------------------------------------------------------
 a {
 	text-decoration: underline;
-	
+
 	.navbar-item {
 
 		&:hover {
-			color:$primary;
+			color: $primary;
 			border-bottom: solid 2px $primary;
 		}
 	}
 }
 
 address {
-	font-style:normal;
+	font-style: normal;
 }
 
 .button {
-	height:3em;
+	height: 3em;
 	text-decoration: none;
 	transition: all 0.2s;
 }
@@ -118,34 +118,34 @@ address {
 .navbar {
 
 	&-item {
-		text-decoration:none;
+		text-decoration: none;
 	}
 
 	&--social-links {
 
 		a {
-			color:white;
-	
+			color: white;
+
 			&:hover {
-				color:$primary;
+				color: $primary;
 			}
 		}
 	}
 
 	&-burger {
-		
+
 		&:hover {
-			color:white;
+			color: white;
 		}
 	}
 }
 
 .site-logo {
-	max-height:3rem!important;
+	max-height: 3rem !important;
 
 	&-text {
-		font-size: 1.4rem; 
-		line-height: 1.1; 
+		font-size: 1.4rem;
+		line-height: 1.1;
 		font-family: 'Transport Medium';
 	}
 }
@@ -172,22 +172,22 @@ address {
 	}
 
 	.subtitle {
-		font-size:1.375rem;
+		font-size: 1.375rem;
 	}
 
 }
 
 .work-img {
-	max-width:90%;
+	max-width: 90%;
 }
 
 .cta {
 
-	&-container{
-		margin-top:4em;
-		padding:2em 1em;
+	&-container {
+		margin-top: 4em;
+		padding: 2em 1em;
 	}
-		
+
 	&-img {
 		margin-top: -10rem;
 	}
@@ -200,15 +200,15 @@ address {
 .facility {
 
 	&-hero {
-		padding:2em 0.5em;
+		padding: 2em 0.5em;
 	}
 
 	&-container {
-		padding:2em 1em;
+		padding: 2em 1em;
 	}
 
 	&-gallery {
-		padding-top:1em;
+		padding-top: 1em;
 	}
 
 	&--icon {
@@ -220,17 +220,17 @@ address {
 		@include from($tablet) {
 			border-left: solid 1px;
 			border-color: hsl(0, 0%, 86%);
-		  }
+		}
 	}
 
-	&-description { 
-		min-height: 180px; 
+	&-description {
+		min-height: 180px;
 	}
 }
 
 .small_cta {
-	background-color:$accent;
-	padding:0 1em;
+	background-color: $accent;
+	padding: 0 1em;
 }
 
 // -------------------------------------------------------
@@ -239,16 +239,17 @@ address {
 
 .pricing {
 
-	&-tiers, &-facilities{
-		padding:2em 0;
+	&-tiers,
+	&-facilities {
+		padding: 2em 0;
 	}
 
 	&-price {
 		line-height: 1;
 	}
 
-	&-description { 
-		min-height: 120px; 
+	&-description {
+		min-height: 120px;
 	}
 }
 
@@ -259,7 +260,7 @@ address {
 // -------------------------------------------------------
 
 .team {
-	&-join{
+	&-join {
 		background-color: $accent;
 	}
 
@@ -276,13 +277,13 @@ address {
 // -------------------------------------------------------
 
 #map {
-	width:100%;
-	min-height:25em;
-	margin-bottom:2em;
+	width: 100%;
+	min-height: 25em;
+	margin-bottom: 2em;
 }
 
 .map {
-	
+
 	// -webkit-filter: grayscale(100%);
 	// filter: grayscale(100%);
 
@@ -293,10 +294,10 @@ address {
 	}
 
 	&-container {
-		padding:2em 1em;
+		padding: 2em 1em;
 
 		.is-spaced {
-			margin:1.5em auto;
+			margin: 1.5em auto;
 		}
 	}
 }
@@ -306,7 +307,7 @@ address {
 // -------------------------------------------------------
 
 .policy-content {
-	padding:1.375em 0;
+	padding: 1.375em 0;
 }
 
 // -------------------------------------------------------
@@ -316,31 +317,31 @@ address {
 footer {
 
 	a {
-		color:$footer-link-color;
-		text-decoration:underline;
+		color: $footer-link-color;
+		text-decoration: underline;
 
 		&:hover {
-			color:$primary;
+			color: $primary;
 		}
 	}
 }
 
 .footer {
 
-	padding-bottom:2em;
+	padding-bottom: 2em;
 
 	&-weblink {
-	
-		background-color:$primary;
+
+		background-color: $primary;
 
 	}
 
-    &--sticky {
-    	position: absolute;
-    	width: 100%;
-    	bottom: 0;
-    	overflow: hidden;
-    }
+	&--sticky {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		overflow: hidden;
+	}
 }
 
 // -------------------------------------------------------
@@ -349,4 +350,13 @@ footer {
 
 .map {
 	height: 500px;
+}
+
+// -------------------------------------------------------
+// Blog pages
+// -------------------------------------------------------
+
+.blog-avatar {
+	margin-left: 0 !important;
+	margin-right: 1em !important;
 }

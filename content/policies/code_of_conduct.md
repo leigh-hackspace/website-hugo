@@ -1,6 +1,6 @@
 ---
 title: Code of Conduct
-subtitle:
+subtitle: Rules for our community
 ---
 
 Leigh Hackspace is a shared community workspace that offers the 
@@ -86,5 +86,5 @@ you report it by emailing [info@leighack.org](mailto:info@leighhack.org).
 ## Questions?
 If you have questions, please feel free to [contact us](mailto:info@leighhack.org). 
 
-Text derived from the GCC project Code of Conduct, used under 
-the Creative Commons Attribution license.
+Text derived from the [GCC project Code of Conduct](https://gcc.gnu.org/conduct.html), used under 
+the [Creative Commons Attribution-ShareAlike license](https://creativecommons.org/licenses/by-sa/4.0/).

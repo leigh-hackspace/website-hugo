@@ -10,8 +10,7 @@ Our woodwork shop is the home of everything loud and dusty, along with a stock o
 ### What is available?
 
 #### Hand Tools
-
-* Screw drivers, bits of various types and sizes.
+* Screwdrivers, bits of various types and sizes.
 * Chisels for general use.
 * Craft knives.
 * Wood and metal saws.

@@ -8,11 +8,6 @@
   </script>
 {{ end }}
 
-{{ if .Page.Store.Get "hasMap" }}
-<script src="https://cdn.jsdelivr.net/npm/ol@v8.2.0/dist/ol.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v8.2.0/ol.css">
-{{ end }}
-
 {{ $theme := resources.Get "js/theme.js" }}
 {{ $site := resources.Get "js/site.js" }}
 {{ $js := slice $site $theme | resources.Concat "js/bundle.js" | resources.Minify }}

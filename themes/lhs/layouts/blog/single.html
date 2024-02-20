@@ -8,7 +8,7 @@
 
 {{ define "content" }}
 <article class="media">
-  <figure class="media-left">
+  <figure class="blog-avatar media-left">
     <p class="image is-64x64">
       {{ $avatar := resources.GetRemote (print "https://www.gravatar.com/avatar/" (sha256 .Params.author_email)) |
       resources.Copy (print "images/avatars/" (sha256 .Params.author_email) ".jpg") }}
