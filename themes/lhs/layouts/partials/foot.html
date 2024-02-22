@@ -2,10 +2,19 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 {{ if .Page.Store.Get "hasMermaid" }}
-  <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({ startOnLoad: true });
-  </script>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+{{ end }}
+
+{{ if .Page.Store.Get "hasCarousel" }}
+{{ with resources.Get "js/bulma-carousel.min.js" }}
+<script src="{{ .RelPermalink }}"></script>
+{{ end }}
+<script>
+  bulmaCarousel.attach('.carousel', { pagination: false });
+</script>
 {{ end }}
 
 {{ $theme := resources.Get "js/theme.js" }}
