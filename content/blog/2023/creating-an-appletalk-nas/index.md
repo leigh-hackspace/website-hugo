@@ -13,13 +13,13 @@ listing_image: network-browser.jpg
 ---
 {{< image src="netatalk.png" width="400x" class="is-pulled-right" title="The Netatalk logo.">}}
 
-Working on [retro Apple Macs](../powerbook-g4-disk-replacement/) sometimes presents its own challenges in a modern context, most systems make use of either outdated or dying media which may be unreliable or difficult to locate. In my case i've recently acquired a Power Mac G4 Sawtooth which while it has USB the interface is slow and wrangling files between computers using USB sticks isn't the quickest method. For even older Macs this isn't even an option, so you have to resort to burnt CDs, Zip disks, or floppy disks. Thankfully Apple has always supported some level of networking on even their earliest machines; AppleTalk.
+Working on [retro Apple Macs](../powerbook-g4-disk-replacement/) sometimes presents its own challenges in a modern context, most systems make use of either outdated or dying media which may be unreliable or difficult to locate. In my case, I've recently acquired a Power Mac G4 Sawtooth which while it has USB the interface is slow and wrangling files between computers using USB sticks isn't the quickest method. For even older Macs this isn't even an option, so you have to resort to burnt CDs, Zip disks, or floppy disks. Thankfully Apple has always supported some level of networking on even their earliest machines; AppleTalk.
 
-[Netatalk](https://netatalk.io) is a modern implementation of the AppleTalk protocols and can be used to provide file shares and time services over Ethernet. To connect to LocalTalk devices you'll need a [quite expensive network converter](). We're going to setup, install, and configure a basic Netatalk 2.3 server on Ubuntu 24.02 and share a folder and time services.
+[Netatalk](https://netatalk.io) is a modern implementation of the AppleTalk protocols and can be used to provide file shares and time services over Ethernet. To connect to LocalTalk devices you'll need a [quite expensive network converter](). We're going to setu p, install, and configure a basic Netatalk 2.3 server on Ubuntu 24.02 and share a folder and time services.
 
 ## System preparation
 
-First of all, you'll need a Ubuntu 24.02 system, or any Debian-based distribution for that matter, which is out of the scope of this article. As we'll be building Netatalk from source (as no package is available for the later Ubuntu/Debian versions) we'll need to install some pre-req packages:
+First of all, you'll need a Ubuntu 24.02 system, or any Debian-based distribution for that matter, which is out of the scope of this article. As we'll be building Netatalk from source (as no package is available for the later Ubuntu/Debian versions) we'll need to install some prereq packages:
 
 ```shell
 # apt-get install automake libtool build-essential pkg-config checkinstall git-core avahi-daemon libavahi-client-dev libssl-dev libdb5.3-dev db-util db5.3-util libgcrypt20 libgcrypt20-dev libcrack2-dev libpam0g-dev libdbus-1-dev libdbus-glib-1-dev libglib2.0-dev libwrap0-dev systemtap-sdt-dev libacl1-dev libldap2-dev libevent-dev
@@ -45,7 +45,7 @@ A quick rundown of the options used here:
 * `--with-uams-path=/usr/local/lib/netatalk` - Destination for the 'UAMS' modules, which provide authentication methods.
 * `--enable-ddp` - Enables AppleTalk, should be on by default but just to make sure...
 
-Netatalk includes several other options, all that can be viewed by using `./configure --help`, these include configuring CUPS printing via PAP, SLP support for OSX 10.1, and various backend database support for metadata (which the stock one is just fine).
+Netatalk includes several other options, all of which can be viewed by using `./configure --help`, these include configuring CUPS printing via PAP, SLP support for OSX 10.1, and various backend database support for metadata (which the stock one is just fine).
 
 Now we need to build and install:
 
@@ -72,11 +72,11 @@ ens192 -router -phase 2 -net 1 -addr 1.1 -zone "Doofnet"
 
 So, to break down what that means:
 
-* `ens192` - the network interface we want to speak AppleTalk on, in this instance, we're using a VM so its `ens192`, but on your system it'll be different.
+* `ens192` - the network interface we want to speak AppleTalk on, in this instance, we're using a VM so the primary network interface is `ens192`, but on your system, it'll be different.
 * `-router` - advertise this service as a router.
 * `-phase 2` - use ['Phase II' AppleTalk over Ethernet](https://en.wikipedia.org/wiki/AppleTalk).
-* `-net 1 -addr 1.1` - The network and node ID of this service, **this can be skipped** as `atalkd` will auto-generate this if its missing.
-* `-zone "Doofnet"` - The name of the 'zone' to advertise this service as part of, this can be anything or skipped, its more for visual fluff on client devices.
+* `-net 1 -addr 1.1` - The network and node ID of this service, **this can be skipped** as `atalkd` will auto-generate this if it is missing.
+* `-zone "Doofnet"` - The name of the 'zone' to advertise this service as part of, this can be anything or skipped, as this is just more for visual fluff for client devices.
 
 Once the configuration file is done, you can start `atalkd`:
 
@@ -102,17 +102,17 @@ Feb 20 22:36:10 nas-afp systemd[1]: Started atalkd.service - Netatalk AppleTalk 
 
 ### `afpd`
 
-`afpd` handles the AppleTalk File Protocol requests, much like `smbd`. This service only needs a few configuration items to get working, and again, leaving the defaults will be absolutely fine. But, as we're trying to make things look good as well, we'll had some extra fluff
+`afpd` handles the AppleTalk File Protocol requests, much like `smbd`. This service only needs a few configuration items to get working, and again, leaving the defaults will be absolutely fine. But, as we're trying to make things look good we'll add some extra fluff:
 
 **/etc/netatalk/afpd.conf**
 ```
-- -transall -uamlist uams_guest.so,uams_dhx2.so -icon -mimicmodel AirPort
+- -transall -uamlist uams_guest.so,uams_randnum.so,uams_dhx.so,uams_dhx2.so -icon -mimicmodel AirPort
 ```
 
-* `-transall` - Use TCP and Appletalk (all transports)
-* `-uamlist` - The list of 'UAM' modules to use for authentication, we've enabled Guest and DHX2
-* `-icon` - Use the Netatalk icon for mounted volumes
-* `-mimicmodel` - Mimic a Mac model, in this instance an AirPort (options can be found in `man afpd.conf`)
+* `-transall` - Use TCP and Appletalk (all transports).
+* `-uamlist` - The list of 'UAM' modules to use for authentication, we've enabled Guest, Randnum, DHX, and DHX2.
+* `-icon` - Use the Netatalk icon for mounted volumes.
+* `-mimicmodel` - Mimic a Mac model, in this instance an AirPort (options can be found in `man afpd.conf` and `/System/Library/CoreServices/CoreTypes.bundle/Contents/Info.plist` on a macOS system).
 
 Again, we restart `aftpd` and watch the results
 
@@ -127,9 +127,9 @@ Feb 20 22:36:16 nas-afp afpd[44900]: AFP/TCP started, advertising 10.101.2.123:5
 
 Now, with a little luck, your new AFP server should be visible to your client devices:
 
-{{< image src="network-browser.jpg" title="Mac OS 9 'Network Browser' showing the 'nas-afp' service available via AFP over AppleTalk.">}}
-
+{{< image src="network-browser.jpg" title="Mac OS 9.2.2 'Network Browser' showing the 'nas-afp' service available via AFP over AppleTalk.">}}
 {{< image src="osx-finder.png" title="Mac OS X 10.4 Finder showing the 'nas-afp' service available via AFP over TCP/IP.">}}
+{{< image src="sonoma-finder.png" title="macOS Sonoma Finder showing the 'nas-afp' service available via AFP over TCP/IP.">}}
 
 ### Sharing Folders
 
@@ -137,13 +137,13 @@ The final step is to get some folders shared, but first we need to approach the 
 
 #### Resource Forks
 
-Apple files are not just files, due to how the original Mac OS system was designed files consist of a data and resource fork and while some files work perfectly fine with just a 'data' fork, others require the resource fork. The resource forks are stored differently on the file system and was quite unique to Mac OS for a while, so much so that FAT/FAT32, NFS, SMB have no concept of how to handle them. Over time support has improved and NTFS and modern Linux filesystems have the concept of 'Extended Attributes' which can be used to store resource forks. 
+Apple files are not just files, due to how the original Mac OS system was designed files consist of a data and resource fork and while some files work perfectly fine with just a 'data' fork, others require the resource fork. The resource forks are stored differently on the file system and were unique to Mac OS for a while, so much so that FAT/FAT32, NFS, SMBv1 have no concept of how to handle them. Over time support has improved and NTFS and modern Linux filesystems have the concept of 'Extended Attributes' which can be used to store resource forks. 
 
 This matters because, behind the scenes, Netatalk handles resource forks either by working with the filesystem to write 'extended attributes' or storing the resource forks and other metadata in 'AppleDouble' files. When creating shares via `afpd` you'll need to take this into account, but here is some bias suggestions:
 
-* Avoid NFS mounts - its easy to just mount a folder on a VM and share out with AFP, but that presents a whole set of new problems and no extended attribute support
+* Avoid NFS mounts - it's easy to just mount a folder on a VM and share out with AFP, but that presents a whole set of new problems and no extended attribute support
 * Use a filesystem like XFS - It supports extended attributes and is just straight up awesome. ext2/3/4 supports them also but with size limits.
-* Avoid interfering with `.AppleDouble` files! Loss of this data may make other files useless.
+Avoid interfering with `.AppleDouble` files! Loss of this data may make other files useless.
 
 Now, back to the configuration:
 
@@ -171,11 +171,9 @@ Once done, we can restart `aftpd` again:
 # systemctl restart afpd
 ```
 
-{{< image src="network-browser-share.jpg" title="Mac OS 9 'Network Browser' showing the 'nas-afp' server and shares.">}}
-
+{{< image src="network-browser-share.jpg" title="Mac OS 9.2.2 'Network Browser' showing the 'nas-afp' server and shares.">}}
 {{< image src="osx-shares.png" title="Mac OS X 10.4 Finder showing the 'nas-afp' server and shares.">}}
-
-
+{{< image src="sonoma-shares.png" title="macOS Sonoma Finder showing the 'nas-afp' server and shares.">}}
 
 ## Common Issues
 
@@ -197,4 +195,4 @@ In UniFi, this is under the Site configuration and the network settings.
 
 ### My WiFi AppleTalk device can't see the server
 
-Do you have Unifi? Check the 'Multicast Enhancements' setting under your AP configuration, much like IGMP Snooping its trying to do 'smart' things to reduce broadcast traffic over WiFi. This usually presents with being able to run a `tcpdump` on the server and seeing the client device announcements, but its not responding to any broadcasts from your server.
+Do you have Unifi? Check the 'Multicast Enhancements' setting under your AP configuration, much like IGMP Snooping it is trying to do 'smart' things to reduce broadcast traffic over WiFi. This usually presents with being able to run a `tcpdump` on the server and seeing the client device announcements, but it's not responding to any broadcasts from your server.
