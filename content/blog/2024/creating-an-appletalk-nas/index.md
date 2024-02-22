@@ -127,6 +127,8 @@ Feb 20 22:36:16 nas-afp afpd[44900]: AFP/TCP started, advertising 10.101.2.123:5
 
 Now, with a little luck, your new AFP server should be visible to your client devices:
 
+{{< gallery >}}
+
 {{< image src="network-browser.jpg" title="Mac OS 9.2.2 'Network Browser' showing the 'nas-afp' service available via AFP over AppleTalk.">}}
 {{< image src="osx-finder.png" title="Mac OS X 10.4 Finder showing the 'nas-afp' service available via AFP over TCP/IP.">}}
 {{< image src="sonoma-finder.png" title="macOS Sonoma Finder showing the 'nas-afp' service available via AFP over TCP/IP.">}}
