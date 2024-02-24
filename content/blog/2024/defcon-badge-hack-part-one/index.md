@@ -33,9 +33,6 @@ So I will attempt to give a rundown of the steps it have taken to find/solve the
 
 First things First lets look at the badge and see what we are working with
 
-<< badge-front >>
-
-<< badge-back >>
 
 ##### Whats on the badge
 
@@ -43,11 +40,15 @@ what is actually on the badge.
 
 ###### Badge Front
 
+{{< image src="images/badge-front.jpeg" width="500x" class="is-pulled-left" title="Front of the badge">}}
+
 On the front of the badge there is a silkscreen of the CovertSwarm logo with the words "YOU DESERVE TO BE HACKED" in the middle.There are also 8 Neo-Pixel RGB LEDs in the sides of the 'arrows' of the Covertswarm logo with a couple of capacitors and resistors when the badge is turned on these LEDs are orange, 6 pushable buttons labeled F, G, A on the top left side and D, C, B on the bottom right.
 
 On the bottom left side there is a {} Chip and on the top right there is an S.A.O
 
 ###### Badge Back
+
+{{< image src="images/badge-back.jpeg" width="500x" class="is-pulled-right" title="Back of the badge">}}
 
 On the badge back there is a battery pack holder for 3 AAA batteries with a warning in the top right corner to not use rechargeable batteries.
 
@@ -59,15 +60,15 @@ Underneath the Arduino there is a 'hidden' message that states "Nothing To See h
 
 There is something under the Battery pack but its not quite visible with the battery pack on.
 
-<< under the batteries >>
+{{< image src="images/under-the-batteries.jpeg" width="500x" class="is-pulled-left" title="Under the battery pack">}}
 
 lets get the iron out and get it off :D
 
-<< removing the battery pack >>
+{{< image src="images/under-the-batteries.jpeg" width="500x" class="is-pulled-left" title="Under the battery pack">}}
 
 There we go.
 
-<< under the hood >>
+{{< image src="images/under-the-hood.jpeg" width="500x" class="is-pulled-right" title="Under the battery pack">}}
 
 Printed under the battery pack there is the phrase "TH3FUZZYLLAMA" that might come in handy later.
 
@@ -77,7 +78,7 @@ Also I have found that bridging the pads next to the LEDs on the back of the bad
 
 Using the Serial monitor on the Arduino IDE configured with the baud rate of 115200 we get the following output
 
-<< Initial Dashboard image >>
+{{< image src="images/dashboard-image.jpeg" width="500x" class="is-pulled-right" title="initial-dashboard-image">}}
 
 On the printout there is line that says "Reading Device configuration" followed by an array of eight 0s ([00000000]).
 
@@ -87,8 +88,6 @@ This suggests that there may be alternate functions on the Device.
 
 ##### Commands Available
 
-===
-
 #### Cracking the combination
 
 on the underside of the badge there is an array or 8 LEDs and a set of corresponding unpopulated pads to the right of them.
@@ -97,15 +96,17 @@ Using a multimeter to check what these pads could be used for it looks like ther
 
 By bridging all the connections on unpopulated spaces on the back this has changed the array of 0's to 1's in the boot up section, This would suggest that the different configuration on the device is accessed by using a combination these connections.
 
+<< {{< image src="images/half-way-over-the-bridge.jpeg" width="500x" class="is-pulled-right" title="half way over the bridge ">}} >>
+
 Based on the the range of possible bits from [00000000] to [11111111] is 256 possible combinations.
 
 Rather that solder and un-solder a bridge every single time I want to check if this has applied any configuration changes I built a small 8 switch DIP selector
 
-<< Initial Dip Switches >>
+<< initial-dip-switches >>
 
 Success !
 
-<< 8 bits is enough for me >>
+{{< image src="images/8-bits-are-enough-for-me.jpeg" width="500x" class="is-pulled-left" title="8 bits is enough ">}}
 
 Brute forcing the combination this way will take ages if we use some quick napkin maths.
 
