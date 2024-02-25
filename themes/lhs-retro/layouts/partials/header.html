@@ -1,11 +1,11 @@
 {{ with resources.Get "images/rose_logo.gif" }}
-<h1><a href="{{ absURL "" }}"><img src="{{ .RelPermalink }}" alt="The logo of Leigh Hackspace" width="70px"></a> Leigh
+<h1><a href="{{ absURL "" }}" border="0"><img src="{{ .RelPermalink }}" alt="The logo of Leigh Hackspace" width="70px"></a> Leigh
     Hackspace</h1>
 {{ end }}
 <p>
     {{ $menu_items := add (len site.Menus.main) -1 }}
     {{- range $i, $e := site.Menus.main }}
-    <a href="{{ .URL }}" class="active navbar-item has-shadow is-size-5">{{ .Name }}</a>{{ if lt $i $menu_items }} / {{ end }}
+    <a href="{{ .URL }}">{{ .Name }}</a>{{ if lt $i $menu_items }} / {{ end }}
     {{- end }}
 </p>
 <hr>
