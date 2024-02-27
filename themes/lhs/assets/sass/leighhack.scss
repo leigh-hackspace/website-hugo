@@ -360,3 +360,8 @@ footer {
 	margin-left: 0 !important;
 	margin-right: 1em !important;
 }
+
+// Fix syntax highlighting to match Bulma pre
+div.highlight {
+    padding-bottom: 1.25em;
+}
