@@ -13,10 +13,14 @@ tags:
     - hackspace
     - makerspace
 draft: false
-author: John W
+author: John Williams
 author_email: ponix@protonmail.com
 listing_image: images/badge-front.jpeg
 ---
+
+{{< block_separator >}}
+    
+
 
 ### Introduction
 
@@ -28,18 +32,18 @@ So when I saw the puzzles that were built into some of the badges from [#Defcon]
 I finally managed to get hold of a badge and am super excited to get stuck in to finding the puzzles and solving the challenges that are could be embedded within.
 
 So I will attempt to give a rundown of the steps it have taken to find/solve the puzzle(s) and my thought processes behind them.
+{{< /block_separator >}}
 
 #### MY First Badge
 
 First things First lets look at the badge and see what we are working with
 
-
+{{< block_separator >}}
 ##### Whats on the badge
 
 what is actually on the badge.
 
-###### Badge Front
-
+## Badge Front
 {{< image src="images/badge-front.jpeg" width="500x" class="is-pulled-left" title="Front of the badge">}}
 
 On the front of the badge there is a silkscreen of the CovertSwarm logo with the words "YOU DESERVE TO BE HACKED" in the middle.There are also 8 Neo-Pixel RGB LEDs in the sides of the 'arrows' of the Covertswarm logo with a couple of capacitors and resistors when the badge is turned on these LEDs are orange, 6 pushable buttons labeled F, G, A on the top left side and D, C, B on the bottom right.
@@ -53,6 +57,7 @@ On the bottom left side there is a {} Chip and on the top right there is an S.A.
 On the badge back there is a battery pack holder for 3 AAA batteries with a warning in the top right corner to not use rechargeable batteries.
 
 There is an Arduino nano in the center and a {} chip to the left of it. underneath the Arduino there is a piezo speaker and to the right of that there are 8 LEDs with what looks to be a corresponding set of pads for each LED.
+{{< /block_separator >}}
 
 ###### Other Areas of interest
 
@@ -63,8 +68,6 @@ There is something under the Battery pack but its not quite visible with the bat
 {{< image src="images/under-the-batteries.jpeg" width="500x" class="is-pulled-left" title="Under the battery pack">}}
 
 lets get the iron out and get it off :D
-
-{{< image src="images/under-the-batteries.jpeg" width="500x" class="is-pulled-left" title="Under the battery pack">}}
 
 There we go.
 
@@ -96,7 +99,7 @@ Using a multimeter to check what these pads could be used for it looks like ther
 
 By bridging all the connections on unpopulated spaces on the back this has changed the array of 0's to 1's in the boot up section, This would suggest that the different configuration on the device is accessed by using a combination these connections.
 
-<< {{< image src="images/half-way-over-the-bridge.jpeg" width="500x" class="is-pulled-right" title="half way over the bridge ">}} >>
+{{< image src="images/half-way-over-the-bridge.jpeg" width="500x" class="is-pulled-right" title="half way over the bridge ">}}
 
 Based on the the range of possible bits from [00000000] to [11111111] is 256 possible combinations.
 

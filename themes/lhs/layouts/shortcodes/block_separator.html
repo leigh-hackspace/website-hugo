@@ -1,0 +1,9 @@
+{{ $blocks := split .Inner "<!-- block_separator -->" }}
+{{ range $index, $block := $blocks }}
+    <div class="block">
+        {{ $block | markdownify | safeHTML }}
+    </div>
+    {{ if ne (add $index 1) (len $blocks) }}
+        <hr class="separator" />
+    {{ end }}
+{{ end }}
