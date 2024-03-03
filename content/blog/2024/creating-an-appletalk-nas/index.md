@@ -13,9 +13,9 @@ listing_image: network-browser.jpg
 ---
 {{< image src="netatalk.png" width="400x" class="is-pulled-right" title="The Netatalk logo.">}}
 
-Working on [retro Apple Macs](../../2023/powerbook-g4-disk-replacement/) sometimes presents its own challenges in a modern context, most systems make use of either outdated or dying media which may be unreliable or difficult to locate. In my case, I've recently acquired a Power Mac G4 Sawtooth which while it has USB the interface is slow and wrangling files between computers using USB sticks isn't the quickest method. For even older Macs this isn't even an option, so you have to resort to burnt CDs, Zip disks, or floppy disks. Thankfully Apple has always supported some level of networking on even their earliest machines; AppleTalk.
+Working on [retro Apple Macs](../../2023/powerbook-g4-disk-replacement/) sometimes presents challenges in a modern context, most systems make use of either outdated or dying media which may be unreliable or difficult to locate. In my case, I've recently acquired a Power Mac G4 Sawtooth which while it has USB the interface is slow and wrangling files between computers using USB sticks isn't the quickest method. For even older Macs this isn't even an option, so you have to resort to burnt CDs, Zip disks, or floppy disks. Thankfully Apple has always supported some level of networking on even their earliest machines; AppleTalk.
 
-[Netatalk](https://netatalk.io) is a modern implementation of the AppleTalk protocols and can be used to provide file shares and time services over Ethernet. To connect to LocalTalk devices you'll need a [quite expensive network converter](). We're going to setu p, install, and configure a basic Netatalk 2.3 server on Ubuntu 24.02 and share a folder and time services.
+[Netatalk](https://netatalk.io) is a modern implementation of the AppleTalk protocols and can be used to provide file shares and time services over Ethernet. To connect to LocalTalk devices you'll need a [quite expensive network converter](). We're going to set-up, install, and configure a basic Netatalk 2.3 server on Ubuntu 24.02 and share a folder and time services.
 
 ## System preparation
 
@@ -135,17 +135,17 @@ Now, with a little luck, your new AFP server should be visible to your client de
 
 ### Sharing Folders
 
-The final step is to get some folders shared, but first we need to approach the issue of [resource forks](https://en.wikipedia.org/wiki/Resource_fork).
+The final step is to get some folders shared, but first, we need to approach the issue of [resource forks](https://en.wikipedia.org/wiki/Resource_fork).
 
 #### Resource Forks
 
 Apple files are not just files, due to how the original Mac OS system was designed files consist of a data and resource fork and while some files work perfectly fine with just a 'data' fork, others require the resource fork. The resource forks are stored differently on the file system and were unique to Mac OS for a while, so much so that FAT/FAT32, NFS, SMBv1 have no concept of how to handle them. Over time support has improved and NTFS and modern Linux filesystems have the concept of 'Extended Attributes' which can be used to store resource forks. 
 
-This matters because, behind the scenes, Netatalk handles resource forks either by working with the filesystem to write 'extended attributes' or storing the resource forks and other metadata in 'AppleDouble' files. When creating shares via `afpd` you'll need to take this into account, but here is some bias suggestions:
+This matters because, behind the scenes, Netatalk handles resource forks either by working with the filesystem to write 'extended attributes' or storing the resource forks and other metadata in 'AppleDouble' files. When creating shares via `afpd` you'll need to take this into account, but here are some bias suggestions:
 
 * Avoid NFS mounts - it's easy to just mount a folder on a VM and share out with AFP, but that presents a whole set of new problems and no extended attribute support
 * Use a filesystem like XFS - It supports extended attributes and is just straight up awesome. ext2/3/4 supports them also but with size limits.
-Avoid interfering with `.AppleDouble` files! Loss of this data may make other files useless.
+* Avoid interfering with `.AppleDouble` files! Loss of this data may make other files useless.
 
 Now, back to the configuration:
 
