@@ -13,6 +13,22 @@ priority = -1
 bgColor = '#ffffff'
 resampleFilter = 'CatmullRom'
 
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = false
+    noHl = false
+    style = 'emacs'
+    tabWidth = 4
+
 [params]
 company = "Leigh Hackspace CIC"
 company_number = "09404083"
