@@ -26,6 +26,10 @@ $body-font-size: 1.25em;
 
 // Import Bulmas styles
 @import "bulma.sass";
+@import "chroma.scss";
+
+// Add Carousel add-on
+@import "bulma-carousel.sass";
 
 
 // -------------------------------------------------------
