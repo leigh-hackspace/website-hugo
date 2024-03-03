@@ -6,14 +6,14 @@ tags:
     - macos
     - appletalk
     - apple
-draft: true
+draft: false
 author: Andrew Williams
 author_email: andy@tensixtyone.com
 listing_image: network-browser.jpg
 ---
 {{< image src="netatalk.png" width="400x" class="is-pulled-right" title="The Netatalk logo.">}}
 
-Working on [retro Apple Macs](../powerbook-g4-disk-replacement/) sometimes presents its own challenges in a modern context, most systems make use of either outdated or dying media which may be unreliable or difficult to locate. In my case, I've recently acquired a Power Mac G4 Sawtooth which while it has USB the interface is slow and wrangling files between computers using USB sticks isn't the quickest method. For even older Macs this isn't even an option, so you have to resort to burnt CDs, Zip disks, or floppy disks. Thankfully Apple has always supported some level of networking on even their earliest machines; AppleTalk.
+Working on [retro Apple Macs](../../2023/powerbook-g4-disk-replacement/) sometimes presents its own challenges in a modern context, most systems make use of either outdated or dying media which may be unreliable or difficult to locate. In my case, I've recently acquired a Power Mac G4 Sawtooth which while it has USB the interface is slow and wrangling files between computers using USB sticks isn't the quickest method. For even older Macs this isn't even an option, so you have to resort to burnt CDs, Zip disks, or floppy disks. Thankfully Apple has always supported some level of networking on even their earliest machines; AppleTalk.
 
 [Netatalk](https://netatalk.io) is a modern implementation of the AppleTalk protocols and can be used to provide file shares and time services over Ethernet. To connect to LocalTalk devices you'll need a [quite expensive network converter](). We're going to setu p, install, and configure a basic Netatalk 2.3 server on Ubuntu 24.02 and share a folder and time services.
 
@@ -21,20 +21,20 @@ Working on [retro Apple Macs](../powerbook-g4-disk-replacement/) sometimes prese
 
 First of all, you'll need a Ubuntu 24.02 system, or any Debian-based distribution for that matter, which is out of the scope of this article. As we'll be building Netatalk from source (as no package is available for the later Ubuntu/Debian versions) we'll need to install some prereq packages:
 
-```shell
+```bash-session
 # apt-get install automake libtool build-essential pkg-config checkinstall git-core avahi-daemon libavahi-client-dev libssl-dev libdb5.3-dev db-util db5.3-util libgcrypt20 libgcrypt20-dev libcrack2-dev libpam0g-dev libdbus-1-dev libdbus-glib-1-dev libglib2.0-dev libwrap0-dev systemtap-sdt-dev libacl1-dev libldap2-dev libevent-dev
 ```
 
 ## Downloading, Compiling, and installing Netatalk
 
-```
+```bash-session
 # curl -O netatalk-2.3.1.tar.bz2 https://sourceforge.net/projects/netatalk/files/netatalk-2-3-1/netatalk-2.3.1.tar.bz2/download
 # tar jxvf netatalk-2.3.1.tar.bz2
 ```
 
 You should have a folder named `netatalk-2.3.1` as the result. Now we need to configure the build, for anyone who has ever compiled any standard C project in the last ten years should find this quite familiar:
 
-```shell
+```bash-session
 # ./configure --enable-systemd --sysconfdir=/etc --with-uams-path=/usr/lib/netatalk --enable-ddp
 ```
 
@@ -49,7 +49,7 @@ Netatalk includes several other options, all of which can be viewed by using `./
 
 Now we need to build and install:
 
-```shell
+```bash-session
 # make
 # make install
 # systemctl daemon-reload
@@ -80,13 +80,13 @@ So, to break down what that means:
 
 Once the configuration file is done, you can start `atalkd`:
 
-```
+```bash-session
 # systemctl start atalkd
 ```
 
 After a short pause, you can check `journalctl` and see the logs of the service starting up.
 
-```
+```bash-session
 # journalctl -u atalkd -f -n 100
 
 Feb 20 22:35:39 nas-afp systemd[1]: Starting atalkd.service - Netatalk AppleTalk daemon...
@@ -116,7 +116,7 @@ Feb 20 22:36:10 nas-afp systemd[1]: Started atalkd.service - Netatalk AppleTalk 
 
 Again, we restart `aftpd` and watch the results
 
-```shell
+```bash-session
 # systemctl restart afpd
 # journalctl -u afpd -f
 
@@ -169,7 +169,7 @@ Here we're sharing two folders, Transfer and Software Archive, both from within 
 
 Once done, we can restart `aftpd` again:
 
-```
+```bash-session
 # systemctl restart afpd
 ```
 
@@ -187,7 +187,7 @@ Unfortunately, before Mac OSX we had little or no tools to diagnose issues on th
 
 On the server side, you can use `tcpdump` to inspect AppleTalk traffic. I've found success with the following filter set:
 
-```
+```bash-session
 # tcpdump -i ens192 atalk or aarp or stp
 ```
 
