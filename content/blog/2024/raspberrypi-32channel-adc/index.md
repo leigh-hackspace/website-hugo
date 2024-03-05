@@ -20,13 +20,13 @@ There of course many HATs already available which solve many problems, but after
 I initially started very simply by looking at some of the solutions available and found several options, the simplest was this module [Gravity: I2C ADS1115 16-Bit ADC Module
 ](https://thepihut.com/products/gravity-i2c-ads1115-16-bit-adc-module-arduino-raspberry-pi-compatible)
 
-{{< image src="images/adc_i2c.jpg" width="150" title="">}}
+{{< image src="images/adc_i2c.jpg" width="150x" class="is-pulled-right" height="200x" title="">}}
 
 It is not too expensive, although buying multiple soon adds up. It can service 4 analogue inputs and you can put up to 4 ( two I2C bus on the Raspberry PI and two per bus ).
 
 I did also purchase this sensor [Gravity: Analog Waterproof Capacitive Soil Moisture Sensor](https://thepihut.com/products/gravity-analog-waterproof-capacitive-soil-moisture-sensor) 
 
-{{< image src="images/moisture_sensor.jpg" width="150" title="">}}
+{{< image src="images/moisture_sensor.jpg" width="150x" class="is-pulled-right" title="">}}
 
 
 
