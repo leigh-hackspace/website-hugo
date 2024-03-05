@@ -21,6 +21,8 @@ I initially started very simply by looking at some of the solutions available an
 ](https://thepihut.com/products/gravity-i2c-ads1115-16-bit-adc-module-arduino-raspberry-pi-compatible)
 
 {{< image src="images/adc_i2c.jpg" width="90x" class="is-pulled-right" height="120x" title="">}}
+&nbsp;
+&nbsp;
 It is not too expensive, although buying multiple soon adds up. It can service 4 analogue inputs and you can put up to 4 ( two I2C bus on the Raspberry PI and two per bus ).
 
 {{< image src="images/moisture_sensor.jpg" width="150x" height="200x" class="is-pulled-right" title="">}}
