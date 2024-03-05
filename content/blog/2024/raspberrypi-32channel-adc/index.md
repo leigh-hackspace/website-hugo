@@ -4,7 +4,7 @@ subtitle: "My first entry into create a Raspberry PI HAT"
 date: 2024-03-04T00:00:00Z
 toc: false
 tags:
-    - hardware
+	- hardware
 	- raspberry pi
 draft: true
 author: Andrew K
