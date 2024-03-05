@@ -15,6 +15,19 @@ Over the last 12 months I had been looking at building a hydroponics set up usin
 
 There of course many HATs already available which solve many problems, but after quite a bit of research found that the HATs available severly restricted the capability of the PI and increased costs should I ever want to scale up.
 
-## Some title of some description
+## Starting simple
 
-{{< image src="images/finished_hat.jpg" width="400x" class="is-pulled-right" title="A PI hat">}}
+I initially started very simply by looking some of the solutions available and found several options, the simplest was this module [Gravity: I2C ADS1115 16-Bit ADC Module
+](https://thepihut.com/products/gravity-i2c-ads1115-16-bit-adc-module-arduino-raspberry-pi-compatible)
+
+{{< image src="images/adc_i2c.jpg" width="400x" class="is-pulled-left" title="">}}
+
+It is not too expensive and can service 4 analogue inputs and you can put up to 4 ( two I2C bus and two per bus ).
+
+I do however also purchase this sensor [Gravity: Analog Waterproof Capacitive Soil Moisture Sensor](https://thepihut.com/products/gravity-analog-waterproof-capacitive-soil-moisture-sensor) 
+
+{{< image src="images/moisture_sensor.jpg" width="400x" class="is-pulled-left" title="">}}
+
+
+
+
