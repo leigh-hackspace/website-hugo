@@ -22,7 +22,7 @@ I initially started very simply by looking at some of the solutions available an
 
 {{< image src="images/adc_i2c.jpg" width="90x" class="is-pulled-right" height="120x" title="">}}
 
-({<br /><br />})
+{{<br /><br />}}
 It is not too expensive, although buying multiple soon adds up. It can service 4 analogue inputs and you can put up to 4 ( two I2C bus on the Raspberry PI and two per bus ).
 ({<br /><br />})
 
