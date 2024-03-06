@@ -91,7 +91,7 @@ To make this something more useable in the real world I did needed to make this 
 
 The Raspberry PI Hat specification suggests (is optional) to have an ID for your Hat. I had never done this before, so I thought this would be a good opportunity to see what this is about. 
 
-The simplest guide for doing this I found by [MadeByMikal](https://www.madebymikal.com/raspberry-pi-hat-identity-eeproms-a-simple-guide/). It notes the gotchas and although does use a slightly more expance EEPROM it works well.
+The simplest guide for doing this I found by [MadeByMikal](https://www.madebymikal.com/raspberry-pi-hat-identity-eeproms-a-simple-guide/). It notes the gotchas and although does use a slightly more expensive EEPROM it works well.
 
 After you have read the guide, the file you are looking at is eeprom_settings.txt. These are the following values I used
 
@@ -106,7 +106,8 @@ The one element I use which is not covered is the custom data and I took some te
 
 The text I added was
 
-```This is a 32 channel ADC using the library found here
+```
+This is a 32 channel ADC using the library found here
 
 https://learn.adafruit.com/mcp3008-spi-adc/python-circuitpython
 
@@ -195,18 +196,32 @@ At this point I got the PCB made from [PCBWay](https://www.pcbway.com/) and deci
 
 I bought all the parts needed along with stackable headers for the Hat, so when the boards can back it was time to soldering it all up.
 
-A single bare board looks like this. As you can see, and from the PCB design, I added text to the boards to show which IC is controlled by which GPIO on the Raspberry PI, just to help with deployment.
-
 {{< image src="images/pcb_bare.jpg" width="150x" height="200x" class="is-pulled-right" title="">}}
+
+A single bare board looks like this. As you can see, and from the PCB design, I added text to the boards to show which IC is controlled by which GPIO on the Raspberry PI, just to help with deployment.
 
 ### How to go about soldering it all up
 
+{{< image src="images/pcb_rasp_connector.jpg" width="150x" height="200x" class="is-pulled-right" title="">}}
 
+A simple gotcha was to solder the GPIO header FIRST. I went through a board figuring that one out, thankfully it was just IC sockets and was more painfully to remove than just throw away the board.
 
+{{< image src="images/pcb_sandwich.jpg" width="150x" height="200x" class="is-pulled-right" title="">}}
 
+Next was trying to figure out how to make all the connectors straight. Single line headers are somewhat fiddly to get straight, common techniques are solder one into place, while holding then do the rest. As I had several blanks it was easier to make a PCB sandwich so holding them in place with small bull dog clips.
 
+{{< image src="images/pcb_conn_complete.jpg" width="150x" height="200x" class="is-pulled-right" title="">}}
 
-then we are here
+You can see in the picture all the headers are straight so I used this technique for adding in the IC holders and completed the PCB soldering quite quickly. 
 
+{{< image src="images/pcb_first.jpg" width="150x" height="200x" class="is-pulled-right" title="">}}
+
+All the connectors, sockets and resistors in place with an EEPROM ready for testing. It provided the same results as the breadboard prototype so I knew it was working for the EEPROM at least, and testing each location I found the moisture sensor worked as needed.
+
+The design worked and I was happy with it, however I also thought it was somewhat hard to determine the direction of connectors (they are marked on the board), so I went one step further and bought some coloured connectors.
+
+{{< image src="images/finished_hat.jpg" width="150x" height="200x" class="is-pulled-right" title="">}}
+
+As you can see this is much more appealing and make is significantly easier to see the connection orientation and what the jumpers are for. I used red for positive, black for negative and yellow for signal. I matched the orientation to the sensor I had.
 
 
