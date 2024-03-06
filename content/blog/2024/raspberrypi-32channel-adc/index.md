@@ -224,4 +224,8 @@ The design worked and I was happy with it, however I also thought it was somewha
 
 As you can see this is much more appealing and make is significantly easier to see the connection orientation and what the jumpers are for. I used red for positive, black for negative and yellow for signal. I matched the orientation to the sensor I had.
 
+{{< image src="images/pcb_on_pi.jpg" width="150x" height="200x" class="is-pulled-right" title="">}}
 
+When the Hat is on the Raspberry PI it looks nice and compact ready to be used.
+
+This little project helped me learn quite a bit about the Raspberry PI and how relatively straight forward it is to build something for it. I am working on a couple of new HATs for the next part of my hydroponics set up so will post what they involve when they are done.
