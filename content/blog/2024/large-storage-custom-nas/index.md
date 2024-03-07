@@ -138,3 +138,18 @@ and then with the PCB in place As you can see, it kind of fits ?
 So in my wisdom I thought I could fit more connectors on the PCB, so I went for 14 drives per PCB
 
 Two rows of 7, I would have two port expanders underneath and using some method not determined find a location for a 3rd one. If I have 9 slots, 14 x 9 = 126 , so I get to my goal with a few to spare!
+
+{{< image src="images/IMG_2780 (1).jpg" width="150x" class="is-pulled-right" height="200x" title="">}}
+{{< image src="images/IMG_2779 (1).jpg" width="150x" class="is-pulled-right" height="200x" title="">}}
+
+So a completed PCB 
+
+It is a very simple design, two locations to power the drives and then pass through connectors for SATA
+
+{{< image src="images/IMG_2762 (1).jpg" width="150x" class="is-pulled-right" height="200x" title="">}}
+
+Then I wired it up with the SATA cables I had
+
+It looks pretty, and did work, 20 drives and a boot drive, so 21 drives.
+
+At this point, which was quite a bit of work, I realized with much distress, it was slower than a snail, at one point I was getting an underwhelming 10Mb/s !!!
