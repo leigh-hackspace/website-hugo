@@ -203,3 +203,25 @@ Even better the RES240 cards do not actually need to plug into the motherboard, 
 
 - This is an amazing win.
 - I started the build out as follows
+
+{{< image src="images/IMG_2870.jpg" width="150x" class="is-pulled-right" height="200x" title="">}}
+{{< image src="images/IMG_2800(1).jpg" width="150x" class="is-pulled-right" height="200x" title="">}}
+{{< image src="images/IMG_2804.jpg" width="150x" class="is-pulled-right" height="200x" title="">}}
+
+
+Add some drive location testing
+
+{{< image src="images/IMG_2883.jpg" width="150x" class="is-pulled-right" height="200x" title="">}}
+
+It is brilliant what could go wrong!
+
+As it turns out ... there is always something!
+
+When I added an additional 14, the SAS controller only showed 24, but 14 + 14 = 28
+
+It turns out SAS controller cards do not have an unlimited number ports, they can only service 24 drives per card! Some mention 16 , some 32, all the ones I bought that touted different numbers, the upper limit was always 24.
+
+The best we can do with 3 controllers is then 72 drives ( 1 RES240 card + other physical port to 4 drives ). 
+
+Close but not yet 120 drives - ARG!!!!!
+
