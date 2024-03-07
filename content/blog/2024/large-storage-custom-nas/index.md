@@ -21,9 +21,9 @@ As it turns out this is a little more complicated than I expected, even when you
 I have several of these from an older project
 
 {{< gallery >}}
-{{< image src="images/IMG_2991.jpg" width="400x" height="525x" title="">}}
-{{< image src="images/IMG_2992.jpg" width="400x" height="525x" title="">}}
-{{< image src="images/IMG_2993.jpg" width="400x" height="525x" title="">}}
+{{< image src="images/IMG_2991.jpg" width="300x" height="400x" title="">}}
+{{< image src="images/IMG_2992.jpg" width="300x" height="400x" title="">}}
+{{< image src="images/IMG_2993.jpg" width="300x" height="400x" title="">}}
 {{< /gallery >}}
 
 These are 4RU in height, wide and deep enough to sit on a 19" rack shelf and cabinet and are quite old now, >10 years. They were bought for a project which did not get much passed the 
