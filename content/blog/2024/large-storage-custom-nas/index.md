@@ -177,3 +177,29 @@ If you look at this motherboard it is 2 x 1x and 1 x 2x and 3 x 4x PCIE interfac
 There are multiple SATA cards that provide good 8x SATA interfaces such as this [StarTech](https://www.startech.com/en-gb/cards-adapters/8p6g-pcie-sata-card)
 
 it's a fast card, does the job well, so with 3 of these in I get 24 ports. Alas not getting me close to the 120 I wanted, so no real use.
+
+# Time to go SAS
+
+{{< image src="images/s-l1600 (1).jpg" width="150x" class="is-pulled-right" height="200x" title="">}}
+
+SAS cards are incredibly cheap and relatively quick and compatible with SATA drives, not to be confused with SAS drives ARE NOT compatible with SATA controllers. This one is goes for about $30 and has 2 ports on board.
+
+{{< image src="images/s-l1600 (2).jpg" width="150x" class="is-pulled-right" height="200x" title="">}}
+
+To make the best use out of it you also need to expand the number of ports available, which is where this card comes in.
+
+It is an Intel RES2SV240 RAID card. It is not really a RAID card in this case, but provides 24 ports, of which 4 are inbound and 20 outbound. This card is relatvely good as you can then use SFF8087 cables to SATA ports, keeping the cabling manageable, rather than individual SATA cables
+
+So let's do the maths
+
+- SAS card - 2 physical ports
+- Intel RES240 - 20 outbound ports, so based on the LSI card , 2 of these connected per LSI card = 40 ports
+
+So three (3) LSI cards and 6 RES240 cards = 120 ports. We are there.
+
+{{< image src="images/s-l1600 (2).jpg" width="150x" class="is-pulled-right" height="200x" title="">}}
+
+Even better the RES240 cards do not actually need to plug into the motherboard, they just need power and are fitted  with an external power socket!!!
+
+- This is an amazing win.
+- I started the build out as follows
