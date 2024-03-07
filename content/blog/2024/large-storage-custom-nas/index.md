@@ -103,11 +103,15 @@ I created a 3d printed flat platform that the drives could stand on, just to tes
 
 At this point I realized the cabling would not fit under the platform, so any new location for the drives would either need to be custom with driver chip (like the previous items) or just connectors with drivers elsewhere, but also with the SSDs being smaller (hence shorter) there is now more room to move things upwards, as it turns out about 35mms of room.
 
+{{< image src="images/IMG_3013.jpg" width="150x" class="is-pulled-right" height="200x" title="">}}
+{{< image src="images/IMG_3014.jpg" width="150x" class="is-pulled-right" height="200x" title="">}}
+
 I then 3d printed a mask, that would allow me to use the nylong screws into the positions in the chassis but also allow me to add additional holes for anything I wanted to attach, so removing the need to match holes but allow me to extend upwards
 
-{{< image src="images/IMG_3011.jpg" width="150x" class="is-pulled-right" height="200x" title="">}}
 
 # Drive capacity
+
+{{< image src="images/IMG_3011.jpg" width="150x" class="is-pulled-right" height="200x" title="">}}
 
 Now to get more drives into the chassis, I initially went for 10 drives , instead of 5 per location. This then required the use of port expanders, so I bought a few of these.
 
