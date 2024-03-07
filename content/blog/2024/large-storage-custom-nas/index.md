@@ -204,7 +204,7 @@ Even better the RES240 cards do not actually need to plug into the motherboard, 
 - This is an amazing win.
 - I started the build out as follows
 
-{{< image src="images/IMG_2870.jpg" width="150x" class="is-pulled-right" height="200x" title="">}}
+{{< image src="images/IMG_2790.jpg" width="150x" class="is-pulled-right" height="200x" title="">}}
 {{< image src="images/IMG_2800 (1).jpg" width="150x" class="is-pulled-right" height="200x" title="">}}
 {{< image src="images/IMG_2804.jpg" width="150x" class="is-pulled-right" height="200x" title="">}}
 
