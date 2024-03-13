@@ -17,8 +17,10 @@
   </figure>
   <div class="media-content">
     <div class="content">
-      <p class="is-size-5 is-italic">This is a post by <b>{{ .Params.author }}</b>.<br />Originally
-        posted <b>{{ .PublishDate | time.Format ":date_full" }}</b></p>
+      <p class="is-size-6 is-italic">This is a post by <b>{{ .Params.author }}</b>.<br />
+        Posted <b>{{ .PublishDate | time.Format ":date_full" }}</b>
+        {{ if .Params.original_url }}<br/>Originally posted at <a href="{{ .Params.original_url }}" rel="canonical">{{ .Params.original_url }}</a>{{ end }}
+      </p>
     </div>
   </div>
 </article>

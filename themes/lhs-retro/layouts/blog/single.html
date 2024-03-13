@@ -16,8 +16,10 @@
       <img src="{{ $avatar.RelPermalink }}" alt="{{ .Params.author }}'s avatar">
     </td>
     <td>
-      <p><i>This is a post by <b>{{ .Params.author }}</b>.<br>Originally
-        posted <b>{{ .PublishDate | time.Format ":date_full" }}</b></i></p>
+      <p><i>This is a post by <b>{{ .Params.author }}</b>.<br>Posted <b>{{ .PublishDate | time.Format ":date_full" }}</b></i>
+        {{ if .Params.original_url }}<br>Originally posted at <a href="{{ .Params.original_url }}" rel="canonical">{{
+          .Params.original_url }}</a>{{ end }}
+      </p>
     </td>
   </tr>
 </table>

@@ -10,6 +10,7 @@ draft: false
 author: Andrew Williams
 author_email: andy@tensixtyone.com
 listing_image: network-browser.jpg
+original_url: https://nikdoof.com/posts/2024/creating-an-appletalk-nas/
 ---
 {{< image src="netatalk.png" width="400x" class="is-pulled-right" title="The Netatalk logo.">}}
 
