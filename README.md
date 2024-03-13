@@ -25,7 +25,7 @@ Branches are automatically deployed to [https://web-test.leighhack.org](https://
 
 ### New Blog Post
 
-* Download and install Hugo
+* Download and install [Hugo](https://github.com/gohugoio/hugo/releases/) (the extended edition)
 * Run `hugo new blog/<year>/name-of-post`, and a new folder will be created in the year folder with a `index.md` with the post.
 * Update the `author` and `author_email` values
 * Add a `subtitle`
