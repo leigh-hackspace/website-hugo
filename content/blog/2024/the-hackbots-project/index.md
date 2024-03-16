@@ -17,7 +17,7 @@ We'll start at the beginning, after all, it is the very best place to start!
 
 The inspiration for the robots came from wanting to make a simple project using fairly _off the shelf_ and _reasonably priced_ parts that young people could also get their hands on and follow allong with. 
 
-_Note: this post has been written a little "after the fact" so some parts will be skipped... for brevity_ 
+_Note: This post has been written a little "after the fact" so some parts will be skipped... for brevity_ 
 
 # The Prototype
 The initial prototype used the following components
