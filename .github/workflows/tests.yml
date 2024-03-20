@@ -1,5 +1,5 @@
 # Run tests on the website build
-name: Test
+name: Test - Run a test build
 
 on:
   push:
