@@ -2,4 +2,7 @@
 * @leigh-hackspace/infra
 
 # Website content is managed by the Web Editors team
-content/* @leigh-hackspace/web-editors
+/content/ @leigh-hackspace/web-editors
+
+# Membership data is managed by the directors
+/data/memberships.yaml @leigh-hackspace/directors
