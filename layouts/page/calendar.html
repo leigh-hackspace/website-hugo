@@ -11,13 +11,13 @@
 {{ end }}
 
 {{ define "extra_js" }}
-<script src="https://cdn.jsdelivr.net/npm/@event-calendar/build@2.4.1/event-calendar.min.js" type="application/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/@event-calendar/build@2.4.1/event-calendar.min.js"></script>
 {{ $js := resources.Get "js/calendar.js" | resources.Minify }}
 {{ $secureJS := $js | resources.Fingerprint "sha512" }}
 <script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
 {{ end }}
 
 {{ define "content" }}
-<div id="calendar"></div>
+<div id="calendar"><p id="nojs">Your browser doesn't support (or has disabled) Javascript. If you wish to see the upcoming event calendar you can use our <a href="https://api.leighhack.org/events.ics">iCal Feed</a> with your calendar or mail software.</p></div>
 {{ printf "<!--# include virtual='%s' -->" ("/cgi/events.cgi" | relURL) | safeHTML }}
 {{ end }}
