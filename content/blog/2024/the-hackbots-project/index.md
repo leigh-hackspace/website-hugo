@@ -12,14 +12,14 @@ author_email: phyushin@gmail.com
 listing_image: hackbot.jpg
 ---
 
-# The Beginning
+## The Beginning
 We'll start at the beginning, after all, it is the very best place to start!
 
 The inspiration for the robots came from wanting to make a simple project using fairly _off the shelf_ and _reasonably priced_ parts that young people could also get their hands on and follow allong with. 
 
 _Note: This post has been written a little "after the fact" so some parts will be skipped... for brevity_ 
 
-# The Prototype
+## The Prototype
 The initial prototype used the following components
 - [Raspberry Pi Pico][1] * 1
 - [L29XN Motor Controller][2] * 1
@@ -94,7 +94,7 @@ Below is the initial schematic:
 
 As you can see above, this is roughly how the prototype fit together ... you connected to the bluetooth module, send the correct commands, the pico reads them over _[uart][7]_ and calls the respective functions... well that was the plan at least - it turns out that iOS devices don't work as _out of the box_ as android devices when it comes to serial over bluetooth shenanigans, so back to the drawing board on how we get the signals - after all it's no good to us if only some kids can use it! the idea was it could be done all by your phone.
 
-# MK II, III, and IV
+## MK II, III, and IV
 So, now we've a relative idea of how it fits together we've got to overcome the issue of only being able to control robots using androids [is that meta?].
 
 `MK II` we tried an ESP32 instead of the Pico and HC-05 combination... same issue it didn't like iOS devices :( .
@@ -103,7 +103,7 @@ In `MK III` we tried to use a different bluetooth module with a bluetooth pad, b
 
 `MK IV`! we settled for replacing the Pico with a Pico W so that the wireless comms are all in the one (relatively cheap) package and instead of listening for serial commands over bluetooth; switched to using the WiFi that the Pico W has and created our very own web server, with the contols on it! - this has the added bonus of being able to customise the look [to some extent] as well as being _i-device_ compatible ... I'd call that a win!
 
-# MK IV Explained
+## MK IV Explained
 With our Pico W wired in we needed to make some modifications to the program running on the Pico - thankfully most of it can stay the same - that's the handy thing about writing things in functions they're all nice and contained and you can just change the way you call them rather than reimplementing them.
 
 The main change is that instead of using bluetooth to communicate over serial we're now using the web server (this means upgrading to the Pico W for it's handy wireless functionality) to do the _talking_ and we just interact with _it_
@@ -157,7 +157,7 @@ If your Pico is powered, you should now see it broadcasting an SSID like this:
 
 Fantastic!
 
-### Creating the Web app
+### Creating the Web App
 The web application doesn't need to be anything fancy, after all we're going to just send get requests and read the URL for the direction.
 
 So, the initial webserver is created using a [socket][9] like so:
