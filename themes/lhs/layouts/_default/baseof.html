@@ -30,7 +30,7 @@
                                 <div class="column is-half">
                                     {{ block "hero-image" . }}
                                     {{ $hero := printf "%s/%s" "images/" .Params.hero_image }}
-                                    <img class="image hero-img" src="{{ absURL $hero }}" alt="">
+                                    <img class="image hero-img" src="{{ absURL $hero }}" alt="" height="300px">
                                     {{ end }}
                                 </div>
                                 {{ end }}
