@@ -18,6 +18,6 @@
 {{ end }}
 
 {{ define "content" }}
-<div id="calendar"></div>
+<div id="calendar"><p id="nojs">Your browser doesn't support (or has disabled) Javascript. If you wish to see the upcoming event calendar you can use our <a href="https://api.leighhack.org/events.ics">iCal Feed</a> with your calendar or mail software.</p></div>
 {{ printf "<!--# include virtual='%s' -->" ("/cgi/events.cgi" | relURL) | safeHTML }}
 {{ end }}

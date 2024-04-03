@@ -1,6 +1,7 @@
 
 var events = [];
 $(document).ready(function () {
+    $('div#calendar p#nojs').hide(); // Hide the NoJS message
     $.getJSON('https://api.leighhack.org/events', function (data) {
         data.forEach(function (event) {
             events.push({
