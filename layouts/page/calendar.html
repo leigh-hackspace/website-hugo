@@ -11,7 +11,7 @@
 {{ end }}
 
 {{ define "extra_js" }}
-<script src="https://cdn.jsdelivr.net/npm/@event-calendar/build@2.4.1/event-calendar.min.js" type="application/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/@event-calendar/build@2.4.1/event-calendar.min.js"></script>
 {{ $js := resources.Get "js/calendar.js" | resources.Minify }}
 {{ $secureJS := $js | resources.Fingerprint "sha512" }}
 <script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
