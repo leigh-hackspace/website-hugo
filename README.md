@@ -1,6 +1,6 @@
 # Leigh Hackspace Website - Hugo Edition
 
-Hugo version: 0.122
+Hugo version: 0.124.1
 
 ## Contributing
 
