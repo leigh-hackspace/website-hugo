@@ -82,7 +82,7 @@ Where the `:root` _selector_ contains the variable namnes used for the colours -
 Thanks for reading!
 PW
 
-[1]: https://www.leighhack.org/blog/ "More Hackbot Adventures"
+[1]: https://www.leighhack.org/blog/2024/the-hackbots-project/ "Original Hackbot Adventures"
 [2]: https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html "Raspberry Pi Pico"
 [3]: https://codepen.io/pen/ "CodePen"
 [4]: https://paletton.com/ "Paletton"
