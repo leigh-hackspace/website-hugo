@@ -17,7 +17,7 @@ So, we'll continue from where we left on last a little while ago with our bot bu
 We'd got to the MK IV if memory serves... Next on the list of things to do is to make our bot interface page nice and pretty.
 
 ## Enter, CSS
-Because we're using a very simple webserver on the [Raspberyy Pi Pico W][2] and because the code handily returned from our `generateHTML()` function is effectively the page that's served by the websever; we know this is a pretty good place to add a little customisation for our robot - make our page a little... _prettier_.
+Because we're using a very simple webserver on the [Raspbery Pi Pico W][2] and because the code handily returned from our `generateHTML()` function is effectively the page that's served by the websever; we know this is a pretty good place to add a little customisation for our robot - make our page a little... _prettier_.
 
 ## CodePen
 When prototyping, it's always much more satisfying to see the changes happen quickly as opposed to editing our `generateHTML()` function, uploading to the bot, connecting to our bot, visiting the url... it's a lot of steps - so, to make this a bit easier we're going to use a nice tool called [CodePen][3], our first step is to rip out the HTML from the `generateHTML()` function and paste it into the HTML window like so:
@@ -149,7 +149,7 @@ def generateHTML():
 
 _Note: we already have the external stylesheet file `stlye.css` generated_ which the code opens and reads the contents into the `style` variable, this, in turn is replaced using python's _format string_ functionality we talked about earlier. We write the code in this way as it allows us to easily change the _style_ of our buttons simply by replacing the colours in the `style.css`
 
-## Finally secrets.py
+## Finally, secrets.py
 The secrets.py file is where we... store our secrets - sounds pretty obvious right? The benefit of doing it this way is that we only need to make changes to the one file and they'll be reflected everywhere, which is a common theme in programming sometimes referred to as the [DRY Principle][6]. Our `secrets.py` should look something like this:
 
 ```python
@@ -169,13 +169,11 @@ ssid = secrets['ssid']
 password = secrets['pw']
 ```
 
-Using this approach allows us to make changes to the configuration easily simply by changing the values in the dictionary and saving it to the device.
+Using this approach allows us to make changes to the configuration easily simply by changing the values in the dictionary and saving it to the device. which will help later on!
 
+Once we've saved our configuration and other files, pushed them to the [Pico W][2] we can visit the url (by default it's `http://192.168.4.1`) and we'll see the page we designed earlier all nice and pretty!
 
-
-
-
-Thanks for reading! - Stay tuned for part 3 
+Thanks for reading! - Stay tuned for part 3 where we'll go through the wiring up and building of the bot
 PW
 
 [1]: https://www.leighhack.org/blog/2024/the-hackbots-project/ "Original Hackbot Adventures"
