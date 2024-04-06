@@ -17,10 +17,10 @@ So, we'll continue from where we left on last a little while ago with our bot bu
 We'd got to the MK IV if memory serves... Next on the list of things to do is to make our bot interface page nice and pretty.
 
 ## Enter, CSS
-Because we're using a very simple webserver on the [Raspbery Pi Pico W][2] and because the code handily returned from our `generateHTML()` function is effectively the page that's served by the websever; we know this is a pretty good place to add a little customisation for our robot - make our page a little... _prettier_.
+Because we're using a very simple webserver on the [Raspbery Pi Pico W][2] and because the code handily returned from our `generateHTML()` function is effectively the page that's served by the websever; we know this is a good place to add a little customisation for our robot - make our page a little _prettier_.
 
 ## CodePen
-When prototyping, it's always much more satisfying to see the changes happen quickly as opposed to editing our `generateHTML()` function, uploading to the bot, connecting to our bot, visiting the url... it's a lot of steps - so, to make this a bit easier we're going to use a nice tool called [CodePen][3], our first step is to rip out the HTML from the `generateHTML()` function and paste it into the HTML window like so:
+When prototyping, it's always much more satisfying to see the changes happen quickly, as opposed to editing our `generateHTML()` function, uploading to the bot, connecting to our bot, visiting the url... it's a lot of steps - so, to make this a bit easier we're going to use a nice tool called [CodePen][3], our first step is to rip out the HTML from the `generateHTML()` function and paste it into the HTML window, like so:
 ![HTML & CSS editor windows above, results below](./images/codepen_screenshot.png)
 The result of the code is shown underneath the HTML and CSS editor windows, We've made a couple of modifications from our original `generateHTML()` function to make it easier to work with CSS:
 
@@ -32,9 +32,9 @@ html = f"""
 return html
 ```
 
-The above code is snipped for brevity, but what it does is uses python's [_string format_][5] functionality to add the variable `style` with the the style we read into the variable (more on that a little later).
+The above code is snipped to keep things simple, but what it does is use python's [_string format_][5] functionality to add the variable `style` with the the style we read into the variable from the `style.css` file (more on that a little later).
 
-We've also moved `generateHTML()` into its own file (`html.py`)and used parameters to drop in from the main program, we import the function into `main.py` by adding the following code to the top of our `main.py`:
+We've also moved `generateHTML()` into its own file (`html.py`) and used parameters to drop in from the main program; we import the function into `main.py` by adding the following code to the top of our `main.py`:
 
 ```python
 from html import generateHTML
@@ -79,7 +79,7 @@ Where the `:root` _selector_ contains the variable namnes used for the colours -
 ## The generateHTML() function
 Once you're finished, you should end up with something like this in your `generateHTML()` function:
 
-```
+```python
 def generateHTML():
     style = ""
 
@@ -150,7 +150,10 @@ def generateHTML():
 _Note: we already have the external stylesheet file `stlye.css` generated_ which the code opens and reads the contents into the `style` variable, this, in turn is replaced using python's _format string_ functionality we talked about earlier. We write the code in this way as it allows us to easily change the _style_ of our buttons simply by replacing the colours in the `style.css`
 
 ## Finally, secrets.py
-The secrets.py file is where we... store our secrets - sounds pretty obvious right? The benefit of doing it this way is that we only need to make changes to the one file and they'll be reflected everywhere, which is a common theme in programming sometimes referred to as the [DRY Principle][6]. Our `secrets.py` should look something like this:
+The `secrets.py` file is where we, well... store our secrets - sounds pretty obvious right? 
+The benefit of doing it this way is that we only need to make changes to the one file and they'll be reflected everywhere, which is a common theme in programming sometimes referred to as the [DRY Principle][6]. 
+
+Our `secrets.py` should look something like this:
 
 ```python
 secrets = {
