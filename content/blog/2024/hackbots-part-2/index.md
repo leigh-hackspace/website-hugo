@@ -1,12 +1,12 @@
 ---
-title: "The Hackbots Project"
+title: "The Hackbots Project II"
 subtitle: "Making Simple Robots That Anyone Can Build (Pt. 2)"
 date: 2024-03-18T07:40:38Z
 tags:
     - Rasberry Pi Pico
     - Robots
     - Electronics
-draft: true
+draft: false
 author: Paul Williams
 author_email: phyushin@gmail.com
 listing_image: hackbot.jpg
@@ -173,7 +173,7 @@ Using this approach allows us to make changes to the configuration easily simply
 
 Once we've saved our configuration and other files, pushed them to the [Pico W][2] we can visit the url (by default it's `http://192.168.4.1`) and we'll see the page we designed earlier all nice and pretty!
 
-Thanks for reading! - Stay tuned for part 3 where we'll go through the wiring up and building of the bot
+Thanks for reading! - Stay tuned for part 3 where we'll go through the wiring up and building of the bot.
 PW
 
 [1]: https://www.leighhack.org/blog/2024/the-hackbots-project/ "Original Hackbot Adventures"
