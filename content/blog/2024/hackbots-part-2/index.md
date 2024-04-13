@@ -9,10 +9,10 @@ tags:
 draft: false
 author: Paul Williams
 author_email: phyushin@gmail.com
-listing_image: hackbot.jpg
+listing_image: images/hackbot.jpg
 ---
 
-# Continuing the Bot Building Process
+## Continuing the Bot Building Process
 So, we'll continue from where we left on last a little while ago with our bot building blog [posts][1]. 
 We'd got to the MK IV if memory serves... Next on the list of things to do is to make our bot interface page nice and pretty.
 
@@ -21,7 +21,7 @@ Because we're using a very simple webserver on the [Raspbery Pi Pico W][2] and b
 
 ## CodePen
 When prototyping, it's always much more satisfying to see the changes happen quickly, as opposed to editing our `generateHTML()` function, uploading to the bot, connecting to our bot, visiting the url... it's a lot of steps - so, to make this a bit easier we're going to use a nice tool called [CodePen][3], our first step is to rip out the HTML from the `generateHTML()` function and paste it into the HTML window, like so:
-![HTML & CSS editor windows above, results below](./images/codepen_screenshot.png)
+{{< image src="images/codepen_screenshot.png" title="HTML & CSS editor windows above, results below">}}
 The result of the code is shown underneath the HTML and CSS editor windows, We've made a couple of modifications from our original `generateHTML()` function to make it easier to work with CSS:
 
 ```python
@@ -50,10 +50,10 @@ Now, once we're done with making the code look _pretty_ in CodePen we can just d
 
 ## Paletton
 A good place to grab some colours that go well together is [Paletton][3], For the purposes of this guide however we're only going to pick a primary colour but don't let that stop you from adding a little extra _flare_, pick a colour you like the look of like so:
-![Paletton Colour Picker](./images/paletton1.png)
+{{< image src="images/paletton1.png" title="Paletton Colour Picker">}}
 
 Then, once you're happy with your colourcscheme - go to the export and select _as CSS_:
-![Export - listing colours that go well together](./images/export_as_css.png)
+{{< image src="images/export_as_css.png" title="Export - listing colours that go well together">}}
 Don't worry if the export doesn't work, as all the relevant colour information (Hex values) can be grabbed right off this page too!
 You should end up with something like this in your `style.css` file:
 ```css
