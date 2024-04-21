@@ -9,7 +9,7 @@ tags:
 draft: false
 author: Paul Williams
 author_email: phyushin@gmail.com
-listing_image: hackbot.jpg
+listing_image: images/hackbot.jpg
 ---
 
 ## The Beginning
@@ -90,7 +90,7 @@ if uart.any(): #Checking if data available
 ```
 Below is the initial schematic:
 
-{{< image src="initial_schematic.png" height="x400" title="The prototype" >}}
+{{<image src="images/initial_schematic.png" title="The prototype">}}
 
 As you can see above, this is roughly how the prototype fit together ... you connected to the bluetooth module, send the correct commands, the pico reads them over _[uart][7]_ and calls the respective functions... well that was the plan at least - it turns out that iOS devices don't work as _out of the box_ as android devices when it comes to serial over bluetooth shenanigans, so back to the drawing board on how we get the signals - after all it's no good to us if only some kids can use it! the idea was it could be done all by your phone.
 
@@ -109,8 +109,7 @@ With our Pico W wired in we needed to make some modifications to the program run
 The main change is that instead of using bluetooth to communicate over serial we're now using the web server (this means upgrading to the Pico W for it's handy wireless functionality) to do the _talking_ and we just interact with _it_
 
 Below is a very basic sequence diagram of how this works - did I mention it was basic?
-
-![Basic Sequence Diagram of the communication from phone to the _bot_](./basic_phone_to_bot_comms.png)
+{{<image src="images/basic_phone_to_bot_comms.png" title="Basic Sequence Diagram of the communication from phone to the _bot_">}}
 
 Now that we've got the idea for how the communication works we can start to build the web _frontend_ for our bot... Keeping in mind that all the control functionality we already have from the `MK I` to `MK III` we just need to change the way the Pico [W now that we've _upgraded_] gets the instructions to _call_ the functions we need, we can think of this somewhat like the _frontend_ and _backend_ of any other web app really!
 
@@ -152,8 +151,7 @@ print('Connection successful')
 print(ap.ifconfig()) 
 ```
 If your Pico is powered, you should now see it broadcasting an SSID like this:
-
-![Hackbots AP](./Wifi.png)
+{{ <image src="images/Wifi.png" title="Hackbots Wifi AP"> }}
 
 Fantastic!
 
