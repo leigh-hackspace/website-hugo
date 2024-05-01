@@ -20,6 +20,10 @@ As it turns out this is a little more complicated than I expected, even when you
 
 I have several of these from an older project
 
+![Top](images/IMG_2991.jpg)
+![Top](images/IMG_2992.jpg)
+![Top](images/IMG_2991.jpg)
+
 {{< gallery >}}
 {{< image src="images/IMG_2991.jpg" width="200x" title="Top">}}
 {{< image src="images/IMG_2992.jpg" width="200x" title="Front">}}
