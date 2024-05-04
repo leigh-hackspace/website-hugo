@@ -1,7 +1,7 @@
 ---
 title: "Covert Swarm Badge Hack - Part One"
 subtitle: "John Dips his toes into the world of hardware hacking with the covert swarm Defcon badge"
-date: 2024-03-30T22:00:00Z
+date: 2024-05-1T22:00:00Z
 tags:
     - defcon
     - badgelife
@@ -115,20 +115,17 @@ By bridging all the connections on unpopulated spaces on the back this has chang
 
 {{< image src="images/half-way-over-the-bridge.jpeg" title="half way over the bridge ">}}
 
+
 Based on the the range of possible bits from [00000000] to [11111111] is 256 possible combinations.
 
 {{< image src="images/8-bits-are-enough.jpeg" title="all 8 leds bridged">}}
-
-many lights 
-
+ 
 {{< image src="images/8-bits-light-up.jpeg" height="200x" class="is-pulled-right"  title="Many LEDS" >}}
 
 Rather that solder and un-solder a bridge every single time I want to check if this has applied any configuration changes I built a small 8 switch DIP selector
 
-<< initial-dip-switches >>
-
+{{< image src="images/switches-over-bridges.jpeg" >}}
 Success !
-
 
 Brute forcing the combination this way will take ages if we use some quick napkin maths.
 
