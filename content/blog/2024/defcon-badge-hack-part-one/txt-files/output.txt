@@ -1,0 +1,2188 @@
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00011100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00011101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00000000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00000001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00000010]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00000011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00000100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00000101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00000110]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00000111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00001000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00001001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00001010]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00001011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00001100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00001101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00001110]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00001111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00010000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00010001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00010010]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00010011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00010100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00010101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00010110]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00010111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00011000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00011001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00011010]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00011011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00011100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00011101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00011110]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00011111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00100000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00100001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00100010]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00100011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00100100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00100101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00100110]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00100111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Secure Messagging Channel ]
+Do not trust the void, always encrypt your messages.
+
+nF1gUR4t10n!}
+
+Loading...
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00101000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00101001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00101010]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00101011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00101100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00101101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00101110]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00101111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00110000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00110001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00110010]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00110011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00110100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00110101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00110110]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00110111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00111000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00111001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00111011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00111100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00111101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00111110]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00111111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01000000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01000001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01000010]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01000011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01000100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01000101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01000110]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01000111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01001000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01001001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01001010]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01001011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01001100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01001101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01001110]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01001111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01010000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01010001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01010010]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01010011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01010100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01010101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01010110]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01010111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01011000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01011001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01011010]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01011011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01011100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01011101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01011110]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01011111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01100000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01100001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01100010]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01100011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01100100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01100101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01100110]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01100111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01101000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01101001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01101010]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01101011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01101100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01101101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01101110]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01101111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01110000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01110001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01110010]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01110011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01110100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01110101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01110110]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01110111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01111000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01111001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01111010]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01111011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01111100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01111101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01111110]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [01111111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10000000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10000001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10000010]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10000011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10000100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10000101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10000110]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10000111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10001000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10001001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10001010]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10001011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10001100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10001100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10001101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10001110]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10001111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10010000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10010001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10010010]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10010011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10010100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10010101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10010110]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10010111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10011000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10011001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10011010]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10011011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10011100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10011101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10011110]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10011111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10100000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10100001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10100010]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10100011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10100100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10100101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10100110]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10100111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10101000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10101001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Logs & HQ Directives Downloader ]
+A secure delivery method and storage for spaceship logs, HQ directives and new orders.
+
+CS2023{H4rDc0d3d_c0
+insert password > 
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10101010]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10101011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10101100]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10101101]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10101110]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10101111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10110000]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10110001]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10110010]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [10110011]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Welcome To CSCMOD Dashboard ]
+Your module is not cofigured to access any other functionality. 
+
+type HELP for commands:
+

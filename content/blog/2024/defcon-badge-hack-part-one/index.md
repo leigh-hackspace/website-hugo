@@ -1,7 +1,7 @@
 ---
 title: "Covert Swarm Badge Hack - Part One"
 subtitle: "John Dips his toes into the world of hardware hacking with the covert swarm Defcon badge"
-date: 2024-05-1T22:00:00Z
+date: 2024-05-01T10:10:10
 tags:
     - defcon
     - badgelife
@@ -18,12 +18,12 @@ author_email: ponix@protonmail.com
 listing_image: images/badge-front.jpeg
 ---
 
-# Introduction
+Introduction
 
- A Little bit about me
+A Little bit about me
 
-I have always loved puzzles since I was little. From my first jigsaw to the CTF challenges been solving on hack the box.
-So when I saw the puzzles that were built into some of the badges from [#Defcon](https://defcon.org/) and from the [#BadgeLife](https://www.reddit.com/r/badgelife/) community I wanted to get my hands on one.
+I have always loved puzzles since I was little. From my first jigsaw to the CTF challenges on [Hack The Box](https://app.hackthebox.com/login?redirect=%2Fhome) and [Try Hack Me](https://tryhackme.com/).
+So when I saw the puzzles that were built into some of the badges from [#Defcon](https://defcon.org/) and from the [#BadgeLife](https://www.reddit.com/r/badgelife/) community I Knew I wanted to get my hands on one.
 
 I finally managed to get hold of an electronic badge and am super excited to get stuck in trying to find and solve the challenges that are could be embedded within.
 
@@ -35,24 +35,28 @@ First things First lets look at the badge and see what we are working with
 
 what is actually on the badge.
 
-Here are images for the badge front and badge back 
+Below are some images of the badge and whats on it
 
-{{< image src="images/badge-front.jpeg" class="is-pulled-right"  title="Front of the badge" >}}
+{{ define "block"}}
+Badge Front 
 
-{{< image src="images/badge-back.jpeg" class="is-pulled-right"  title="Back of the badge">}}
+{{< image src="images/badge-front.jpeg" width="350x" class="is-pulled-right" title="Front of the badge" >}}
 
 On the front of the badge there is a silkscreen of the CovertSwarm logo with the words "YOU DESERVE TO BE HACKED" in the middle.There are also 8 Neo-Pixel RGB LEDs in the sides of the 'arrows' of the Covertswarm logo with a couple of capacitors and resistors when the badge is turned on these LEDs are orange, 6 pushable buttons labeled F, G, A on the top left side and D, C, B on the bottom right.
 
-On the bottom left side there is a 23A2XSM Chip and on the top right there is an S.A.O
+On the bottom left side there is a 23A2XSM Chip and on the top right there is a space for an S.A.O port
 
 &nbsp;
+{{ end }}
+<div>
+Badge Back
+
+{{< image src="images/badge-back.jpeg" width="350x" class="is-pulled-left" title="Back of the badge">}}
 
 On the badge back there is a battery pack holder for 3 AAA batteries with a warning in the top right corner to not use rechargeable batteries.
 
 There is an Arduino nano in the center and an 23A2XSM chip to the left of it. underneath the Arduino there is a piezo speaker and to the right of that there are 8 LEDs with what looks to be a corresponding set of pads for each LED.
-
-&nbsp;
-
+</div>
 Other Areas of interest
 
 Underneath the Arduino there is a 'hidden' message that states "Nothing To See here! Go away!"
@@ -76,8 +80,6 @@ Connecting to the Arduino Nano
 Using the Serial monitor on the Arduino IDE configured with the baud rate of 115200 we get the following output
 
 {{< image src="images/dashboard-image.jpeg" title="initial-dashboard-image">}}
-
-&nbsp;
 
 On the printout there is line that says "Reading Device configuration" followed by an array of eight 0s ([00000000]).
 
@@ -103,7 +105,6 @@ and finally log
 {{< image src="images/log-0.png" alt="Log entry 0" >}}
 
 If want to you can read the full log#0 [Here](txt-files/log-0.txt)
-
 
 Cracking the combination
 
@@ -140,9 +141,13 @@ This wont do. I should be able to automate this using a Raspberry Pi Pico and so
 
 Logic is the Key
 
-I don't know much about electronics so doing after doing some research it looks like its possible to Achieve my goal by using PNP transistors.
+I don't know much about electronics so doing after doing some research it looks like its possible to Achieve my goal by using PNP transistors or perhaps using some relays,
 
-A brief overview of what the transistors are doing in the circuit below. I have written some python code that will count from 0 to 256 and by using some of the GPIO pins on the Pico to act as The 8 bits once the value of the bit is reached then the pin is set high and the reset signal is sent to the pin on the ICSP port on the Arduino Nano and Then using the TX pin on the same header to read the output from the serial console.
+A brief overview of what the relays are doing in the circuit below. I have written some python code that will count from 0 to 256 and by using some of the GPIO pins on the Pico to act as The 8 bits once the value of the bit is reached then the pin is set high and the reset signal is sent to the pin on the ICSP port on the Arduino Nano and Then using the TX pin on the same header to read the output from the serial console.
+
+<< Link to Github badge decode page >>
+
+
 
 << Circuit plan >>
 
@@ -150,7 +155,7 @@ It is worth noting that there _IS_ a difference in the voltages from the Arduino
 
 << RIP Pico >>
 
- Timing is important
+Timing is important
 
 Using the transistor Circuit takes about 15 seconds rather than 5 mins . Again some quick napkin maths to work out the time difference.
 
