@@ -5,6 +5,8 @@ layout: home
 hero_image: rose_logo.svg
 ---
 
+{{< eventbrite >}}
+
 {{< openstatus >}}
 
 | Day       | Opening Times |
