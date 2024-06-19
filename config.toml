@@ -69,6 +69,12 @@ name = "Events"
 pageRef = "events"
 weight = 6
 
+[[menu.main]]
+name = "Donate"
+pageRef = "Donate"
+URL = "https://www.paypal.com/donate/?hosted_button_id=G9AJ2HR3SDQ3J"
+weight = 7
+
 [[menu.policies]]
 name = "Code of Conduct"
 pageRef = "policies/code_of_conduct"
