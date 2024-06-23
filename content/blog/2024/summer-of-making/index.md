@@ -7,7 +7,7 @@ tags:
     - Programme
 draft: true
 author: Kian Ryan
-author_email: kianronan@gmail.com
+author_email: kian@orangetentacle.co.uk
 listing_image: images/summer_of_making.jpg
 ---
 
