@@ -48,10 +48,10 @@
             {{ block "content" . }}
             {{ end }}
         </div>
+
+        <div class="is-clearfix"></div>
     </section>
 
-    <div class="is-clearfix"></div>
-    
     {{ block "cta" . }}
     {{ if (default true .Params.show_cta) }}
         {{ if .Params.show_big_cta }}
