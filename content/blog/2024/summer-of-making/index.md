@@ -8,6 +8,7 @@ tags:
 draft: true
 author: Kian Ryan
 author_email: kianronan@gmail.com
+listing_image: images/summer_of_making.jpg
 ---
 
 {{< eventbrite >}}
@@ -15,6 +16,8 @@ author_email: kianronan@gmail.com
 Alongside the opening of [Leigh Spinners Mill](https://www.spinnersmill.co.uk), [Leigh Hackspace](http://leighhack.org) 
 has launched our Summer Of Making programme of events open to members and non-members 
 from July to September.
+
+{{< image src="images/summer_of_making.jpg" title="Leigh Hackspace Summer of Making Flyer" width="400x" class="is-pulled-right" >}}
 
 We're offering the opportunity to try a new range of skills from 3d printing to garment making.
 
