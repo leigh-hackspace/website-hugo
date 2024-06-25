@@ -5,7 +5,7 @@ tags:
     - Events
     - Making
     - Programme
-draft: true
+draft: false
 author: Kian Ryan
 author_email: kian@orangetentacle.co.uk
 listing_image: images/summer_of_making.jpg
