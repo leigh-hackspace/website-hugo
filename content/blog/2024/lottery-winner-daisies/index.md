@@ -71,6 +71,5 @@ on stage.
 
 Leigh Hackspace is open to commissions, and we're also keen on teaching people the skills to make for themselves.
 
-Our [Summer of Making](), has a range of skills that can help get you started, or if 
+Our [Summer of Making]({{< ref "/blog/2024/summer-of-making/index.md" >}}), has a range of skills that can help get you started, or if 
 you have a project in mind, please [come and talk to us](mailto:directors@leighhack.org).
-
