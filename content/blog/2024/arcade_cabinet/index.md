@@ -9,83 +9,139 @@ tags:
 draft: false
 author: Kian Ryan
 author_email: kian@orangetentacle.co.uk
+listing_image: images/final_cabinet_full.jpg
 ---
 
-Sometimes projects get out of hand, and come around full circle.
+__This one started out as an idea.__
 
-This one started out as an idea.
+Dan Hardiker from [Devoxx UK](https://www.devoxx.co.uk/) contacted me with an idea:
 
-"We want to make a bunch of games with our sponsors, and have a bunch of small arcade cabinets.  But we also want to 
-take the cabinets to a bunch of other events."
+> _"We want to make a bunch of games with our sponsors, and play them on a bunch of small arcade cabinets.  But we also want to 
+> take the cabinets to a some other events."_
 
-Okay.  So first thoughts go to the [Picade](https://shop.pimoroni.com/products/picade).  The Picade is a small arcade cabinet 
+I like small, well defined projects, and this one fitted the bill.  We can do this.
+
+_Small, well defined projects._
+
+
+Okay.  So first thoughts immediately went to the [Picade](https://shop.pimoroni.com/products/picade).  The Picade is a small arcade cabinet 
 from [Pimoroni](https://shop.pimoroni.com/).  It's great, I have one. 
 It lives upstairs in my second bedroom, and when I need a bit of quiet time, I use it to play Frogger.  I'm a Frogger demon.
 
-But it's not small, and arguably, it's not easy to store.  It's still arcade shaped, and doesn't stack well.
+But while it's quite small, it's not easy to store.  It's arcade cabinet shaped, and doesn't pack or stack well.
 
-What if we could build an arcade laptop?  Something that could be folded down between events and stored easily?
+What if we could build an arcade laptop?  Something that could be folded down between events and stored away easily?
 
-First iteration was really a Picade in a case, and used a removable stick.  It filled the first attempt at the brief, but 
-didn't look "Arcade-y" enough.  Fair.  Can we make it look more like an arcade.
+{{< clearfix >}}
 
-For my early drafts, I sketch, rather than go straight to CAD.  I like to have ideas on paper, or more recently, 
+{{<image src="images/note-01.png" title="Notebook Sketch 1 - Picade and folding model" width="300x" class="is-pulled-left">}}
+{{<image src="images/note-02.png" title="Notebook Sketch 2 - Console and folding case" width="300x" class="is-pulled-left">}}
+{{<image src="images/fusion_design_1.jpg" title="Fusion 360 - Initial working concept for folding case" width="300x" class="is-pulled-left">}}
+
+{{< clearfix >}}
+
+When I start a project, I sketch, rather than go straight to CAD.  I like to have ideas on paper, or more recently, 
 on digital paper, before I start opening up a CAD program.  It won't be perfect, but I'll have some idea of the shape 
 of the thing before I start working through something I plan on making.  CAD software can occassionally be unforgiving, 
 and it likes to have a plan of what you want to build.  You can vary that plan - but having at least part of that plan up 
 front helps.
 
-This conversation goes forwards and backwards until we get to the nub of it.
+We start with a "Picade in a case".  10" screen, Raspberry Pi 4, and an arcade console with a removable stick to allow the case 
+to be closed.  Technically it works, and I take it to the team.  It fills the portable part, but doesn't look "Arcade-y" enough.
+Fair.  Can we make it look more like an arcade cabinet.
 
-"You want full size arcade cabinets, don't you?"
+{{< clearfix >}}
 
-So how do we deliver full size arcade cabinets, that are still ultimately, portable and storable.
+{{<image src="images/note-03.png" title="Notebook Sketch 1 - Picade and folding model" width="400x" class="is-pulled-left">}}
+{{<image src="images/note-04.png" title="Notebook Sketch 2 - Console and folding case" width="400x" class="is-pulled-left">}}
 
-Another limitation - our CNC has a bed size of 80x80cm.  We never thought this would be a limitation, but turns out 
-we're starting to hit it's limits!  We're at least glad we got this one, and not the next size down.
+{{< clearfix >}}
 
-The answer is you do it in bits.  The idea of the case still works, somewhere for all the electronics to live.  Monitor, 
-Raspberry Pi and controls.  Then we build a separate cabinet for the case to slot in to.  The cabinet slots together 
-like flat pack furniture, using furniture bolts and slots for assembly.  At the end of the event, remove the bolts, 
-flatten the case and store between events.
+This conversation goes forwards and backwards for a few iterations where we play with bartop designs, etc until we hit 
+what they _really_ want.
+
+> "You want full size arcade cabinets, don't you?"
+
+So how do we deliver full size arcade cabinets, that are still ultimately, _portable_ and _storable_.
+
+The answer is you do it in parts.  The idea of "all the bits in the case" still works, somewhere for all the electronics to live.  Monitor, 
+Raspberry Pi and controls.  Then we build a separate cabinet for the case to slot in to.  Because our CNC bed is 80cm square, 
+the cabinet is split in 2, giving a total height of 1.6m.  Added benefit - if you want a bartop cabinet for some events, you just use 
+the top half.  The cabinet slots together like flat pack furniture, using slots and furniture bolts for assembly.  At the 
+end of the event, remove the bolts, flatten the case and store between events.
+
 
 Once we were happy with the general idea, we designed the prototype in Fusion 360, and cut the prototype on our Shapeoko XXL. 
-The case is cut in 9mm MDF and the cabinet in 18mm MDF.  We refined the design a bit, and the DXF files are now available 
-on Github.
+The electronics case is cut from 9mm MDF and the cabinet from 18mm MDF.  The console and display frame are cut from 5mm acrylic. 
+Assembly of the electronics case is done with glue, with the console and surround mounted using M3 bolts and self tapping inserts.
 
-To kit the electronics, we used an off-the shelf monitor, connected using M6 bolts to the case, a normally Raspberry Pi 
-running RetroArch and a pretty vanilla Picade style setup with an arcade stick and 10 buttons.  The GA241 monitor is powered 
-by 12V so by supplying power to the case, and then splitting the power, we can then power the monitor and a buck converter 
-to power the Pi.  A single 12V/4A power supply powers the whole rig very adequately.
+{{< clearfix >}}
 
-Electronics:
+{{<image src="images/fusion_design_2.jpg" title="Fusion 360 Design - Arcade Cabinet Final" width="300x" class="is-pulled-left">}}
+{{<image src="images/cutting_cases.jpg" title="Cutting a side panel on the Shapeoko XXL" width="300x" class="is-pulled-left">}}
+{{<image src="images/prototype_case.jpg" title="Testing the prototype - Cat for scale" width="300x" class="is-pulled-left">}}
 
-Cooler Master GA241 23.8" VA Monitor
-Raspberry Pi 4
-Picade X HAT
-Phreak Mods Link EX Groove Quick Release 
-Sanwa JLF-TP-8YT Arcade Joystick 
-Sanwa OBSN-30 Screw In Japanese Arcade Button 
-16mm Metal Illuminated Button
-A 5V/3A Buck Converter
-2.1mm sockets.
+{{< clearfix >}}
 
-Note on suppliers: We used Arcade World UK for a large amount of this build, but they appear to have disappeared.  Since 
-the original build, we've been using [Aracde Express](https://www.arcadexpress.com), a Spanish Company.  Import charges 
-may apply when using them.
+[An archive of the Fusion 360 project is available on Github.](https://github.com/leigh-hackspace/arcade-cabinet)
 
-The Devoxx UK games were built using PyGame - Dan Hardiker came down the weekend before the event and spent the time getting 
-the games working on the machines.  There's nothing like a deadline.  Running right up against it, we painted the cabinets 
-black and drove them down for setup at the Business Design Centre in London.
+To kit the electronics, we used an off the shelf monitor - a Cooler Master GA241, a Raspberry Pi 4
+running RetroArch, an Sanwa JLF arcade stick modified with a Link EX Groove Quick Release and 10 buttons. The GA241 monitor is powered 
+by 12V, which allows us to nicely split a single 12V/4A power supply for monitor and Pi (using a buck converter).
+
+> Note on suppliers: We used Arcade World UK for a large amount of this build, but they appear to have disappeared.  Since 
+> the original build, we've been using [Arcade Express](https://www.arcadexpress.com), a Spanish Company.  Import charges 
+> may apply when using them.
+
+{{< clearfix >}}
+
+{{<image src="images/wiring_loom.jpg" title="Wiring up the power for the test case" width="400x" class="is-pulled-left">}}
+{{<image src="images/wiring_up_case.jpg" title="Testing a nearly finished electronics case" width="400x" class="is-pulled-left">}}
+
+{{< clearfix >}}
+
+
+The Devoxx UK games were built using [PyGame](https://www.pygame.org/) - [Dan Hardiker](https://twitter.com/dhardiker) came down the weekend before the 
+event and spent time getting the games working on the machines.  There's nothing like a deadline.  Running right up 
+against it, we painted the cabinets black and drove them down for setup at the Business Design Centre in London.
+
+{{< clearfix >}}
+
+{{<image src="images/primed_cases.jpg" title="Priming upper cabinets for painting" width="300x" class="is-pulled-left">}}
+{{<image src="images/case_production_line.jpg" title="Lining up finished cases for wiring" width="300x" class="is-pulled-left">}}
+{{<image src="images/loading_cabinets.jpg" title="Loading up flattened cabinets ready for transport" width="300x" class="is-pulled-left">}}
+
+{{< clearfix >}}
+
 
 They were received well, and performed great for the duration of the event.  Dan and the crew then did exactly what the 
 cabinets were designed to do - they removed the electronic cases, removed the bolts, dropped the cabinets flat and packed 
 them for the next event.
 
-But we're not quite done.  The event had gone well, but our prototype was still looking ... well, like a prototype.  And 
-a Hackspace without an Arcade Cabinet isn't really a Hackspace.  So we recut the side panels to the new profile, gave ours 
-a lick of paint, and using a Player-X board, some more components and a trackball, added some extra rizz.  It's already 
-been to EMFCamp, where it ran Pico-8 games from Johnathon in the Family Tent, and it'll be making an appearance at the 
-Discworld Convention in August.
+{{< clearfix >}}
 
-If you drop by the Hackspace, you're more than welcome to play on it.
+{{<image src="images/cabinets_lined_up.jpg" title="Arcade cabinets assembled" width="400x" class="is-pulled-left">}}
+{{<image src="images/cabinets_played.jpg" title="Arcade cabinets being played" width="400x" class="is-pulled-left">}}
+
+{{< clearfix >}}
+
+But we're not quite done.  The event had gone well, but our prototype was still looking ... well, like a prototype.  And 
+a Hackspace without an Arcade Cabinet isn't really a Hackspace.  So we recut the side panels to the same profile as the Devoxx cabinets, 
+gave ours a lick of paint, and using a Player-X board, some more components and a trackball, added some extra rizz for two player action and more game modes.  
+
+{{< clearfix >}}
+
+{{<image src="images/final_cabinet_full.jpg" title="Our final cabinet - full length shot" width="400x" class="is-pulled-left">}}
+{{<image src="images/final_cabinet_console.jpg" title="Up close shot of two player console and trackball" width="400x" class="is-pulled-left">}}
+
+{{< clearfix >}}
+
+It's already been to [Elecromagnetic Field](https://www.emfcamp.org/), where it was used to run [Pico-8](https://www.lexaloffle.com/pico-8.php) games from [Johan Peitz](https://johanpeitz.itch.io/) in the Family Tent, and it'll be making an appearance at the 
+[International Discworld Convention](https://dwcon.org/) in August, playing the original Discworld point and click games using [ScummVM](https://www.scummvm.org/).
+
+If you drop by the [Hackspace](/index.md), you're more than welcome to play on it.
+
+Leigh Hackspace is open to commissions, and we're also keen on teaching people the skills to make for themselves.
+
+Our [Summer of Making]({{< ref "/blog/2024/summer-of-making/index.md" >}}), has a range of skills that can help get you started, or if 
+you have a project in mind, please [come and talk to us](mailto:directors@leighhack.org).
