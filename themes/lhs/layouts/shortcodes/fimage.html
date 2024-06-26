@@ -1,0 +1,14 @@
+{{ $img := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
+{{ $width := .Get "width" }}
+{{ $height := .Get "height" }}
+{{ $title := .Get "title" }}
+{{ $float := .Get "float" }}
+  <img src="{{ $img.RelPermalink }}" style="float:{{$float}}; margin-right:10px;" width="{{$width}}px" heigth="{{$height}}px" {{ if $title }}
+    alt="{{ $title }}" {{ end }}>
+  {{ if $title }}
+  <figcaption class="is-size-6">
+    <small>
+      {{ $title }}
+    </small>
+  </figcaption>
+  {{ end }}
