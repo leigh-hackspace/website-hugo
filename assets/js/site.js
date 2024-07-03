@@ -10,14 +10,14 @@ $(document).ready(function () {
         // Hackspace status
         if ($('span#hackspace-status').length) {
             if (data.state.open) {
-                message = '<b>Open</b>'
+                message = 'are'
                 if ('message' in data.state) {
                     message = message + ': ' + data.state.message;
                 }
                 $('span#hackspace-status').html(message);
                 $('div#hackspace-open').addClass('is-success');
             } else {
-                $('span#hackspace-status').html('<b>Closed</b>');
+                $('span#hackspace-status').html('aren\'t');
             }
             $('div#hackspace-open').fadeIn('slow');
         }
