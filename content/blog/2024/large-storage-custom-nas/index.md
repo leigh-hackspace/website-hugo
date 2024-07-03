@@ -36,8 +36,9 @@ I have put them on ebay on more than one occasion but never got the price I thou
 
 If you open the large cover you find it has a location for 3 1/2 45 disks, see the link above, it goes into plenty of detail.
 
-{{< bimage src="images/IMG_2994.jpg" width="500" height="400"  zone="60">}} 
-
+{{< bgallery width="60" >}}
+{{< fimage src="images/IMG_2994.jpg" width="500" height="400"  float="inline-block">}} 
+{{< /bgallery >}}
 
 
 The drives sit in the grid and the vibration of the disks spinning is dampened by some rubber bands, you can see a couple in the picture.
@@ -55,7 +56,9 @@ Unfortunately these can not be re-used in this project as we need the locations 
 
 I stripped out all the port expanders and all wiring to go with them and you can see it here, so just an empty chassis
 
-{{< bimage src="images/IMG_2998.jpg" width="500" height="400"  zone="60">}}
+{{< bgallery width="60" >}}
+{{< fimage src="images/IMG_2998.jpg" width="500" height="400" float="inline-block">}}
+{{< /bgallery >}}
 
 I left the nylon posts in place as they are threaded and allow the nylon screws, they were holding in the port exanpders, to be used.
 
@@ -84,7 +87,9 @@ So at this point we have a working motherboard, a case, locations for a PSU and 
 
 We also have 3 of these
 
-{{< bimage src="images/IMG_3009.jpg" width="400" height="300"  zone="30">}}
+{{< bgallery width="60" >}}
+{{< fimage src="images/IMG_3009.jpg" width="400" height="300"  float="inline-block">}}
+{{< /bgallery >}}
 
 
 Nothing amazing, but simple 4 port SATA controllers.
@@ -100,7 +105,9 @@ Next I started to look at the size of the drives. I wanted to move away from spi
 
 I created a 3d printed flat platform that the drives could stand on, just to test out how many seemed reasonable
 
-{{< bimage src="images/IMG_2497.jpg" width="400" height="300"  zone="30">}}
+{{< bgallery width="60" >}}
+{{< fimage src="images/IMG_2497.jpg" width="400" height="300" float="inline-block">}}
+{{< /bgallery >}}
 
 
 # Cabling
@@ -117,11 +124,15 @@ At this point I realized the cabling would not fit under the platform, so any ne
 
 Now to get more drives into the chassis, I initially went for 10 drives , instead of 5 per location. This then required the use of port expanders, so I bought a few of these.
 
-{{< bimage src="images/IMG_3011.jpg" width="400" height="300"  zone="30">}}
+{{< bgallery width="60" >}}
+{{< fimage src="images/IMG_3011.jpg" width="400" height="300"  float="inline-block">}}
+{{< /bgallery >}}
 
 As it turns they are little rubbish. Not because they do not work, or that they are insanely slow but if you buy them from anywhere the heatsink is stuck in place with some kind of double sided heat resistance tape, which transfers little heat to the heatsink. This causes them to restart regularly when in use, rendering them next to useless. You can remove the heatsink, applying heat ( seems strange ) and it will come off
 
-{{< bimage src="images/IMG_3012.jpg" width="400" height="300"  zone="30">}}
+{{< bgallery width="60" >}}
+{{< fimage src="images/IMG_3012.jpg" width="400" height="300" float="inline-block">}}
+{{< /bgallery >}}
 
 
 Then if you put it back with heat transfer epoxy, it will stop restarting, but remains incredibly slow!
@@ -141,7 +152,9 @@ and then with the PCB in place As you can see, it kind of fits ?
 
 So in my wisdom I thought I could fit more connectors on the PCB, so I went for 14 drives per PCB, two rows of 7, I would have two port expanders underneath and using some method not determined find a location for a 3rd one. If I have 9 slots, 14 x 9 = 126 , so I get to my goal with a few to spare!
 
-{{< bimage src="images/IMG_2752.jpg" width="400" height="300"  zone="30">}}
+{{< bgallery width="60" >}}
+{{< fimage src="images/IMG_2752.jpg" width="400" height="300" float="inline-block">}}
+{{< /bgallery >}}
 
 
 So a completed PCB, it is a very simple design, two locations to power the drives and then pass through connectors for SATA
@@ -156,7 +169,9 @@ Then I wired it up with the SATA cables I had
 
 It looks pretty, and did work, 20 drives and a boot drive, so 21 drives.
 
-{{< bimage src="images/IMG_2762 (1).jpg" width="400" height="300"  zone="30">}}
+{{< bgallery width="60" >}}
+{{< fimage src="images/IMG_2762 (1).jpg" width="400" height="300" float="inline-block">}}
+{{< /bgallery >}}
 
 
 At this point, which was quite a bit of work, I realized with much distress, it was slower than a snail, at one point I was getting an underwhelming 10Mb/s !!!
@@ -190,7 +205,9 @@ SAS cards are incredibly cheap and relatively quick and compatible with SATA dri
 
 To make the best use out of it you also need to expand the number of ports available, which is where this card comes in.
 
-{{< bimage src="images/s-l1600 (2).jpg" width="400" height="300"  zone="30">}}
+{{< bgallery width="60" >}}
+{{< fimage src="images/s-l1600 (2).jpg" width="400" height="300" float="inline-block">}}
+{{< /bgallery >}}
 
 
 It is an Intel RES2SV240 RAID card. It is not really a RAID card in this case, but provides 24 ports, of which 4 are inbound and 20 outbound. This card is relatvely good as you can then use SFF8087 cables to SATA ports, keeping the cabling manageable, rather than individual SATA cables
@@ -204,7 +221,9 @@ So three (3) LSI cards and 6 RES240 cards = 120 ports. We are there.
 
 Even better the RES240 cards do not actually need to plug into the motherboard, they just need power and are fitted  with an external power socket!!!
 
-{{< bimage src="images/s-l1600 (2).jpg" width="400" height="300"  zone="30">}}
+{{< bgallery width="60" >}}
+{{< fimage src="images/s-l1600 (2).jpg" width="400" height="300" float="inline-block">}}
+{{< /bgallery >}}
 
 
 This is an amazing win so I started the build out as follows
@@ -217,7 +236,9 @@ This is an amazing win so I started the build out as follows
 
 Add some drive location testing
 
-{{< bimage src="images/IMG_2883.jpg" width="400" height="300"  zone="30">}}
+{{< bgallery width="60" >}}
+{{< fimage src="images/IMG_2883.jpg" width="400" height="300" float="inline-block">}}
+{{< /bgallery >}}
 
 
 It is brilliant what could go wrong!
@@ -236,26 +257,36 @@ Close but not yet 120 drives - ARG!!!!!
 
 As I was cabling this, space for cabling was also becoming a premium, even with SFF cables. So now I changed tac on the design for the last time, and brough my expectations down a little.
 
-{{< bimage src="images/IMG_2883.jpg" width="400" height="300"  zone="30">}}
+{{< bgallery width="60" >}}
+{{< fimage src="images/IMG_2883.jpg" width="400" height="300" float="inline-block">}}
+{{< /bgallery >}}
 
 So I did have this
 
-{{< bimage src="images/IMG_2892.jpg" width="400" height="300"  zone="30">}}
+{{< bgallery width="60" >}}
+{{< fimage src="images/IMG_2892.jpg" width="400" height="300" float="inline-block">}}
+{{< /bgallery >}}
 
 I am now going to do this
 
-{{< bimage src="images/IMG_2905.jpg" width="400" height="300"  zone="30">}}
+{{< bgallery width="60" >}}
+{{< fimage src="images/IMG_2905.jpg" width="400" height="300" float="inline-block">}}
+{{< /bgallery >}}
 
 
 Instead of using the 9 locations for drives I am going for 6. The last 3 I can use for the RES240 cards and allow some space for cabling, air flow and as it turns out some boot space as well.
 
 In this picture you can see 84 drives, but I did mention 72, where did the other 12 come from ? Remember the 3 original controller cards, as it turns out they fit into the remaining PCI slots.
 
-{{< bimage src="images/IMG_2937 (1).jpg" width="400" height="300"  zone="30">}}
+{{< bgallery width="60" >}}
+{{< fimage src="images/IMG_2937 (1).jpg" width="400" height="300" float="inline-block">}}
+{{< /bgallery >}}
 
 We now end up with this
 
-{{< bimage src="images/IMG_2906.jpg" width="400" height="300"  zone="30">}}
+{{< bgallery width="60" >}}
+{{< fimage src="images/IMG_2906.jpg" width="400" height="300" float="inline-block">}}
+{{< /bgallery >}}
 
 
 To show that it all works under Linux
