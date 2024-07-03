@@ -15,12 +15,14 @@
 <h3 id="{{ .Key }}">{{ .Key }}</h3>
 
 {{- range .Pages }}
-{{ $image := .Resources.GetMatch .Params.listing_image }}
-{{ $image = $image.Fill "512x512 Center jpg" }}
 <div class="box">
     <div class="columns">
         <div class="column is-one-quarter has-text-centered is-hidden-mobile">
-            <img src="{{ $image.RelPermalink}}" class="image is-inline-block">
+					{{ with .Resources.GetMatch .Params.listing_image }}
+						{{ $image := . }}
+						{{ $image = $image.Fill "512x512 Center jpg" }}
+                            <img src="{{ $image.RelPermalink }}" class="image is-inline-block" alt="">
+					{{ end }}
         </div>
         <div class="column">
             <p><a href="{{ .RelPermalink }}">{{.Title}}</a> - {{ .Params.author }}<br />

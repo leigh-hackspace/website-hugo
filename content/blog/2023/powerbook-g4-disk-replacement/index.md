@@ -11,6 +11,7 @@ draft: false
 author: Andrew Williams
 author_email: andy@tensixtyone.com
 listing_image: open.jpg
+original_url: https://nikdoof.com/posts/2023/powerbook-g4-disk-replacement/
 ---
 
 In October 2003, I made my first leap into using an Apple device. For quite some time I'd been trying to find a reasonable and portable machine for daily use, and I had slowly gotten frustrated with the current offerings by Dell, HP, and other major laptop manufacturers. In the hunt for something new, I picked a Powerbook G4 12". This machine was my daily workhorse for several years and at the end of its life, it was stuffed into a draw and forgotten about. Sometime around 2014 when I was purchasing a new Macbook Pro I decided to grab my old laptop out of storage and get it booted to hopefully pull a few files from the system. I had lost the power adapter and (obviously) the battery had given up. I purchased a new power adapter on eBay and ended up throwing everything back in the drawer to sort out another day.

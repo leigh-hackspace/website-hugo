@@ -6,7 +6,7 @@
 	src: url('../fonts/transport-medium.woff2') format('woff2');
 }
 
-// Hackspace Branding 
+// Hackspace Branding
 //$family-sans-serif: "Roboto", sans-serif;
 $primary: #d41246;
 $accent: #fbf3ee;
@@ -92,7 +92,7 @@ p {
 }
 
 // -------------------------------------------------------
-// Base 
+// Base
 // -------------------------------------------------------
 a {
 	text-decoration: underline;
@@ -315,7 +315,7 @@ address {
 }
 
 // -------------------------------------------------------
-// Footer 
+// Footer
 // -------------------------------------------------------
 
 footer {
@@ -368,4 +368,20 @@ footer {
 // Fix syntax highlighting to match Bulma pre
 div.highlight {
     padding-bottom: 1.25em;
+}
+
+// Hackspace Status
+div#hackspace-open {
+	display: none;
+}
+
+.events {
+background-image: linear-gradient(red, orange);
+	a {
+		color: white;
+	}
+	border: 2px solid red;
+	border-radius: 5px;;
+	padding: 2rem 0;
+	margin-bottom: 2rem;
 }

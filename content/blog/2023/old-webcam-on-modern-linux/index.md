@@ -11,6 +11,7 @@ tags:
 author: Andrew Williams
 author_email: andy@tensixtyone.com
 listing_image: camera.png
+original_url: https://nikdoof.com/posts/2023/old-webcam-on-modern-linux/
 ---
 
 {{< image src="camera.png" width="400x" class="is-pulled-right" title="The Trust WB-1200P, a webcam from the early days of USB devices.">}}

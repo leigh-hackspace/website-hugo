@@ -19,6 +19,7 @@ $(document).ready(function () {
             } else {
                 $('span#hackspace-status').html('<b>Closed</b>');
             }
+            $('div#hackspace-open').fadeIn('slow');
         }
 
         // 'printers' shortcode

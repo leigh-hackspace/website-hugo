@@ -30,7 +30,7 @@
                                 <div class="column is-half">
                                     {{ block "hero-image" . }}
                                     {{ $hero := printf "%s/%s" "images/" .Params.hero_image }}
-                                    <img class="image hero-img" src="{{ absURL $hero }}">
+                                    <img class="image hero-img" src="{{ absURL $hero }}" alt="" height="300px">
                                     {{ end }}
                                 </div>
                                 {{ end }}
@@ -48,10 +48,10 @@
             {{ block "content" . }}
             {{ end }}
         </div>
+
+        <div class="is-clearfix"></div>
     </section>
 
-    <div class="is-clearfix"></div>
-    
     {{ block "cta" . }}
     {{ if (default true .Params.show_cta) }}
         {{ if .Params.show_big_cta }}

@@ -1,12 +1,11 @@
-<nav class="navbar is-spaced" role="navigation" aria-label="main navigation">
+<nav class="navbar is-spaced">
     <div class="container">
 
         <div class="navbar-brand">
             <a class="navbar-item" href="{{ absURL "" }}">
-                <img class="site-logo" src="{{ absURL "images/rose_logo.svg" }}" alt="The logo of Leigh Hackspace" width="70">
-                <span class="site-logo-text">Leigh<br/>Hackspace</span>
+                <img class="site-logo" src="{{ absURL "images/long_logo_solo_whitebg.svg" }}" alt="The logo of Leigh Hackspace" width="150">
             </a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+            <a role="button" class="navbar-burger" aria-label="open menu" aria-expanded="false" data-target="navbar">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -18,7 +17,6 @@
 
                 {{- range site.Menus.main }}
                 <a href="{{ .URL }}" class="active navbar-item has-shadow is-size-5">{{ .Name }}</a>
-                </a>
                 {{- end }}
 
                 <div class="navbar-item has-shadow">

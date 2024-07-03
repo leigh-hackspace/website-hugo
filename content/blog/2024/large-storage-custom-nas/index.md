@@ -39,6 +39,7 @@ If you open the large cover you find it has a location for 3 1/2 45 disks, see t
 {{< bimage src="images/IMG_2994.jpg" width="500" height="400"  zone="60">}} 
 
 
+
 The drives sit in the grid and the vibration of the disks spinning is dampened by some rubber bands, you can see a couple in the picture.
 
 The drives are hot swappable and plug directly into a PCB, of which there are 9, each controlling 5 drives. The controller cards are actually just SATA port expanders, and in comparison to many port expanders work relatively well. 
@@ -85,6 +86,7 @@ We also have 3 of these
 
 {{< bimage src="images/IMG_3009.jpg" width="400" height="300"  zone="30">}}
 
+
 Nothing amazing, but simple 4 port SATA controllers.
 
 # Comparing drive sizes
@@ -99,6 +101,7 @@ Next I started to look at the size of the drives. I wanted to move away from spi
 I created a 3d printed flat platform that the drives could stand on, just to test out how many seemed reasonable
 
 {{< bimage src="images/IMG_2497.jpg" width="400" height="300"  zone="30">}}
+
 
 # Cabling
 
@@ -120,6 +123,7 @@ As it turns they are little rubbish. Not because they do not work, or that they 
 
 {{< bimage src="images/IMG_3012.jpg" width="400" height="300"  zone="30">}}
 
+
 Then if you put it back with heat transfer epoxy, it will stop restarting, but remains incredibly slow!
 
 # Drive Connectors
@@ -139,6 +143,7 @@ So in my wisdom I thought I could fit more connectors on the PCB, so I went for 
 
 {{< bimage src="images/IMG_2752.jpg" width="400" height="300"  zone="30">}}
 
+
 So a completed PCB, it is a very simple design, two locations to power the drives and then pass through connectors for SATA
 
 {{< bgallery width="60" >}}
@@ -152,6 +157,7 @@ Then I wired it up with the SATA cables I had
 It looks pretty, and did work, 20 drives and a boot drive, so 21 drives.
 
 {{< bimage src="images/IMG_2762 (1).jpg" width="400" height="300"  zone="30">}}
+
 
 At this point, which was quite a bit of work, I realized with much distress, it was slower than a snail, at one point I was getting an underwhelming 10Mb/s !!!
 
@@ -186,6 +192,7 @@ To make the best use out of it you also need to expand the number of ports avail
 
 {{< bimage src="images/s-l1600 (2).jpg" width="400" height="300"  zone="30">}}
 
+
 It is an Intel RES2SV240 RAID card. It is not really a RAID card in this case, but provides 24 ports, of which 4 are inbound and 20 outbound. This card is relatvely good as you can then use SFF8087 cables to SATA ports, keeping the cabling manageable, rather than individual SATA cables
 
 So let's do the maths
@@ -199,6 +206,7 @@ Even better the RES240 cards do not actually need to plug into the motherboard, 
 
 {{< bimage src="images/s-l1600 (2).jpg" width="400" height="300"  zone="30">}}
 
+
 This is an amazing win so I started the build out as follows
 
 {{< bgallery width="80" >}}
@@ -210,6 +218,7 @@ This is an amazing win so I started the build out as follows
 Add some drive location testing
 
 {{< bimage src="images/IMG_2883.jpg" width="400" height="300"  zone="30">}}
+
 
 It is brilliant what could go wrong!
 
@@ -237,6 +246,7 @@ I am now going to do this
 
 {{< bimage src="images/IMG_2905.jpg" width="400" height="300"  zone="30">}}
 
+
 Instead of using the 9 locations for drives I am going for 6. The last 3 I can use for the RES240 cards and allow some space for cabling, air flow and as it turns out some boot space as well.
 
 In this picture you can see 84 drives, but I did mention 72, where did the other 12 come from ? Remember the 3 original controller cards, as it turns out they fit into the remaining PCI slots.
@@ -246,6 +256,7 @@ In this picture you can see 84 drives, but I did mention 72, where did the other
 We now end up with this
 
 {{< bimage src="images/IMG_2906.jpg" width="400" height="300"  zone="30">}}
+
 
 To show that it all works under Linux
 
@@ -542,4 +553,4 @@ Interesting things to note - the read IOPS was 21k and the write IOPS was 5k, th
 
 I need to add in the power pictures and some other things etc
 
- 
+
