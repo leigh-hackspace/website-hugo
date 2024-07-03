@@ -2,7 +2,6 @@
 {{ $width := .Get "width" }}
 {{ $height := .Get "height" }}
 {{ $zone := .Get "zone" }}
-{{ $img = $img.Resize (print (default "1264x" $width) " webp") }}
 {{ $title := .Get "title" }}
 {{ $class := .Get "class" }}
 {{- with .Parent -}}
@@ -10,7 +9,7 @@
 {{ end }}
 <div style="display: block;  margin-left: auto;  margin-right: auto;  width: {{ $zone }}%;">
 <figure class="image{{ if $class }} {{ $class }}{{ end }}">
-  <img src="{{ $img.RelPermalink }}" width="{{ $width }}" height="{{ $height }}" {{ if $title }}
+  <img src="{{ $img.RelPermalink }}" width="{{ $width }}px" height="{{ $height }}px" {{ if $title }}
     alt="{{ $title }}" {{ end }}>
   {{ if $title }}
   <figcaption class="is-size-6">
