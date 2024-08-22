@@ -20,11 +20,11 @@ There are many many write ups about how 2812 LEDs work, so rather cover much of 
 
 The [WS2812B DataSheet](/images/WS2812B.pdf) outlines the timings, but to make life easier the basics are as follows :
 
-A simple bit shift register configuration , each LED can have 3 colours, order as green, red and blue. Each colour has 8 bits for brightness.
+A simple bit shift register configuration , each LED can have 3 colours, order as green, red and blue. Each colour has 8 bits for brightness, so one byte.
 
 In order to send the correct configuration the following timings apply :
 
-A total of 1us per bit should be used, but see the observation below.
+A total of 1us(1000ns) per bit should be used, but see the observation below.
 
 To send a 0, a signal should be held high for between 0.250us (250ns) and 0.550us (550ns), and then low for between 0.700us(700ns) and 1us (1000ns)
 To send a 1, a signal should be held high for between 0.650us (650ns) and 0.950us (950ns), and then low for between 0.300us(300ns) and 0.450us (450ns)
@@ -37,6 +37,10 @@ To make one LED show GREEN, the following would be sent, with the correct timing
 
 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 <50us>
 
+So 3 bytes, then a delay.
+
+Seems simple right ?
+
 # The PICs and Programmer
 
 I found some interesting development tools in the Hackspace and decided to go down the route of attempting to use them.
@@ -46,11 +50,11 @@ I found some interesting development tools in the Hackspace and decided to go do
 {{< fimage src="images/IMG_3498.jpg" width="300" height="200" float="inline-block">}}
 {{< /bgallery >}}
 
-This was immediately hit by a brick wall, that the PIC programmer is now considered so old it is no longer supported by any of the actual development tools. I could install Windows XP and get it working but that brings many more problems than I wanted.
+This was immediately hit by a brick wall. The PIC programmer is now considered so old it is no longer supported by any of the actual development tools. I could install Windows XP and get it working but that brings many more problems than I wanted.
 
 # An up to date Programmer
 
-I decided to get a PIC Kit 5 programmer, and as it happens they were on sale so 1/2 price.
+I decided to get a PIC Kit 5 programmer, and as it happens they were on sale so 1/2 price, but still £70, at the time of writing. I am interested in doing some other projects, so worth the investment. If anyone at the HackSpace would like to use it, certainly available as needed.
 
 {{< bgallery width="60" >}}
 {{< fimage src="images/IMG_3494.jpg" width="500" height="400" float="inline-block">}}
@@ -78,7 +82,7 @@ It is a little hackey and I may do something better in the future but for my pur
 
 # Choose a PIC
 
-After a little bit of research I decided to use a PIC16F1613. It is a relatively simple part and has all the parts needed to get things going quickly. It has a built in clock, 16k of programmable space, 2k of RAM and perfectly capable of doing what I wanted.
+After a little bit of research I decided to use a PIC16F1613. It is a relatively simple part and has all the functionality needed to get things going quickly. It has a built in clock, 16k of programmable space, 2k of RAM and perfectly capable of doing what I wanted.
 
 When I set up the MPLab X IDE with the part I ended up with a configuration screen as follows
 
@@ -123,11 +127,11 @@ To determine how fast we can toggle the pin on/off we first need to add some cod
 int main(void)
 {
     SYSTEM_Initialize();
-	while (1)
-	{
-		LATCbits.LATC0 = 1;
-		LATCbits.LATC0 = 0;
-	}
+    while (1)
+    {
+        LATCbits.LATC0 = 1;
+        LATCbits.LATC0 = 0;
+    }
 }
 ```
 
@@ -139,34 +143,38 @@ The output from the Oscilloscope is shown
 {{< fimage src="images/IMG_3482.jpg" width="600" height="500" float="inline-block">}}
 {{< /bgallery >}}
 
-With the scope set to 200ns per segment you can see the rise/fall of the output is ~250ns. This is immediately within the timing for sending a 0. However we also need to look at the gap to the next rise/fall to make sure we are not exceeding 50us.
+With the scope set to 200ns per segment you can see the rise/fall of the output is ~300ns. This is immediately within the timing for sending a 0. However we also need to look at the gap to the next rise/fall to make sure we are not exceeding 50us.
 
 {{< bgallery width="60" >}}
 {{< fimage src="images/IMG_3483.jpg" width="600" height="500" float="inline-block">}}
 {{< /bgallery >}}
 
-The gap between two rise and falls is 2000ns (2us) so does fall within out 50us delay.
+The gap between two rise and falls is 2000ns (2us) so does fall within our 50us delay requirement. 
 
-We now need to determine how to keep the pin high for longer. There are various ways to do this, however the simplest is to just set the pin high again, so our code now changes to
+We now need to determine how to keep the pin high for longer, as need to be able to send a longer pulse for setting a 1. There are various ways to do this, however the simplest is to just set the pin high again, so our code now changes to
 
 ```
 int main(void)
 {
     SYSTEM_Initialize();
-	while (1)
-	{
-		LATCbits.LATC0 = 1;
-		LATCbits.LATC0 = 1;
-		LATCbits.LATC0 = 0;
-	}
+    while (1)
+    {
+        LATCbits.LATC0 = 1;
+        LATCbits.LATC0 = 1;
+        LATCbits.LATC0 = 0;
+    }
 }
 ```
+
+At the clock rate is set to 16Mhz, per cycle for the PIC is approximately 62.5ns per instruction. 
 
 {{< bgallery width="60" >}}
 {{< fimage src="images/IMG_3503.jpg" width="600" height="500" float="inline-block">}}
 {{< /bgallery >}}
 
 This is really close and gives ~500ns. We need at least 550ns to make sure we are within tolerance of the specifications.
+
+We can see per setting the pin to high, we have added ~200ns, which suggests 3 instructions are being used per setting, even though the value has not changed.
 
 Then we changed to
 
@@ -190,7 +198,7 @@ int main(void)
 
 This provided the output we need for a 1 bit set, it is approx 750ns. 
 
-Now we have both ways to set for a long (one) and a short(zero), for the output.
+Now we have both ways to set for a long (one) and a short(zero), for the output. You can see on the above image the edge of the previous long pulse, and our gap between rise and fall has increased to 2.5us(2500ns), so something we may need to be aware of later. 
 
 To make life much simpler to set these I created two functions (placed before the main(void) function).
 
@@ -301,11 +309,48 @@ int main(void)
 {{< fimage src="images/IMG_3485.jpg" width="600" height="500" float="inline-block">}}
 {{< /bgallery >}}
 
+You can experiment with the bits being sent for the intensity of the colour and you should find the first bit is the high value and last bit is the low value in order thus,
+
+
+```128  64  32  16  8  4  2  1```  - bit values of a byte
+
+Pulse order sent
+
+```1    0    0   0  0  0  0  0```
+
+This would give a half intensity colour for whichever colour was being set, so you can now create a function to send byte values rather than just single pulses.
+
+```
+void sendsingle_byte(unsigned char byte)
+{
+    if ( byte & 0b10000000) { longPulse(); }
+    else { shortPulse(); }
+    if ( byte & 0b01000000) { longPulse(); }
+    else { shortPulse(); }
+    if ( byte & 0b00100000) { longPulse(); }
+    else { shortPulse(); }
+    if ( byte & 0b00010000) { longPulse(); }
+    else { shortPulse(); }
+    if ( byte & 0b00001000) { longPulse(); }
+    else { shortPulse(); }
+    if ( byte & 0b00000100) { longPulse(); }
+    else { shortPulse(); }
+    if ( byte & 0b00000010) { longPulse(); }
+    else { shortPulse(); }
+    if ( byte & 0b00000001) { longPulse(); }
+    else { shortPulse(); }
+}
+```
+
+This function should be placed before the longPulse() and shortPulse() in your main.c code. 
+
+It uses a binary mask ( &0b prefix ) to check against each bit in the byte provided into the function and then sends either a longPulse() or shortPulse() depending if it is set or not.
+
 # Limitations of a PIC
 
-I was then interested in making a 144 LED strip working with different colours. In modern computing you can just memory and allocate it based on your needs, and in this case would be 3 bytes x 144 which is 432 bytes. However with the PIC chosen it only has 2k of RAM of which most - 1500 bytes - is used when initializing the program and other variables needed.
+I was then interested in making a 144 LED strip working with different colours. In modern computing you can just use memory and allocate it based on your needs, and in this case would be 3 bytes x 144 which is 432 bytes. However with the PIC chosen it only has 2k of RAM of which most - 1500 bytes - is used when initializing the program and other variables needed.
 
-In order to cope with the lack of memory I decided that a small buffer of 72 bytes would suffice, which is 24 LEDs, which can then be replicated across the number of LEDs required.
+In order to cope with the lack of memory I decided that a small buffer of 70 bytes would suffice, which is two bytes short of 24 LEDs, which can then be replicated across the number of LEDs required. I did however want to keep as much visual randomness as possible.
 
 The code I came up with was as follows
 
@@ -322,7 +367,7 @@ void shortPulse(void)
     LATCbits.LATC0 = 1;
     LATCbits.LATC0 = 0;
 }
-void ws_sendsingle_byte(unsigned char byte)
+void sendsingle_byte(unsigned char byte)
 {
     if ( byte & 0b10000000) { longPulse(); }
     else { shortPulse(); }
@@ -345,46 +390,161 @@ int main(void)
 {
     SYSTEM_Initialize();
      
+	// 144 LEDs in the strip i am using. 
     int ledCount = 144;
-    int ledCountMaxMem = 72;
+	
+	// The ledCount in the array to create random values
+    int ledCountArrayMem = 70;
 
+	// Total byte send, each LED has 3 bytes, so ledCount multipled by 3
     int ledCountCol = ledCount * 3;
-    char ledCountArray[72];
+	
+    // Create an array of 70 values for the random values.
+    // This should be an odd number, NOT divisible by 3.
+    // This array could be much smaller however does reduce how
+    // 'random' the LEDs look.
+    char ledCountArray[70];
       
+    // Array position counter
+    int d = 0;
+	
     // init srand
     srand(40);
     
-    // clear all LEDs
+    // clear all LEDs to no value.
     for ( int o = 0 ; o < ledCount*3; o++)
     {
-       ws_sendsingle_byte( 0b00000000 );
+       sendsingle_byte( 0b00000000 );
     }
     __delay_ms(50);
 	
-	while(1)
+    while(1)
     {
-        for ( int l = 0 ; l < ledCountMaxMem ; l+=3 )
-        { 
+        // Creating random values is slow, so creating them into
+        // an array first before we send them out keeps the LEDs
+        // from thinking there is a timeout to display.
+        for ( int l = 0 ; l < ledCountArrayMem ; l++ )
+        {
+           // I used a mask of 0x0f to reduce the intensity of the LED brightness.
+           // If you change this, say of 0xff, two things will happen
+           // 1 - the LEDs will be MUCH brighter
+           // 2 - your power usage will increase 
            ledCountArray[(l)] = (rand()&0x0f);
-           ledCountArray[(l)+1] = (rand()&0x0f);
-           ledCountArray[(l)+2] = (rand()&0x0f);
         }
-        int d = 0;
+		
+        // Now we loop through all the LED bytes needed to be sent
+        // Simple count from 0 to the number of LEDs multipled by 3
+        // as set above.
         for ( int o = 0 ; o < ledCountCol; o++)
         {
-            ws_sendsingle_byte( ledCountArray[d] );
+            sendsingle_byte( ledCountArray[d] );
             d++;
-            if ( d > ledCountMaxMem-1 )
+            // As the array is an odd number, not divisible by 3
+            // when it reaches the end, it is not a complete LED value
+            // so cycles back to the start of the array, so the random
+            // values are different for the next block of LEDs to be shown.
+            if ( d == ledCountArrayMem )
                d = 0;
         }   
         __delay_ms(50);
     }
 }
 ```
-This code uses a 72 byte array to handle any number of LEDs. The colours do repeat but it does give the impression of randomness. As the routine does one less than the byte size, it is an odf number so shifts the repeating pattern by one byte, thus ensuring no obvious repeating pattern.
+This code uses a 70 byte array to handle any number of LEDs, and it does give the impression of randomness. As the routine does an odd size array, not divisible by 3, it tries to ensure no obvious repeating pattern.
 
 The output can be seen here
 
-{{< bgallery width="60" >}}
-{{< fimage src="images/IMG_3504.jpg" width="600" height="500" float="inline-block">}}
+{{< bgallery width="90" >}}
+{{< fimage src="images/IMG_3505.jpg" width="300" height="200" float="inline-block">}}
+{{< fimage src="images/IMG_3506.jpg" width="300" height="200" float="inline-block">}}
 {{< /bgallery >}}
+
+# One last pattern for anyone to try out
+
+As part of programming the LEDs I have looked at various patterns and one more for anyone to try out is a simple back and forth single LED, making it blue.
+
+```
+void longPulse(void)
+{
+    LATCbits.LATC0 = 1; 
+    LATCbits.LATC0 = 1;
+    LATCbits.LATC0 = 1;
+    LATCbits.LATC0 = 0;
+}
+void shortPulse(void)
+{
+    LATCbits.LATC0 = 1;
+    LATCbits.LATC0 = 0;
+}
+void sendsingle_byte(unsigned char byte)
+{
+    if ( byte & 0b10000000) { longPulse(); }
+    else { shortPulse(); }
+    if ( byte & 0b01000000) { longPulse(); }
+    else { shortPulse(); }
+    if ( byte & 0b00100000) { longPulse(); }
+    else { shortPulse(); }
+    if ( byte & 0b00010000) { longPulse(); }
+    else { shortPulse(); }
+    if ( byte & 0b00001000) { longPulse(); }
+    else { shortPulse(); }
+    if ( byte & 0b00000100) { longPulse(); }
+    else { shortPulse(); }
+    if ( byte & 0b00000010) { longPulse(); }
+    else { shortPulse(); }
+    if ( byte & 0b00000001) { longPulse(); }
+    else { shortPulse(); }
+}
+int main(void)
+{
+    SYSTEM_Initialize();
+     
+    int ledCount = 144;    
+    int liPos = 0 ;
+    int currPos = 0;
+    	
+    // clear all LEDs to no value.
+    for ( int o = 0 ; o < ledCount*3; o++)
+    {
+       sendsingle_byte( 0b00000000 );
+    }
+    __delay_ms(50);
+	
+     while (1)
+    {
+        for ( int led = 0 ; led < ledCount ; led ++ )
+        {
+            if ( led == currPos )
+            {
+                // Send a blue colour at the correct position.
+                ws_send_byte( 0b00000000 );
+                ws_send_byte( 0b00000000 );
+                ws_send_byte( 0x34 );
+            }
+            else
+            {
+                // Reset the LED when not at the correct position.
+                ws_send_byte( 0b00000000 );
+                ws_send_byte( 0b00000000 );
+                ws_send_byte( 0b00000000 );
+            }
+        }
+        liPos++;
+        currPos =  ((liPos + ledCount) % (ledCount*2))  - ledCount ;
+		
+		// Invert the position to track back and forth.
+        if ( currPos < 0 )
+           currPos = currPos * -1;
+
+      __delay_us(100);
+    }
+}
+```
+
+# So what's next ?
+
+As I was going through all of this, learning lots and lots of interesting things, from PICs, to the MPLAB X IDE, and of course the 2812 LEDs, someone at the Hackspace pointed out a much simpler, far more developed way.
+
+Using an [ESP32](https://docs.arduino.cc/hardware/nano-esp32/) with [WLED](https://kno.wled.ge/) or [FAST LED](https://fastled.io/) libraries. All the timing, patterns, control interface has all been done and very simple to get going.
+
+I am going to continue to learn about PICs, as they do have their place, single standalone projects, very cheap and incredibly low power. 
