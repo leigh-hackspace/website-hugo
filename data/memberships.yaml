@@ -22,7 +22,8 @@ membership_levels:
     value: 40
     currency: "GBP"
     description: "A discounted family membership for two adults and two children."
-    link: "https://pay.gocardless.com/AL000637J3VZP7"
+    #link: "https://pay.gocardless.com/AL000637J3VZP7"
+    link: "https://pay.gocardless.com/BRT0001S3NRMAE2"
 
   - name: "Day Pass"
     value: 5
