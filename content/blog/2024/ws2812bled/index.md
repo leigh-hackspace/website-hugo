@@ -512,31 +512,35 @@ int main(void)
 	
      while (1)
     {
-        for ( int led = 0 ; led < ledCount ; led ++ )
+        liPos = 0;
+        for ( int t = 0 ; t < ledCount*2; t++)
         {
-            if ( led == currPos )
+            for ( int led = 0 ; led < ledCount ; led ++ )
             {
-                // Send a blue colour at the correct position.
-                ws_send_byte( 0b00000000 );
-                ws_send_byte( 0b00000000 );
-                ws_send_byte( 0x34 );
+                if ( led == currPos )
+                {
+                    // Send a blue colour at the correct position.
+                    ws_send_byte( 0b00000000 );
+                    ws_send_byte( 0b00000000 );
+                    ws_send_byte( 0x34 );
+                }
+                else
+                {
+                    // Reset the LED when not at the correct position.
+                    ws_send_byte( 0b00000000 );
+                    ws_send_byte( 0b00000000 );
+                    ws_send_byte( 0b00000000 );
+                }
             }
-            else
-            {
-                // Reset the LED when not at the correct position.
-                ws_send_byte( 0b00000000 );
-                ws_send_byte( 0b00000000 );
-                ws_send_byte( 0b00000000 );
-            }
-        }
-        liPos++;
-        currPos =  ((liPos + ledCount) % (ledCount*2))  - ledCount ;
+            liPos++;
+            currPos =  ((liPos + ledCount) % (ledCount*2))  - ledCount ;
 		
-		// Invert the position to track back and forth.
-        if ( currPos < 0 )
-           currPos = currPos * -1;
+            // Invert the position to track back and forth.
+            if ( currPos < 0 )
+               currPos = currPos * -1;
 
-      __delay_us(100);
+            __delay_us(100);
+        }
     }
 }
 ```
