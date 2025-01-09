@@ -1,0 +1,22 @@
+{{ $img := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
+{{ $width := .Get "width" }}
+{{ $img = $img.Resize (print (default "1264x" $width) " webp") }}
+{{ $title := .Get "title" }}
+{{ $class := .Get "class" }}
+{{- with .Parent -}}
+<div>
+{{ end }}
+<figure class="image{{ if $class }} {{ $class }}{{ end }}">
+  <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" {{ if $title }}
+    alt="{{ $title }}" {{ end }}>
+  {{ if $title }}
+  <figcaption class="is-size-6">
+    <small>
+      {{ $title }}
+    </small>
+  </figcaption>
+  {{ end }}
+</figure>
+{{- with .Parent -}}
+</div>
+{{ end }}

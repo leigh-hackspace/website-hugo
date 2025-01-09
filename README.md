@@ -42,6 +42,21 @@ We have a few shortcodes that you can use:
 * `title` - This is the title and alt text used for the image.
 * `width` - The maximum dimensions of the image, this can be used in a few ways, either defining just the width (`400`), defining scaling to a width `400x`, or a specific width and height (`400x600`). Ideally try to use `400x` to keep image scaling working as expected.
 
+#### side by images
+
+The side-by-side-2-colds short code will put the images in the blog next to each other
+
+the markdown works is as follows
+
+```markdown
+{{< side-by-side-2-cols 
+    "image1" "alt-text-1"
+    "image2" "alt-text-1"
+>}}
+```
+
+this will present 2 images the same size side by side
+
 #### `gallery`
 
 `gallery` surrounds a group of image tags and makes a rotating gallery of the images:

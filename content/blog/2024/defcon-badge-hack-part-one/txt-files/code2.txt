@@ -1,0 +1,14 @@
+BOOT started #CSCMOD A328P v1.1
+Spaceship connection...OK
+EM Reactive Nanocells status...OK
+Reading device configuration...OK [00100111]
+Spaceship Oxigen level...OK
+Location...Unknown
+
+[ Secure Messagging Channel ]
+Do not trust the void, always encrypt your messages.
+
+nF1gUR4t10n!}
+
+Loading...
+type HELP for commands:
