@@ -1,5 +1,5 @@
 ---
-title: "Covert Swarm Badge Hack"
+title: "CovertSwarm Badge Hack"
 subtitle: "John Dips his toes into the world of hardware hacking with the covert swarm Defcon badge - Part One"
 date: 2024-12-31T10:10:10Z
 tags:
