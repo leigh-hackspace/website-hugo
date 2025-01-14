@@ -42,7 +42,7 @@ We have a few shortcodes that you can use:
 * `title` - This is the title and alt text used for the image.
 * `width` - The maximum dimensions of the image, this can be used in a few ways, either defining just the width (`400`), defining scaling to a width `400x`, or a specific width and height (`400x600`). Ideally try to use `400x` to keep image scaling working as expected.
 
-#### side by images
+#### side by side images
 
 The side-by-side-2-colds short code will put the images in the blog next to each other
 
