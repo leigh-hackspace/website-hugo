@@ -1,6 +1,6 @@
 ---
 title: "CovertSwarm Badge Hack"
-subtitle: "John Dips his toes into the world of hardware hacking with the covert swarm Defcon badge - Part One"
+subtitle: "John Dips his toes into the world of hardware hacking with the CovertSwarm Defcon badge - Part One"
 date: 2024-12-31T10:10:10Z
 tags:
     - defcon
@@ -8,7 +8,7 @@ tags:
     - hardware-hacking
     - hacking
     - electronics
-    - covertswarm
+    - CovertSwarm
     - soldering
     - hackspace
     - makerspace
@@ -41,7 +41,7 @@ Below are some images of the badge (front and back)
 
 On the front of the badge, there is a silkscreen of the CovertSwarm logo with the words "YOU DESERVE TO BE HACKED" in the middle.
 
-There are also 8 Neo-Pixel style RGB LEDs in the sides of the 'arrows' of the Covertswarm logo with a couple of capacitors and resistors.
+There are also 8 Neo-Pixel style RGB LEDs in the sides of the 'arrows' of the CovertSwarm logo with a couple of capacitors and resistors.
 
 When the badge is turned on the LEDs are orange there also are 6 pushable buttons labeled F, G, A on the top left side and D, C, B on the bottom right.
 
