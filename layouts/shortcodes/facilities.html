@@ -1,15 +1,30 @@
-<div class="columns pricing-tiers is-centered is-multiline">
-    {{- range (where .Site.RegularPages "Section" "facilities") }}
-    <div class="column is-one-quarter">
-        <div class="box is-large hover-items">
-            <h3 class="is-size-4 has-text-weight-bold">{{ .Title }}</h3>
-            <div class="content mt-5 facility-description">
-                <p>{{ .Params.subtitle }}</p>
-            </div>
-            <div class="content">
-                <a href="{{ .RelPermalink }}" class="button is-primary is-medium is-fullwidth has-box-shadow ">Learn More</a>
-            </div>
-        </div>
+<div class="is-centered is-multiline">
+
+    <div class="message">
+      <div class="message-body">
+      <p>Detailed information on equipment and facilities is available on 
+      our <a href="https://wiki.leighhack.org/">wiki</a>.</p>
+      </div>
     </div>
+
+    <nav id="fac_menu" class="box">
+      <ul>
+      {{- range (where .Site.RegularPages "Section" "facilities") }}
+        <li>
+          <a href="#{{.LinkTitle}}">{{ .Params.title }}</a>
+        </li>
+      {{ end }}
+      </ul>
+    </nav>
+
+    <div class="box is-clearfix">
+    {{- range (where .Site.RegularPages "Section" "facilities") }}
+      <h2 id="{{.LinkTitle}}">{{ .Params.title }}</h2>
+      <p class="has-text-weight-bold">{{ .Params.subTitle }}</p>
+      <div class="content">
+        {{ .Content }}
+      </div>
+      <p class="is-italic"><a href="#fac_menu">Return to facilities</a></p>
     {{ end }}
+    </div>
 </div>
