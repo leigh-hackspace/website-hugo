@@ -122,6 +122,6 @@ url = "https://github.com/leigh-hackspace"
 icon = "fab fa-github-alt"
 
 [[params.social_links]]
-name = "discourse"
-url = "https://discourse.leighhack.org"
-icon = "fab fa-discourse"
+name = "bluesky"
+url = "https://bsky.app/profile/leighhackspace.bsky.social"
+icon = "fab fa-bluesky"

@@ -13,7 +13,7 @@ hero_image: long_logo_solo_whitebg.svg
 | --------- | ------------- |
 | Monday    | 18:30 - 21:00 |
 | Tuesday   | 14:00 - 21:00 |
-| Wednesday | 14:00 - 21:00 |
+| Wednesday | 18:30 - 21:00 |
 | Thursday  | Closed        |
 | Friday    | Closed        |
 | Saturday  | 12:00 - 17:00 |
