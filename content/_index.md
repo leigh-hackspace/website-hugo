@@ -12,7 +12,7 @@ hero_image: long_logo_solo_whitebg.svg
 | Day       | Opening Times |
 | --------- | ------------- |
 | Monday    | 18:30 - 21:00 |
-| Tuesday   | 14:00 - 21:00 |
+| Tuesday   | 18:30 - 21:00 |
 | Wednesday | 18:30 - 21:00 |
 | Thursday  | Closed        |
 | Friday    | Closed        |
