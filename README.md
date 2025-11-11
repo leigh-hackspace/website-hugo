@@ -23,6 +23,18 @@ The site will be updated in real-time with any changes made to the site files.
 
 Branches are automatically deployed to [https://web-test.leighhack.org](https://web-test.leighhack.org) with subfolders for each of the branches in the repository. Once merged into `main` it'll be deployed out to the live website.
 
+### Webhook implementation details
+
+- Server  = `10.3.1.39`
+- Service = `/etc/systemd/system/webhook.service`
+- Hooks   = `/etc/webhook/hooks.json`
+
+Simulate a webhook via SSH on `10.3.1.39`:
+
+    sudo su - ansible
+    cd /home/ansible/website-hugo
+    tools/branch-deploy.sh "/srv/www/web-test.leighhack.org" "https://web-test.leighhack.org"
+
 ## Common Tasks
 
 ### How do I add images to posts / What custom shortcodes are available?
