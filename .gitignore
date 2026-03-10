@@ -6,3 +6,4 @@ content/blog/.DS_Store
 public
 resources
 serve.sh
+hugo
