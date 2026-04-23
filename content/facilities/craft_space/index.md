@@ -1,15 +1,15 @@
 ---
-title: "Craft Space"
+title: "Textiles"
 subtitle: "A working area for sewing, textiles and other crafts."
 ---
 
-{{< image src="sewing.jpg" width="400x" class="is-pulled-right" >}}
+{{< image src="textiles.jpg" width="400x" class="is-pulled-right" >}}
 
-Bring your textile creations to life at Leigh Hackspace. Our range of sewing and knitting tools and accessories are available to you whether you want to sew a button, stitch a hem, or knit a hat.
+Textiles is equipped with two large working tables a range of sewing 
+machines and overlockers, and additional tools such as rotary cutters, 
+scissors and mats.  We have a range of fabrics available for members to 
+experiment on, or bring your own projects.
 
-### What is available?
-
-* Fabrics, threads, and wool
-* Knitting needles
-* Sewing machines
-* Adjustable dressmaker's dolls
+Members are welcome to work on Textile projects at any time, but we have 
+a Textile Tuesday that provides a focal point to learn new skills, meet 
+people and share projects.
